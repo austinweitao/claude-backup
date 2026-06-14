@@ -1,0 +1,12 @@
+Android Debug Bridge version 1.0.41
+Version 37.0.0-14910828
+Installed as /home/cwtrocks/android-sdk/platform-tools/adb
+Running on Linux 6.6.99-09128-g14e87a8a9b71 (x86_64)
+---
+adb
+Failed to set property 'persist.sys.usb.config' to 'adb,root'.
+See dmesg for error reason.
+adb
+--- Try adb root again ---
+adbd cannot run as root in production builds
+uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context=u:r:shell:s0

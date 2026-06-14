@@ -1,0 +1,13 @@
+total 8
+drwxr-xr-x 1 cwtrocks cwtrocks 144 Apr 11 14:55 .
+drwxr-xr-x 1 cwtrocks cwtrocks 258 Apr 11 21:30 ..
+drwxr-xr-x 1 cwtrocks cwtrocks  80 Apr 11 14:40 android35_test.avd
+-rw-r--r-- 1 cwtrocks cwtrocks 108 Apr 11 14:40 android35_test.ini
+drwxr-xr-x 1 cwtrocks cwtrocks  80 Apr 11 14:55 android36_test.avd
+-rw-r--r-- 1 cwtrocks cwtrocks 108 Apr 11 14:55 android36_test.ini
+---
+Available Android Virtual Devices:
+  platforms;android-35                        | 2                 | Android SDK Platform 35                    | platforms/android-35                       
+  platforms;android-36                        | 2                 | Android SDK Platform 36                    | platforms/android-36                       
+  system-images;android-35;google_apis;x86_64 | 9                 | Google APIs Intel x86_64 Atom System Image | system-images/android-35/google_apis/x86_64
+  system-images;android-36;google_apis;x86_64 | 7                 | Google APIs Intel x86_64 Atom System Image | system-images/android-36/google_apis/x86_64

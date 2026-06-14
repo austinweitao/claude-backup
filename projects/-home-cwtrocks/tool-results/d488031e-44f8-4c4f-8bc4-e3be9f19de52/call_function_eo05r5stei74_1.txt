@@ -1,0 +1,4 @@
+cwtrocks  8430  0.0  0.0 620772  9360 ?        Ssl  15:09   0:00 adb -L tcp:5037 fork-server server --reply-fd 4
+---
+List of devices attached
+emulator-5554	device

@@ -1,0 +1,110 @@
+  system-images;android-34;android-desktop;arm64-v8a                              | 1                 | Desktop ARM 64 v8a System Image                                       
+  system-images;android-34;android-desktop;x86_64                                 | 1                 | Desktop Intel x86_64 Atom System Image                                
+  system-images;android-34;android-tv;arm64-v8a                                   | 3                 | Android TV ARM 64 v8a System Image                                    
+  system-images;android-34;android-tv;x86                                         | 3                 | Android TV Intel x86 Atom System Image                                
+  system-images;android-34;android-wear;arm64-v8a                                 | 1                 | Wear OS 5 ARM 64 v8a System Image                                     
+  system-images;android-34;android-wear;x86_64                                    | 1                 | Wear OS 5 Intel x86_64 Atom System Image                              
+  system-images;android-34;aosp_atd;arm64-v8a                                     | 2                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-34;aosp_atd;x86_64                                        | 2                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-34;default;arm64-v8a                                      | 4                 | ARM 64 v8a System Image                                               
+  system-images;android-34;default;x86_64                                         | 4                 | Intel x86_64 Atom System Image                                        
+  system-images;android-34-ext10;google_apis_playstore;arm64-v8a                  | 2                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-34-ext10;google_apis_playstore;x86_64                     | 2                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-34-ext11;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-34-ext11;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-34-ext12;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-34-ext12;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-34-ext8;google_apis_playstore;arm64-v8a                   | 2                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-34-ext8;google_apis_playstore;x86_64                      | 2                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-34-ext9;android-automotive;arm64-v8a                      | 5                 | Android Automotive with Google APIs arm64-v8a System Image            
+  system-images;android-34-ext9;android-automotive-playstore;arm64-v8a            | 4                 | Android Automotive with Google Play arm64-v8a System Image            
+  system-images;android-34-ext9;android-automotive-playstore;x86_64               | 4                 | Android Automotive with Google Play x86_64 System Image               
+  system-images;android-34-ext9;android-automotive;x86_64                         | 5                 | Android Automotive with Google APIs x86_64 System Image               
+  system-images;android-34;google_apis;arm64-v8a                                  | 14                | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-34;google_apis_playstore;arm64-v8a                        | 14                | Google Play ARM 64 v8a System Image                                   
+  system-images;android-34;google_apis_playstore;x86_64                           | 14                | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-34;google_apis;x86_64                                     | 14                | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-34;google_atd;arm64-v8a                                   | 1                 | Google APIs ATD ARM 64 System Image                                   
+  system-images;android-34;google_atd;x86_64                                      | 1                 | Google APIs ATD Intel x86_64 Atom System Image                        
+  system-images;android-34;google-tv;arm64-v8a                                    | 3                 | Google TV ARM 64 v8a System Image                                     
+  system-images;android-34;google-tv;x86                                          | 3                 | Google TV Intel x86 Atom System Image                                 
+  system-images;android-34;google-xr;arm64-v8a                                    | 7                 | Google Play XR ARM 64 v8a System Image (Developer Preview)            
+  system-images;android-34;google-xr;x86_64                                       | 7                 | Google Play XR Intel x86_64 Atom System Image (Developer Preview)     
+  system-images;android-35;aosp_atd;arm64-v8a                                     | 1                 | AOSP ATD ARM 64 System Image                                          
+  system-images;android-35;aosp_atd;x86_64                                        | 1                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-35;default;arm64-v8a                                      | 2                 | ARM 64 v8a System Image                                               
+  system-images;android-35;default;x86_64                                         | 2                 | Intel x86_64 Atom System Image                                        
+  system-images;android-35-ext14;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-35-ext14;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-35-ext15;android-automotive;arm64-v8a                     | 2                 | Android Automotive with Google APIs arm64-v8a System Image            
+  system-images;android-35-ext15;android-automotive-playstore;arm64-v8a           | 2                 | Android Automotive with Google Play arm64-v8a System Image            
+  system-images;android-35-ext15;android-automotive-playstore;x86_64              | 2                 | Android Automotive with Google Play x86_64 System Image               
+  system-images;android-35-ext15;android-automotive;x86_64                        | 2                 | Android Automotive with Google APIs x86_64 System Image               
+  system-images;android-35-ext15;android-wear;arm64-v8a                           | 1                 | Wear OS 5.1 ARM 64 v8a System Image                                   
+  system-images;android-35-ext15;android-wear;x86_64                              | 1                 | Wear OS 5.1 Intel x86_64 Atom System Image                            
+  system-images;android-35-ext15;google_apis;arm64-v8a                            | 1                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-35-ext15;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-35-ext15;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-35-ext15;google_apis;x86_64                               | 1                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-35;google_apis;arm64-v8a                                  | 9                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-35;google_apis_playstore;arm64-v8a                        | 9                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-35;google_apis_playstore_ps16k;arm64-v8a                  | 5                 | Pre-Release 16 KB Page Size Google Play ARM 64 v8a System Image       
+  system-images;android-35;google_apis_playstore_ps16k;x86_64                     | 5                 | Pre-Release 16 KB Page Size Google Play Intel x86_64 Atom System Image
+  system-images;android-35;google_apis_playstore_tablet;arm64-v8a                 | 9                 | Google Play Tablet ARM 64 v8a System Image                            
+  system-images;android-35;google_apis_playstore_tablet;x86_64                    | 9                 | Google Play Tablet Intel x86_64 Atom System Image                     
+  system-images;android-35;google_apis_playstore;x86_64                           | 9                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-35;google_apis_ps16k;arm64-v8a                            | 5                 | Pre-Release 16 KB Page Size Google APIs ARM 64 v8a System Image       
+  system-images;android-35;google_apis_ps16k;x86_64                               | 5                 | Pre-Release 16 KB Page Size Google APIs Intel x86_64 Atom System Image
+  system-images;android-35;google_apis_tablet;arm64-v8a                           | 2                 | Google APIs Tablet ARM 64 v8a System Image                            
+  system-images;android-35;google_apis_tablet;x86_64                              | 2                 | Google APIs Tablet Intel x86_64 Atom System Image                     
+  system-images;android-35;google_apis;x86_64                                     | 9                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-35;google_apis;x86_64 | 9                 | Google APIs Intel x86_64 Atom System Image | system-images/android-35/google_apis/x86_64
+  system-images;android-35;google_atd;arm64-v8a                                   | 1                 | Google APIs ATD ARM 64 System Image                                   
+  system-images;android-35;google_atd;x86_64                                      | 1                 | Google APIs ATD Intel x86_64 Atom System Image                        
+  system-images;android-36.0-Baklava;google_apis;arm64-v8a                        | 1                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-36.0-Baklava;google_apis_playstore;arm64-v8a              | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-36.0-Baklava;google_apis_playstore_ps16k;arm64-v8a        | 1                 | Pre-Release 16 KB Page Size Google Play ARM 64 v8a System Image       
+  system-images;android-36.0-Baklava;google_apis_playstore_ps16k;x86_64           | 1                 | Pre-Release 16 KB Page Size Google Play Intel x86_64 Atom System Image
+  system-images;android-36.0-Baklava;google_apis_playstore;x86_64                 | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-36.0-Baklava;google_apis_ps16k;arm64-v8a                  | 1                 | Pre-Release 16 KB Page Size Google APIs ARM 64 v8a System Image       
+  system-images;android-36.0-Baklava;google_apis_ps16k;x86_64                     | 1                 | Pre-Release 16 KB Page Size Google APIs Intel x86_64 Atom System Image
+  system-images;android-36.0-Baklava;google_apis;x86_64                           | 1                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-36.1;android-wear-signed;arm64-v8a                        | 1                 | Wear OS 6.1 ARM 64 v8a System Image (signed)                          
+  system-images;android-36.1;android-wear-signed;x86_64                           | 1                 | Wear OS 6.1 Intel x86_64 Atom System Image (signed)                   
+  system-images;android-36.1;google_apis;arm64-v8a                                | 4                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-36.1;google_apis_playstore;arm64-v8a                      | 4                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-36.1;google_apis_playstore_ps16k;arm64-v8a                | 4                 | Pre-Release 16 KB Page Size Google Play ARM 64 v8a System Image       
+  system-images;android-36.1;google_apis_playstore_ps16k;x86_64                   | 4                 | Pre-Release 16 KB Page Size Google Play Intel x86_64 Atom System Image
+  system-images;android-36.1;google_apis_playstore;x86_64                         | 4                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-36.1;google_apis_ps16k;arm64-v8a                          | 4                 | Pre-Release 16 KB Page Size Google APIs ARM 64 v8a System Image       
+  system-images;android-36.1;google_apis_ps16k;x86_64                             | 4                 | Pre-Release 16 KB Page Size Google APIs Intel x86_64 Atom System Image
+  system-images;android-36.1;google_apis;x86_64                                   | 4                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-36;android-tv;arm64-v8a                                   | 4                 | Android TV ARM 64 v8a System Image                                    
+  system-images;android-36;android-tv;x86                                         | 4                 | Android TV Intel x86 Atom System Image                                
+  system-images;android-36;android-tv;x86_64                                      | 4                 | Android TV Intel x86_64 Atom System Image                             
+  system-images;android-36;android-wear-signed;arm64-v8a                          | 1                 | Wear OS 6.0 ARM 64 v8a System Image (signed)                          
+  system-images;android-36;android-wear-signed;x86_64                             | 1                 | Wear OS 6.0 Intel x86_64 Atom System Image (signed)                   
+  system-images;android-36;default;arm64-v8a                                      | 2                 | ARM 64 v8a System Image                                               
+  system-images;android-36;default;x86_64                                         | 2                 | Intel x86_64 Atom System Image                                        
+  system-images;android-36-ext18;google_apis;arm64-v8a                            | 1                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-36-ext18;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-36-ext18;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-36-ext18;google_apis;x86_64                               | 1                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-36-ext19;google_apis;arm64-v8a                            | 1                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-36-ext19;google_apis_playstore;arm64-v8a                  | 1                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-36-ext19;google_apis_playstore;x86_64                     | 1                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-36-ext19;google_apis;x86_64                               | 1                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-36;google_apis;arm64-v8a                                  | 7                 | Google APIs ARM 64 v8a System Image                                   
+  system-images;android-36;google_apis_playstore;arm64-v8a                        | 7                 | Google Play ARM 64 v8a System Image                                   
+  system-images;android-36;google_apis_playstore_ps16k;arm64-v8a                  | 7                 | Pre-Release 16 KB Page Size Google Play ARM 64 v8a System Image       
+  system-images;android-36;google_apis_playstore_ps16k;x86_64                     | 7                 | Pre-Release 16 KB Page Size Google Play Intel x86_64 Atom System Image
+  system-images;android-36;google_apis_playstore;x86_64                           | 7                 | Google Play Intel x86_64 Atom System Image                            
+  system-images;android-36;google_apis_ps16k;arm64-v8a                            | 7                 | Pre-Release 16 KB Page Size Google APIs ARM 64 v8a System Image       
+  system-images;android-36;google_apis_ps16k;x86_64                               | 7                 | Pre-Release 16 KB Page Size Google APIs Intel x86_64 Atom System Image
+  system-images;android-36;google_apis;x86_64                                     | 7                 | Google APIs Intel x86_64 Atom System Image                            
+  system-images;android-36;google_apis;x86_64 | 7                 | Google APIs Intel x86_64 Atom System Image | system-images/android-36/google_apis/x86_64
+  system-images;android-36;google-tv;arm64-v8a                                    | 4                 | Google TV ARM 64 v8a System Image                                     
+  system-images;android-36;google-tv-ps16k;arm64-v8a                              | 4                 | 16 KB Page Size Google TV ARM 64 v8a System Image                     
+  system-images;android-36;google-tv-ps16k;x86_64                                 | 4                 | 16 KB Page Size Google TV Intel x86_64 Atom System Image              
+  system-images;android-36;google-tv;x86                                          | 4                 | Google TV Intel x86 Atom System Image                                 
+  system-images;android-36;google-tv;x86_64                                       | 4                 | Google TV Intel x86_64 Atom System Image

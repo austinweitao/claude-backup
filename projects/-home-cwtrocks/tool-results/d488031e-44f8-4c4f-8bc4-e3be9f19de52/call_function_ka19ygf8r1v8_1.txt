@@ -1,0 +1,13 @@
+  system-images;android-30;aosp_atd;arm64-v8a                                     | 2                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-30;aosp_atd;x86                                           | 1                 | AOSP ATD Intel x86 Atom System Image                                  
+  system-images;android-30;aosp_atd;x86_64                                        | 2                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-31;aosp_atd;arm64-v8a                                     | 1                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-31;aosp_atd;x86_64                                        | 2                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-32;aosp_atd;arm64-v8a                                     | 1                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-32;aosp_atd;x86_64                                        | 1                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-33;aosp_atd;arm64-v8a                                     | 2                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-33;aosp_atd;x86_64                                        | 2                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-34;aosp_atd;arm64-v8a                                     | 2                 | AOSP ATD ARM 64 v8a System Image                                      
+  system-images;android-34;aosp_atd;x86_64                                        | 2                 | AOSP ATD Intel x86_64 Atom System Image                               
+  system-images;android-35;aosp_atd;arm64-v8a                                     | 1                 | AOSP ATD ARM 64 System Image                                          
+  system-images;android-35;aosp_atd;x86_64                                        | 1                 | AOSP ATD Intel x86_64 Atom System Image

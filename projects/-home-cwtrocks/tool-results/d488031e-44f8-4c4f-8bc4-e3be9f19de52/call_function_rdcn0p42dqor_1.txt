@@ -1,0 +1,13 @@
+total 4
+drwxr-xr-x 1 cwtrocks cwtrocks  72 May 16 15:08 .
+drwxr-xr-x 1 cwtrocks cwtrocks  16 Mar 22 11:25 ..
+drwxr-xr-x 1 cwtrocks cwtrocks  20 May 16 15:08 android35_root.avd
+-rw-r--r-- 1 cwtrocks cwtrocks 133 May 16 15:08 android35_root.ini
+---
+total 8
+drwxr-xr-x 1 cwtrocks cwtrocks 144 Apr 11 14:55 .
+drwxr-xr-x 1 cwtrocks cwtrocks 258 Apr 11 21:30 ..
+drwxr-xr-x 1 cwtrocks cwtrocks  80 Apr 11 14:40 android35_test.avd
+-rw-r--r-- 1 cwtrocks cwtrocks 108 Apr 11 14:40 android35_test.ini
+drwxr-xr-x 1 cwtrocks cwtrocks  80 Apr 11 14:55 android36_test.avd
+-rw-r--r-- 1 cwtrocks cwtrocks 108 Apr 11 14:55 android36_test.ini

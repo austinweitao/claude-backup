@@ -1,0 +1,3762 @@
+{
+  "directory_tree": {
+    "CMakeLists.txt": {
+      "_type": "file",
+      "language": "cmake",
+      "lines": 497,
+      "category": "config"
+    },
+    "LICENSE": {
+      "_type": "file",
+      "language": "unknown",
+      "lines": 225,
+      "category": "docs"
+    },
+    "NOTICE": {
+      "_type": "file",
+      "language": "unknown",
+      "lines": 21,
+      "category": "docs"
+    },
+    "README.md": {
+      "_type": "file",
+      "language": "markdown",
+      "lines": 1325,
+      "category": "docs"
+    },
+    "VERSION": {
+      "_type": "file",
+      "language": "unknown",
+      "lines": 4,
+      "category": "code"
+    },
+    "android": {
+      "_type": "dir",
+      "android.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 633,
+        "category": "code"
+      },
+      "android.h": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 240,
+        "category": "code"
+      },
+      "art": {
+        "_type": "dir",
+        "base": {
+          "_type": "dir",
+          "bit_memory_region.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 132,
+            "category": "code"
+          },
+          "bit_memory_region.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 111,
+            "category": "code"
+          },
+          "bit_table.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 54,
+            "category": "code"
+          },
+          "bit_table.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 66,
+            "category": "code"
+          },
+          "bit_utils.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 112,
+            "category": "code"
+          },
+          "bit_vector.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 65,
+            "category": "code"
+          },
+          "enums.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 32,
+            "category": "code"
+          },
+          "globals.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 41,
+            "category": "code"
+          },
+          "leb128.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 57,
+            "category": "code"
+          },
+          "length_prefixed_array.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          },
+          "length_prefixed_array.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 48,
+            "category": "code"
+          },
+          "mem_map.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 48,
+            "category": "code"
+          },
+          "mem_map.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "memory_region.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 76,
+            "category": "code"
+          },
+          "memory_region.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          }
+        },
+        "dex": {
+          "_type": "dir",
+          "compact_dex_file.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 77,
+            "category": "code"
+          },
+          "compact_dex_file.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 83,
+            "category": "code"
+          },
+          "descriptors_names.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 121,
+            "category": "code"
+          },
+          "descriptors_names.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 38,
+            "category": "code"
+          },
+          "dex_file.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 531,
+            "category": "code"
+          },
+          "dex_file.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 128,
+            "category": "code"
+          },
+          "dex_file_structs.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 113,
+            "category": "code"
+          },
+          "dex_file_structs.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 230,
+            "category": "code"
+          },
+          "dex_file_types.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 121,
+            "category": "code"
+          },
+          "modifiers.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 89,
+            "category": "code"
+          },
+          "modifiers.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 184,
+            "category": "code"
+          },
+          "primitive.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "primitive.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 204,
+            "category": "code"
+          },
+          "standard_dex_file.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 49,
+            "category": "code"
+          },
+          "standard_dex_file.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 66,
+            "category": "code"
+          },
+          "utf.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 107,
+            "category": "code"
+          },
+          "utf.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 43,
+            "category": "code"
+          }
+        },
+        "dexdump": {
+          "_type": "dir",
+          "dexdump.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 2216,
+            "category": "code"
+          },
+          "dexdump.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 132,
+            "category": "code"
+          }
+        },
+        "runtime": {
+          "_type": "dir",
+          "arch": {
+            "_type": "dir",
+            "arm": {
+              "_type": "dir",
+              "callee_save_frame_arm.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 113,
+                "category": "code"
+              },
+              "quick_method_frame_info_arm.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 81,
+                "category": "code"
+              },
+              "quick_method_frame_info_arm.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "registers_arm.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 56,
+                "category": "code"
+              },
+              "registers_arm.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 101,
+                "category": "code"
+              }
+            },
+            "arm64": {
+              "_type": "dir",
+              "callee_save_frame_arm64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 136,
+                "category": "code"
+              },
+              "quick_method_frame_info_arm64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 81,
+                "category": "code"
+              },
+              "quick_method_frame_info_arm64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "registers_arm64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 90,
+                "category": "code"
+              },
+              "registers_arm64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 199,
+                "category": "code"
+              }
+            },
+            "riscv64": {
+              "_type": "dir",
+              "callee_save_frame_riscv64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 142,
+                "category": "code"
+              },
+              "quick_method_frame_info_riscv64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 81,
+                "category": "code"
+              },
+              "quick_method_frame_info_riscv64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "registers_riscv64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 75,
+                "category": "code"
+              },
+              "registers_riscv64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 171,
+                "category": "code"
+              }
+            },
+            "x86": {
+              "_type": "dir",
+              "callee_save_frame_x86.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 100,
+                "category": "code"
+              },
+              "quick_method_frame_info_x86.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 81,
+                "category": "code"
+              },
+              "quick_method_frame_info_x86.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "registers_x86.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              },
+              "registers_x86.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 62,
+                "category": "code"
+              }
+            },
+            "x86_64": {
+              "_type": "dir",
+              "callee_save_frame_x86_64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 111,
+                "category": "code"
+              },
+              "quick_method_frame_info_x86_64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 81,
+                "category": "code"
+              },
+              "quick_method_frame_info_x86_64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "registers_x86_64.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 56,
+                "category": "code"
+              },
+              "registers_x86_64.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 77,
+                "category": "code"
+              }
+            }
+          },
+          "art_field.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 67,
+            "category": "code"
+          },
+          "art_field.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 107,
+            "category": "code"
+          },
+          "art_method.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 550,
+            "category": "code"
+          },
+          "art_method.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 450,
+            "category": "code"
+          },
+          "base": {
+            "_type": "dir",
+            "callee_save_type.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 46,
+              "category": "code"
+            },
+            "locks.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 71,
+              "category": "code"
+            },
+            "locks.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 41,
+              "category": "code"
+            },
+            "mutex.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 420,
+              "category": "code"
+            },
+            "mutex.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 142,
+              "category": "code"
+            }
+          },
+          "cache_helpers.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 187,
+            "category": "code"
+          },
+          "cache_helpers.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 67,
+            "category": "code"
+          },
+          "class_linker.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 270,
+            "category": "code"
+          },
+          "class_linker.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 113,
+            "category": "code"
+          },
+          "class_status.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 104,
+            "category": "code"
+          },
+          "entrypoints": {
+            "_type": "dir",
+            "quick": {
+              "_type": "dir",
+              "callee_save_frame.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 65,
+                "category": "code"
+              },
+              "callee_save_frame.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 35,
+                "category": "code"
+              }
+            },
+            "runtime_asm_entrypoints.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 68,
+              "category": "code"
+            }
+          },
+          "gc": {
+            "_type": "dir",
+            "accounting": {
+              "_type": "dir",
+              "space_bitmap.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 179,
+                "category": "code"
+              },
+              "space_bitmap.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 62,
+                "category": "code"
+              }
+            },
+            "heap.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 194,
+              "category": "code"
+            },
+            "heap.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 77,
+              "category": "code"
+            },
+            "space": {
+              "_type": "dir",
+              "bump_pointer_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 203,
+                "category": "code"
+              },
+              "bump_pointer_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 76,
+                "category": "code"
+              },
+              "dlmalloc_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 36,
+                "category": "code"
+              },
+              "dlmalloc_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              },
+              "fake_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 67,
+                "category": "code"
+              },
+              "fake_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 49,
+                "category": "code"
+              },
+              "image_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 52,
+                "category": "code"
+              },
+              "image_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 47,
+                "category": "code"
+              },
+              "large_object_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 415,
+                "category": "code"
+              },
+              "large_object_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 204,
+                "category": "code"
+              },
+              "malloc_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 31,
+                "category": "code"
+              },
+              "malloc_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 45,
+                "category": "code"
+              },
+              "region_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 285,
+                "category": "code"
+              },
+              "region_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 139,
+                "category": "code"
+              },
+              "rosalloc_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 35,
+                "category": "code"
+              },
+              "rosalloc_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              },
+              "space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 488,
+                "category": "code"
+              },
+              "space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 171,
+                "category": "code"
+              },
+              "zygote_space.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 50,
+                "category": "code"
+              },
+              "zygote_space.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 47,
+                "category": "code"
+              }
+            }
+          },
+          "handle_scope.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 63,
+            "category": "code"
+          },
+          "handle_scope.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 46,
+            "category": "code"
+          },
+          "hprof": {
+            "_type": "dir",
+            "hprof.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 954,
+              "category": "code"
+            },
+            "hprof.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 31,
+              "category": "code"
+            }
+          },
+          "image.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 149,
+            "category": "code"
+          },
+          "image.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 80,
+            "category": "code"
+          },
+          "indirect_reference_table.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 253,
+            "category": "code"
+          },
+          "indirect_reference_table.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 118,
+            "category": "code"
+          },
+          "interpreter": {
+            "_type": "dir",
+            "quick_frame.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 184,
+              "category": "code"
+            },
+            "quick_frame.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 60,
+              "category": "code"
+            },
+            "shadow_frame.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 124,
+              "category": "code"
+            },
+            "shadow_frame.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 70,
+              "category": "code"
+            }
+          },
+          "java_frame.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          },
+          "java_frame.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 61,
+            "category": "code"
+          },
+          "jit": {
+            "_type": "dir",
+            "jit.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 105,
+              "category": "code"
+            },
+            "jit.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 57,
+              "category": "code"
+            },
+            "jit_code_cache.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 449,
+              "category": "code"
+            },
+            "jit_code_cache.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 167,
+              "category": "code"
+            },
+            "jit_memory_region.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 52,
+              "category": "code"
+            },
+            "jit_memory_region.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 56,
+              "category": "code"
+            }
+          },
+          "jni": {
+            "_type": "dir",
+            "java_vm_ext.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 216,
+              "category": "code"
+            },
+            "java_vm_ext.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 65,
+              "category": "code"
+            },
+            "jni_env_ext.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 81,
+              "category": "code"
+            },
+            "jni_env_ext.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 64,
+              "category": "code"
+            },
+            "local_reference_table.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 113,
+              "category": "code"
+            },
+            "local_reference_table.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 82,
+              "category": "code"
+            }
+          },
+          "lock_word.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 51,
+            "category": "code"
+          },
+          "lock_word.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 117,
+            "category": "code"
+          },
+          "managed_stack.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "managed_stack.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 73,
+            "category": "code"
+          },
+          "mirror": {
+            "_type": "dir",
+            "array.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 52,
+              "category": "code"
+            },
+            "array.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 57,
+              "category": "code"
+            },
+            "class.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 595,
+              "category": "code"
+            },
+            "class.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 262,
+              "category": "code"
+            },
+            "class_flags.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 74,
+              "category": "code"
+            },
+            "dex_cache.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 122,
+              "category": "code"
+            },
+            "dex_cache.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 92,
+              "category": "code"
+            },
+            "iftable.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 51,
+              "category": "code"
+            },
+            "object.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 214,
+              "category": "code"
+            },
+            "object.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 89,
+              "category": "code"
+            },
+            "object_array.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 36,
+              "category": "code"
+            },
+            "string.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 107,
+              "category": "code"
+            },
+            "string.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 79,
+              "category": "code"
+            }
+          },
+          "monitor.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 190,
+            "category": "code"
+          },
+          "monitor.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 61,
+            "category": "code"
+          },
+          "monitor_pool.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 67,
+            "category": "code"
+          },
+          "monitor_pool.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 54,
+            "category": "code"
+          },
+          "nterp_helpers.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 132,
+            "category": "code"
+          },
+          "nterp_helpers.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 35,
+            "category": "code"
+          },
+          "oat.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 88,
+            "category": "code"
+          },
+          "oat.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 34,
+            "category": "code"
+          },
+          "oat": {
+            "_type": "dir",
+            "oat_file.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 308,
+              "category": "code"
+            },
+            "oat_file.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 138,
+              "category": "code"
+            },
+            "stack_map.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 1061,
+              "category": "code"
+            },
+            "stack_map.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 671,
+              "category": "code"
+            }
+          },
+          "oat_quick_method_header.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 235,
+            "category": "code"
+          },
+          "oat_quick_method_header.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 108,
+            "category": "code"
+          },
+          "quick": {
+            "_type": "dir",
+            "quick_method_frame_info.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 66,
+              "category": "code"
+            },
+            "quick_method_frame_info.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 71,
+              "category": "code"
+            }
+          },
+          "runtime.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 688,
+            "category": "code"
+          },
+          "runtime.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 130,
+            "category": "code"
+          },
+          "runtime_globals.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 37,
+            "category": "code"
+          },
+          "stack.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 158,
+            "category": "code"
+          },
+          "stack.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 106,
+            "category": "code"
+          },
+          "thread.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 922,
+            "category": "code"
+          },
+          "thread.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 188,
+            "category": "code"
+          },
+          "thread_list.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 89,
+            "category": "code"
+          },
+          "thread_list.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 68,
+            "category": "code"
+          },
+          "thread_state.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 68,
+            "category": "code"
+          },
+          "vdex_file.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 51,
+            "category": "code"
+          },
+          "vdex_file.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 52,
+            "category": "code"
+          }
+        }
+      },
+      "basic.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 90,
+        "category": "code"
+      },
+      "dalvik_vm_bytecode.h": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 300,
+        "category": "code"
+      },
+      "fdtrack": {
+        "_type": "dir",
+        "fdtrack.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 166,
+          "category": "code"
+        },
+        "fdtrack.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 65,
+          "category": "code"
+        }
+      },
+      "jdk": {
+        "_type": "dir",
+        "java": {
+          "_type": "dir",
+          "lang": {
+            "_type": "dir",
+            "Array.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 33,
+              "category": "code"
+            },
+            "Array.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 40,
+              "category": "code"
+            },
+            "Class.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 57,
+              "category": "code"
+            },
+            "Class.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 41,
+              "category": "code"
+            },
+            "Integer.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 41,
+              "category": "code"
+            },
+            "Object.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 163,
+              "category": "code"
+            },
+            "Object.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 114,
+              "category": "code"
+            },
+            "ObjectArray.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 45,
+              "category": "code"
+            },
+            "StackTraceElement.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 50,
+              "category": "code"
+            },
+            "StackTraceElement.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 50,
+              "category": "code"
+            },
+            "String.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 40,
+              "category": "code"
+            },
+            "String.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 39,
+              "category": "code"
+            },
+            "Thread.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 48,
+              "category": "code"
+            },
+            "ThreadGroup.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 42,
+              "category": "code"
+            },
+            "Throwable.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 75,
+              "category": "code"
+            },
+            "Throwable.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 48,
+              "category": "code"
+            }
+          }
+        },
+        "libcore": {
+          "_type": "dir",
+          "util": {
+            "_type": "dir",
+            "NativeAllocationRegistry.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 49,
+              "category": "code"
+            }
+          }
+        },
+        "sun": {
+          "_type": "dir",
+          "misc": {
+            "_type": "dir",
+            "Cleaner.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 43,
+              "category": "code"
+            }
+          }
+        }
+      },
+      "logcat": {
+        "_type": "dir",
+        "LogBuffer.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 28,
+          "category": "code"
+        },
+        "LogBuffer.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 43,
+          "category": "code"
+        },
+        "LogStatistics.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 35,
+          "category": "code"
+        },
+        "LogStatistics.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 45,
+          "category": "code"
+        },
+        "SerializedData.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 155,
+          "category": "code"
+        },
+        "SerializedData.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 67,
+          "category": "code"
+        },
+        "SerializedLogBuffer.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 41,
+          "category": "code"
+        },
+        "SerializedLogBuffer.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 60,
+          "category": "code"
+        },
+        "event_logtags.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 572,
+          "category": "code"
+        },
+        "event_logtags.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 70,
+          "category": "code"
+        },
+        "log.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 105,
+          "category": "code"
+        },
+        "log.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 94,
+          "category": "code"
+        }
+      },
+      "properties": {
+        "_type": "dir",
+        "prop_area.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 195,
+          "category": "code"
+        },
+        "prop_area.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 90,
+          "category": "code"
+        },
+        "prop_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 33,
+          "category": "code"
+        },
+        "prop_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 57,
+          "category": "code"
+        },
+        "property.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 96,
+          "category": "code"
+        },
+        "property.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 38,
+          "category": "code"
+        }
+      },
+      "sdk": {
+        "_type": "dir",
+        "android": {
+          "_type": "dir",
+          "app": {
+            "_type": "dir",
+            "ActivityThread.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 45,
+              "category": "code"
+            },
+            "ContextImpl.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 53,
+              "category": "code"
+            },
+            "ContextImpl.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 41,
+              "category": "code"
+            }
+          },
+          "os": {
+            "_type": "dir",
+            "BinderProxy.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 38,
+              "category": "code"
+            }
+          },
+          "util": {
+            "_type": "dir",
+            "ArrayMap.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 86,
+              "category": "code"
+            },
+            "ArrayMap.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 63,
+              "category": "code"
+            },
+            "BaseArrayMap.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 42,
+              "category": "code"
+            },
+            "Singleton.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 40,
+              "category": "code"
+            }
+          }
+        },
+        "native": {
+          "_type": "dir",
+          "android_BpBinder.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 143,
+            "category": "code"
+          },
+          "android_BpBinder.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 58,
+            "category": "code"
+          },
+          "android_os_BinderProxy.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 60,
+            "category": "code"
+          },
+          "android_os_BinderProxy.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 52,
+            "category": "code"
+          }
+        }
+      },
+      "services": {
+        "_type": "dir",
+        "com": {
+          "_type": "dir",
+          "android": {
+            "_type": "dir",
+            "server": {
+              "_type": "dir",
+              "am": {
+                "_type": "dir",
+                "ActivityManagerService.cpp": {
+                  "_type": "file",
+                  "language": "cpp",
+                  "lines": 49,
+                  "category": "code"
+                },
+                "ActivityManagerService.h": {
+                  "_type": "file",
+                  "language": "cpp",
+                  "lines": 43,
+                  "category": "code"
+                }
+              }
+            }
+          }
+        }
+      },
+      "unwindstack": {
+        "_type": "dir",
+        "Unwinder.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 113,
+          "category": "code"
+        },
+        "Unwinder.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 64,
+          "category": "code"
+        }
+      }
+    },
+    "cmake": {
+      "_type": "dir",
+      "EmbedFile.cmake": {
+        "_type": "file",
+        "language": "cmake",
+        "lines": 24,
+        "category": "config"
+      }
+    },
+    "compat": {
+      "_type": "dir",
+      "linux": {
+        "_type": "dir",
+        "elf.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 455,
+          "category": "code"
+        }
+      }
+    },
+    "core": {
+      "_type": "dir",
+      "api": {
+        "_type": "dir",
+        "bridge.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 25,
+          "category": "code"
+        },
+        "bridge.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 30,
+          "category": "code"
+        },
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 605,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 281,
+          "category": "code"
+        },
+        "dwarf.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 1110,
+          "category": "code"
+        },
+        "dwarf.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 158,
+          "category": "code"
+        },
+        "elf.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 323,
+          "category": "code"
+        },
+        "elf.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 178,
+          "category": "code"
+        },
+        "memory_ref.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 151,
+          "category": "code"
+        },
+        "thread.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 56,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 71,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 61,
+          "category": "code"
+        }
+      },
+      "arm": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 51,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 47,
+          "category": "code"
+        },
+        "inst": {
+          "_type": "dir",
+          "constant.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 32,
+            "category": "code"
+          }
+        },
+        "thread_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 97,
+          "category": "code"
+        },
+        "thread_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 73,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 103,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 37,
+          "category": "code"
+        }
+      },
+      "arm64": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 87,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 52,
+          "category": "code"
+        },
+        "inst": {
+          "_type": "dir",
+          "constant.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 79,
+            "category": "code"
+          }
+        },
+        "thread_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 119,
+          "category": "code"
+        },
+        "thread_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 205,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 154,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 38,
+          "category": "code"
+        }
+      },
+      "common": {
+        "_type": "dir",
+        "auxv.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 48,
+          "category": "code"
+        },
+        "auxv.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 125,
+          "category": "code"
+        },
+        "bit.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 35,
+          "category": "code"
+        },
+        "block.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 110,
+          "category": "code"
+        },
+        "disassemble": {
+          "_type": "dir",
+          "capstone.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 132,
+            "category": "code"
+          },
+          "capstone.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 96,
+            "category": "code"
+          }
+        },
+        "elf.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 50,
+          "category": "code"
+        },
+        "elf.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 58,
+          "category": "code"
+        },
+        "exception.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 51,
+          "category": "code"
+        },
+        "file.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 52,
+          "category": "code"
+        },
+        "fpregset.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 39,
+          "category": "code"
+        },
+        "link_map.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 205,
+          "category": "code"
+        },
+        "link_map.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 95,
+          "category": "code"
+        },
+        "load_block.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 146,
+          "category": "code"
+        },
+        "load_block.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 160,
+          "category": "code"
+        },
+        "native_frame.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 89,
+          "category": "code"
+        },
+        "native_frame.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 47,
+          "category": "code"
+        },
+        "note_block.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 89,
+          "category": "code"
+        },
+        "note_block.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 64,
+          "category": "code"
+        },
+        "prstatus.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 238,
+          "category": "code"
+        },
+        "syment.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 59,
+          "category": "code"
+        },
+        "tls.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 37,
+          "category": "code"
+        },
+        "ucontext.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 324,
+          "category": "code"
+        },
+        "xz": {
+          "_type": "dir",
+          "codec.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 45,
+            "category": "code"
+          },
+          "codec.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 49,
+            "category": "code"
+          },
+          "lzma.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 115,
+            "category": "code"
+          },
+          "lzma.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 37,
+            "category": "code"
+          }
+        }
+      },
+      "lp32": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 418,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 90,
+          "category": "code"
+        }
+      },
+      "lp64": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 418,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 90,
+          "category": "code"
+        }
+      },
+      "riscv64": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 51,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 47,
+          "category": "code"
+        },
+        "thread_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 114,
+          "category": "code"
+        },
+        "thread_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 92,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 48,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 36,
+          "category": "code"
+        }
+      },
+      "x86": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 51,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 47,
+          "category": "code"
+        },
+        "thread_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 123,
+          "category": "code"
+        },
+        "thread_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 63,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 132,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 37,
+          "category": "code"
+        }
+      },
+      "x86_64": {
+        "_type": "dir",
+        "core.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 51,
+          "category": "code"
+        },
+        "core.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 47,
+          "category": "code"
+        },
+        "thread_info.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 140,
+          "category": "code"
+        },
+        "thread_info.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 91,
+          "category": "code"
+        },
+        "unwind.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 149,
+          "category": "code"
+        },
+        "unwind.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 37,
+          "category": "code"
+        }
+      }
+    },
+    "doc": {
+      "_type": "dir",
+      "OpenCoreAnalyzer.jpg": {
+        "_type": "file",
+        "language": "jpg",
+        "lines": 4049,
+        "category": "code"
+      }
+    },
+    "ini": {
+      "_type": "dir",
+      "google_aosp_sdk36_64.ini": {
+        "_type": "file",
+        "language": "ini",
+        "lines": 419,
+        "category": "config"
+      },
+      "ini.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 111,
+        "category": "code"
+      },
+      "ini.h": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 36,
+        "category": "code"
+      }
+    },
+    "llvm": {
+      "_type": "dir",
+      "cxx": {
+        "_type": "dir",
+        "deque.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 84,
+          "category": "code"
+        },
+        "deque.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 100,
+          "category": "code"
+        },
+        "list.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 69,
+          "category": "code"
+        },
+        "list.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 74,
+          "category": "code"
+        },
+        "map.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 107,
+          "category": "code"
+        },
+        "map.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 111,
+          "category": "code"
+        },
+        "mutex.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 42,
+          "category": "code"
+        },
+        "mutex.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 52,
+          "category": "code"
+        },
+        "set.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 107,
+          "category": "code"
+        },
+        "set.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 111,
+          "category": "code"
+        },
+        "split_buffer.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 40,
+          "category": "code"
+        },
+        "split_buffer.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 60,
+          "category": "code"
+        },
+        "string.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 56,
+          "category": "code"
+        },
+        "string.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 65,
+          "category": "code"
+        },
+        "unordered_map.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 79,
+          "category": "code"
+        },
+        "unordered_map.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 100,
+          "category": "code"
+        },
+        "unordered_set.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 79,
+          "category": "code"
+        },
+        "unordered_set.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 100,
+          "category": "code"
+        },
+        "vector.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 76,
+          "category": "code"
+        },
+        "vector.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 80,
+          "category": "code"
+        }
+      },
+      "llvm.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 43,
+        "category": "code"
+      },
+      "llvm.h": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 26,
+        "category": "code"
+      },
+      "scudo": {
+        "_type": "dir",
+        "standalone": {
+          "_type": "dir",
+          "chunk.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 58,
+            "category": "code"
+          }
+        }
+      }
+    },
+    "parser": {
+      "_type": "dir",
+      "command": {
+        "_type": "dir",
+        "android": {
+          "_type": "dir",
+          "cmd_class.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 312,
+            "category": "code"
+          },
+          "cmd_class.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "cmd_dex.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 235,
+            "category": "code"
+          },
+          "cmd_dex.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 50,
+            "category": "code"
+          },
+          "cmd_dumpsys.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "cmd_dumpsys.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 32,
+            "category": "code"
+          },
+          "cmd_fdtrack.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 190,
+            "category": "code"
+          },
+          "cmd_fdtrack.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 59,
+            "category": "code"
+          },
+          "cmd_format_dump.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 50,
+            "category": "code"
+          },
+          "cmd_getprop.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 51,
+            "category": "code"
+          },
+          "cmd_getprop.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 32,
+            "category": "code"
+          },
+          "cmd_hprof.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 81,
+            "category": "code"
+          },
+          "cmd_hprof.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 40,
+            "category": "code"
+          },
+          "cmd_logcat.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 189,
+            "category": "code"
+          },
+          "cmd_logcat.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 48,
+            "category": "code"
+          },
+          "cmd_method.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 378,
+            "category": "code"
+          },
+          "cmd_method.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 54,
+            "category": "code"
+          },
+          "cmd_print.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 499,
+            "category": "code"
+          },
+          "cmd_print.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 60,
+            "category": "code"
+          },
+          "cmd_reference.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 187,
+            "category": "code"
+          },
+          "cmd_reference.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 43,
+            "category": "code"
+          },
+          "cmd_search.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 234,
+            "category": "code"
+          },
+          "cmd_search.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 53,
+            "category": "code"
+          },
+          "cmd_space.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 142,
+            "category": "code"
+          },
+          "cmd_space.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 44,
+            "category": "code"
+          },
+          "cmd_top.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 296,
+            "category": "code"
+          },
+          "cmd_top.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 56,
+            "category": "code"
+          },
+          "verify.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 381,
+            "category": "code"
+          },
+          "verify.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 51,
+            "category": "code"
+          }
+        },
+        "cmd_env.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 494,
+          "category": "code"
+        },
+        "cmd_env.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 41,
+          "category": "code"
+        },
+        "cmd_ini.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 1147,
+          "category": "code"
+        },
+        "cmd_ini.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 59,
+          "category": "code"
+        },
+        "cmd_plugin.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 127,
+          "category": "code"
+        },
+        "cmd_plugin.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 64,
+          "category": "code"
+        },
+        "cmd_shell.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 91,
+          "category": "code"
+        },
+        "cmd_shell.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 33,
+          "category": "code"
+        },
+        "cmd_time.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 37,
+          "category": "code"
+        },
+        "cmd_time.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 31,
+          "category": "code"
+        },
+        "command.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 55,
+          "category": "code"
+        },
+        "command_manager.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 285,
+          "category": "code"
+        },
+        "command_manager.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 54,
+          "category": "code"
+        },
+        "core": {
+          "_type": "dir",
+          "backtrace": {
+            "_type": "dir",
+            "cmd_backtrace.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 469,
+              "category": "code"
+            },
+            "cmd_backtrace.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 94,
+              "category": "code"
+            },
+            "cmd_frame.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 387,
+              "category": "code"
+            },
+            "cmd_frame.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 53,
+              "category": "code"
+            }
+          },
+          "cmd_auxv.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 43,
+            "category": "code"
+          },
+          "cmd_auxv.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          },
+          "cmd_core.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 64,
+            "category": "code"
+          },
+          "cmd_core.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 33,
+            "category": "code"
+          },
+          "cmd_disassemble.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 190,
+            "category": "code"
+          },
+          "cmd_disassemble.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 39,
+            "category": "code"
+          },
+          "cmd_exec.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 35,
+            "category": "code"
+          },
+          "cmd_exec.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          },
+          "cmd_file.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 61,
+            "category": "code"
+          },
+          "cmd_file.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          },
+          "cmd_linkmap.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 185,
+            "category": "code"
+          },
+          "cmd_linkmap.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 46,
+            "category": "code"
+          },
+          "cmd_mmap.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 97,
+            "category": "code"
+          },
+          "cmd_mmap.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 34,
+            "category": "code"
+          },
+          "cmd_ptov.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 55,
+            "category": "code"
+          },
+          "cmd_ptov.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 39,
+            "category": "code"
+          },
+          "cmd_ptype.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 77,
+            "category": "code"
+          },
+          "cmd_ptype.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 39,
+            "category": "code"
+          },
+          "cmd_read.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 202,
+            "category": "code"
+          },
+          "cmd_read.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 33,
+            "category": "code"
+          },
+          "cmd_register.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 92,
+            "category": "code"
+          },
+          "cmd_register.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 35,
+            "category": "code"
+          },
+          "cmd_search.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 141,
+            "category": "code"
+          },
+          "cmd_search.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 42,
+            "category": "code"
+          },
+          "cmd_sysroot.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 98,
+            "category": "code"
+          },
+          "cmd_sysroot.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 36,
+            "category": "code"
+          },
+          "cmd_thread.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 176,
+            "category": "code"
+          },
+          "cmd_thread.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 42,
+            "category": "code"
+          },
+          "cmd_vtor.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 72,
+            "category": "code"
+          },
+          "cmd_vtor.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 39,
+            "category": "code"
+          },
+          "cmd_write.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 91,
+            "category": "code"
+          },
+          "cmd_write.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          }
+        },
+        "env.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 69,
+          "category": "code"
+        },
+        "env.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 49,
+          "category": "code"
+        },
+        "fake": {
+          "_type": "dir",
+          "cmd_fake.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 84,
+            "category": "code"
+          },
+          "cmd_fake.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 33,
+            "category": "code"
+          },
+          "core": {
+            "_type": "dir",
+            "arm": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 173,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "tombstone_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 240,
+                "category": "code"
+              },
+              "tombstone_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              }
+            },
+            "arm64": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 288,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 51,
+                "category": "code"
+              },
+              "tombstone_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 277,
+                "category": "code"
+              },
+              "tombstone_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 51,
+                "category": "code"
+              }
+            },
+            "fake_core.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 307,
+              "category": "code"
+            },
+            "fake_core.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 147,
+              "category": "code"
+            },
+            "lp32": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 446,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 66,
+                "category": "code"
+              }
+            },
+            "lp64": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 443,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 66,
+                "category": "code"
+              }
+            },
+            "riscv64": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 181,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              }
+            },
+            "tombstone.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 70,
+              "category": "code"
+            },
+            "tombstone.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 52,
+              "category": "code"
+            },
+            "tombstone_parser.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 66,
+              "category": "code"
+            },
+            "x86": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 173,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "tombstone_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 236,
+                "category": "code"
+              },
+              "tombstone_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              }
+            },
+            "x86_64": {
+              "_type": "dir",
+              "fake_core.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 181,
+                "category": "code"
+              },
+              "fake_core.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "tombstone_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 243,
+                "category": "code"
+              },
+              "tombstone_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 46,
+                "category": "code"
+              }
+            }
+          },
+          "exec": {
+            "_type": "dir",
+            "fake_executable.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 44,
+              "category": "code"
+            },
+            "fake_executable.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 32,
+              "category": "code"
+            },
+            "fake_executable_32.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 136,
+              "category": "code"
+            },
+            "fake_executable_64.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 136,
+              "category": "code"
+            }
+          },
+          "load": {
+            "_type": "dir",
+            "fake_load_block.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 87,
+              "category": "code"
+            },
+            "fake_load_block.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 27,
+              "category": "code"
+            }
+          },
+          "map": {
+            "_type": "dir",
+            "fake_map.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 245,
+              "category": "code"
+            },
+            "fake_map.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 47,
+              "category": "code"
+            },
+            "fake_map_32.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 221,
+              "category": "code"
+            },
+            "fake_map_64.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 220,
+              "category": "code"
+            }
+          },
+          "stack": {
+            "_type": "dir",
+            "fake_java_stack.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 99,
+              "category": "code"
+            },
+            "fake_java_stack.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 27,
+              "category": "code"
+            }
+          }
+        },
+        "help.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 52,
+          "category": "code"
+        },
+        "help.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 35,
+          "category": "code"
+        },
+        "linux": {
+          "_type": "dir",
+          "command.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 55,
+            "category": "code"
+          }
+        },
+        "llvm": {
+          "_type": "dir",
+          "cmd_cxx.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 332,
+            "category": "code"
+          },
+          "cmd_cxx.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 41,
+            "category": "code"
+          },
+          "cmd_scudo.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 44,
+            "category": "code"
+          },
+          "cmd_scudo.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 31,
+            "category": "code"
+          }
+        },
+        "remote": {
+          "_type": "dir",
+          "cmd_remote.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 315,
+            "category": "code"
+          },
+          "cmd_remote.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 42,
+            "category": "code"
+          },
+          "fakecore": {
+            "_type": "dir",
+            "arm": {
+              "_type": "dir",
+              "process_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "process_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 42,
+                "category": "code"
+              }
+            },
+            "arm64": {
+              "_type": "dir",
+              "process_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 76,
+                "category": "code"
+              },
+              "process_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 47,
+                "category": "code"
+              }
+            },
+            "process.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 63,
+              "category": "code"
+            },
+            "process.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 52,
+              "category": "code"
+            },
+            "process_parser.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 56,
+              "category": "code"
+            },
+            "riscv64": {
+              "_type": "dir",
+              "process_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "process_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 42,
+                "category": "code"
+              }
+            },
+            "x86": {
+              "_type": "dir",
+              "process_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "process_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 42,
+                "category": "code"
+              }
+            },
+            "x86_64": {
+              "_type": "dir",
+              "process_parser.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              },
+              "process_parser.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 42,
+                "category": "code"
+              }
+            }
+          },
+          "hook": {
+            "_type": "dir",
+            "arm": {
+              "_type": "dir",
+              "hook.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 88,
+                "category": "code"
+              },
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 38,
+                "category": "code"
+              }
+            },
+            "arm64": {
+              "_type": "dir",
+              "hook.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 386,
+                "category": "code"
+              },
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 43,
+                "category": "code"
+              }
+            },
+            "hook.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 197,
+              "category": "code"
+            },
+            "hook.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 53,
+              "category": "code"
+            },
+            "lp32": {
+              "_type": "dir",
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 32,
+                "category": "code"
+              }
+            },
+            "lp64": {
+              "_type": "dir",
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 32,
+                "category": "code"
+              }
+            },
+            "riscv64": {
+              "_type": "dir",
+              "hook.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 80,
+                "category": "code"
+              },
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 38,
+                "category": "code"
+              }
+            },
+            "x86": {
+              "_type": "dir",
+              "hook.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 79,
+                "category": "code"
+              },
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 38,
+                "category": "code"
+              }
+            },
+            "x86_64": {
+              "_type": "dir",
+              "hook.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 79,
+                "category": "code"
+              },
+              "hook.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 38,
+                "category": "code"
+              }
+            }
+          },
+          "opencore": {
+            "_type": "dir",
+            "arm": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 109,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 40,
+                "category": "code"
+              }
+            },
+            "arm64": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 271,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 44,
+                "category": "code"
+              }
+            },
+            "lp32": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 348,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 72,
+                "category": "code"
+              }
+            },
+            "lp64": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 348,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 72,
+                "category": "code"
+              }
+            },
+            "opencore.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 514,
+              "category": "code"
+            },
+            "opencore.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 160,
+              "category": "code"
+            },
+            "riscv64": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 125,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 40,
+                "category": "code"
+              }
+            },
+            "x86": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 101,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 40,
+                "category": "code"
+              }
+            },
+            "x86_64": {
+              "_type": "dir",
+              "opencore.cpp": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 109,
+                "category": "code"
+              },
+              "opencore.h": {
+                "_type": "file",
+                "language": "cpp",
+                "lines": 40,
+                "category": "code"
+              }
+            }
+          },
+          "setprop": {
+            "_type": "dir",
+            "prop_area.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 131,
+              "category": "code"
+            },
+            "prop_area.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 55,
+              "category": "code"
+            },
+            "prop_info.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 41,
+              "category": "code"
+            },
+            "property.cpp": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 147,
+              "category": "code"
+            },
+            "property.h": {
+              "_type": "file",
+              "language": "cpp",
+              "lines": 30,
+              "category": "code"
+            }
+          }
+        },
+        "windows": {
+          "_type": "dir",
+          "command.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 37,
+            "category": "code"
+          }
+        }
+      },
+      "core_parser.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 381,
+        "category": "code"
+      },
+      "daemon": {
+        "_type": "dir",
+        "http": {
+          "_type": "dir",
+          "index.html": {
+            "_type": "file",
+            "language": "html",
+            "lines": 306,
+            "category": "code"
+          },
+          "server.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 146,
+            "category": "code"
+          },
+          "server.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 30,
+            "category": "code"
+          }
+        },
+        "mcp": {
+          "_type": "dir",
+          "server.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 518,
+            "category": "code"
+          },
+          "server.h": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 28,
+            "category": "code"
+          }
+        }
+      },
+      "ui": {
+        "_type": "dir",
+        "linux": {
+          "_type": "dir",
+          "mini_shell.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 197,
+            "category": "code"
+          }
+        },
+        "mini_shell.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 93,
+          "category": "code"
+        },
+        "ui_thread.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 75,
+          "category": "code"
+        },
+        "ui_thread.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 56,
+          "category": "code"
+        },
+        "windows": {
+          "_type": "dir",
+          "mini_shell.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 215,
+            "category": "code"
+          }
+        }
+      },
+      "work": {
+        "_type": "dir",
+        "work_thread.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 62,
+          "category": "code"
+        },
+        "work_thread.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 55,
+          "category": "code"
+        }
+      }
+    },
+    "plugin": {
+      "_type": "dir",
+      "simple": {
+        "_type": "dir",
+        "simple.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 48,
+          "category": "code"
+        }
+      }
+    },
+    "script": {
+      "_type": "dir",
+      "build.sh": {
+        "_type": "file",
+        "language": "shell",
+        "lines": 79,
+        "category": "script"
+      },
+      "build_android.sh": {
+        "_type": "file",
+        "language": "shell",
+        "lines": 94,
+        "category": "script"
+      },
+      "build_macos.sh": {
+        "_type": "file",
+        "language": "shell",
+        "lines": 71,
+        "category": "script"
+      },
+      "build_windows.sh": {
+        "_type": "file",
+        "language": "shell",
+        "lines": 84,
+        "category": "script"
+      }
+    },
+    "tests": {
+      "_type": "dir",
+      "test.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 93,
+        "category": "code"
+      },
+      "time.cpp": {
+        "_type": "file",
+        "language": "cpp",
+        "lines": 31,
+        "category": "code"
+      }
+    },
+    "utils": {
+      "_type": "dir",
+      "backtrace": {
+        "_type": "dir",
+        "callstack.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 97,
+          "category": "code"
+        },
+        "callstack.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 41,
+          "category": "code"
+        }
+      },
+      "base": {
+        "_type": "dir",
+        "linux": {
+          "_type": "dir",
+          "memory_map.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 110,
+            "category": "code"
+          },
+          "utils.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 108,
+            "category": "code"
+          }
+        },
+        "macros.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 33,
+          "category": "code"
+        },
+        "memory_map.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 57,
+          "category": "code"
+        },
+        "utils.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 81,
+          "category": "code"
+        },
+        "utils.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 38,
+          "category": "code"
+        },
+        "windows": {
+          "_type": "dir",
+          "memory_map.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 128,
+            "category": "code"
+          },
+          "utils.cpp": {
+            "_type": "file",
+            "language": "cpp",
+            "lines": 113,
+            "category": "code"
+          }
+        }
+      },
+      "logger": {
+        "_type": "dir",
+        "log.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 122,
+          "category": "code"
+        },
+        "log.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 160,
+          "category": "code"
+        }
+      },
+      "zip": {
+        "_type": "dir",
+        "zip_entry.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 148,
+          "category": "code"
+        },
+        "zip_entry.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 193,
+          "category": "code"
+        },
+        "zip_file.cpp": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 170,
+          "category": "code"
+        },
+        "zip_file.h": {
+          "_type": "file",
+          "language": "cpp",
+          "lines": 73,
+          "category": "code"
+        }
+      }
+    }
+  },
+  "file_count": {
+    "Configuration": 3,
+    "Other": 5,
+    "Documentation": 1,
+    "C/C++ Source": 540,
+    "Scripts": 4
+  },
+  "key_directories": [
+    "android/",
+    "parser/",
+    "core/",
+    "llvm/",
+    "utils/",
+    "3rd-party/",
+    "script/"
+  ],
+  "tech_stack": {
+    "language": "C++17",
+    "build_system": "CMake (3.21.1+)",
+    "compiler": "Clang 12+ / GCC",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Android",
+      "Windows"
+    ],
+    "architectures": [
+      "ARM64",
+      "ARM",
+      "x86_64",
+      "x86",
+      "RISC-V64"
+    ]
+  },
+  "dependencies": [
+    "Capstone (disassembly framework)",
+    "XZ Utils (LZMA compression)",
+    "Zstd (compression)",
+    "cpp-httplib (HTTP server)"
+  ],
+  "build_system": "CMake"
+}

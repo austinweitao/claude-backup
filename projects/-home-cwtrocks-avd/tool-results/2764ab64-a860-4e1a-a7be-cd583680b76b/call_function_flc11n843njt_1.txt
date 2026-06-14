@@ -1,0 +1,304 @@
+     1→Loading package information...                                                  Loading local repository...                                                     [=========                              ] 25% Loading local repository...       [=========                              ] 25% Fetch remote repository...        [==========                             ] 26% Fetch remote repository...        [============                           ] 31% Fetch remote repository...        [============                           ] 32% Fetch remote repository...        [=============                          ] 33% Fetch remote repository...        [=============                          ] 35% Fetch remote repository...        [==============                         ] 36% Fetch remote repository...        [==============                         ] 37% Fetch remote repository...        [===============                        ] 38% Fetch remote repository...        [===============                        ] 39% Fetch remote repository...        [================                       ] 40% Fetch remote repository...        [================                       ] 41% Fetch remote repository...        [================                       ] 42% Fetch remote repository...        [=================                      ] 44% Fetch remote repository...        [=================                      ] 45% Fetch remote repository...        [==================                     ] 46% Fetch remote repository...        [==================                     ] 47% Fetch remote repository...        [===================                    ] 48% Fetch remote repository...        [===================                    ] 49% Fetch remote repository...        [====================                   ] 50% Fetch remote repository...        [====================                   ] 51% Fetch remote repository...        [====================                   ] 53% Fetch remote repository...        [=====================                  ] 54% Fetch remote repository...        [=====================                  ] 55% Fetch remote repository...        [======================                 ] 56% Fetch remote repository...        [======================                 ] 57% Fetch remote repository...        [=======================                ] 58% Fetch remote repository...        [=======================                ] 59% Fetch remote repository...        [========================               ] 60% Fetch remote repository...        [========================               ] 61% Fetch remote repository...        [=========================              ] 63% Fetch remote repository...        [=========================              ] 64% Fetch remote repository...        [=========================              ] 65% Fetch remote repository...        [==========================             ] 66% Fetch remote repository...        [==========================             ] 67% Fetch remote repository...        [===========================            ] 68% Fetch remote repository...        [===========================            ] 69% Fetch remote repository...        [============================           ] 70% Fetch remote repository...        [============================           ] 72% Fetch remote repository...        [=============================          ] 73% Fetch remote repository...        [=============================          ] 74% Fetch remote repository...        [=============================          ] 75% Fetch remote repository...        [=============================          ] 75% Computing updates...              [=======================================] 100% Computing updates...             
+     2→Installed packages:
+     3→  Path                 | Version           | Description                      | Location            
+     4→  -------              | -------           | -------                          | -------             
+     5→  emulator             | 36.4.10           | Android Emulator                 | emulator            
+     6→  ndk;27.2.12479018    | 27.2.12479018     | NDK (Side by side) 27.2.12479018 | ndk/27.2.12479018   
+     7→  ndk;29.0.14206865    | 29.0.14206865     | NDK (Side by side) 29.0.14206865 | ndk/29.0.14206865   
+     8→  ndk;30.0.14904198    | 30.0.14904198 rc1 | NDK (Side by side) 30.0.14904198 | ndk/30.0.14904198   
+     9→  platform-tools       | 37.0.0            | Android SDK Platform-Tools       | platform-tools      
+    10→  platforms;android-35 | 2                 | Android SDK Platform 35          | platforms/android-35
+    11→  platforms;android-36 | 2                 | Android SDK Platform 36          | platforms/android-36
+    12→
+    13→Available Packages:
+    14→  Path                                                                            | Version           | Description                                                       
+    15→  -------                                                                         | -------           | -------                                                           
+    16→  add-ons;addon-google_apis-google-15                                             | 3                 | Google APIs                                                       
+    17→  add-ons;addon-google_apis-google-16                                             | 4                 | Google APIs                                                       
+    18→  add-ons;addon-google_apis-google-17                                             | 4                 | Google APIs                                                       
+    19→  add-ons;addon-google_apis-google-18                                             | 4                 | Google APIs                                                       
+    20→  add-ons;addon-google_apis-google-19                                             | 20                | Google APIs                                                       
+    21→  add-ons;addon-google_apis-google-21                                             | 1                 | Google APIs                                                       
+    22→  add-ons;addon-google_apis-google-22                                             | 1                 | Google APIs                                                       
+    23→  add-ons;addon-google_apis-google-23                                             | 1                 | Google APIs                                                       
+    24→  add-ons;addon-google_apis-google-24                                             | 1                 | Google APIs                                                       
+    25→  build-tools;19.1.0                                                              | 19.1.0            | Android SDK Build-Tools 19.1                                      
+    26→  build-tools;20.0.0                                                              | 20.0.0            | Android SDK Build-Tools 20                                        
+    27→  build-tools;21.1.2                                                              | 21.1.2            | Android SDK Build-Tools 21.1.2                                    
+    28→  build-tools;22.0.1                                                              | 22.0.1            | Android SDK Build-Tools 22.0.1                                    
+    29→  build-tools;23.0.1                                                              | 23.0.1            | Android SDK Build-Tools 23.0.1                                    
+    30→  build-tools;23.0.2                                                              | 23.0.2            | Android SDK Build-Tools 23.0.2                                    
+    31→  build-tools;23.0.3                                                              | 23.0.3            | Android SDK Build-Tools 23.0.3                                    
+    32→  build-tools;24.0.0                                                              | 24.0.0            | Android SDK Build-Tools 24                                        
+    33→  build-tools;24.0.1                                                              | 24.0.1            | Android SDK Build-Tools 24.0.1                                    
+    34→  build-tools;24.0.2                                                              | 24.0.2            | Android SDK Build-Tools 24.0.2                                    
+    35→  build-tools;24.0.3                                                              | 24.0.3            | Android SDK Build-Tools 24.0.3                                    
+    36→  build-tools;25.0.0                                                              | 25.0.0            | Android SDK Build-Tools 25                                        
+    37→  build-tools;25.0.1                                                              | 25.0.1            | Android SDK Build-Tools 25.0.1                                    
+    38→  build-tools;25.0.2                                                              | 25.0.2            | Android SDK Build-Tools 25.0.2                                    
+    39→  build-tools;25.0.3                                                              | 25.0.3            | Android SDK Build-Tools 25.0.3                                    
+    40→  build-tools;26.0.0                                                              | 26.0.0            | Android SDK Build-Tools 26                                        
+    41→  build-tools;26.0.1                                                              | 26.0.1            | Android SDK Build-Tools 26.0.1                                    
+    42→  build-tools;26.0.2                                                              | 26.0.2            | Android SDK Build-Tools 26.0.2                                    
+    43→  build-tools;26.0.3                                                              | 26.0.3            | Android SDK Build-Tools 26.0.3                                    
+    44→  build-tools;27.0.0                                                              | 27.0.0            | Android SDK Build-Tools 27                                        
+    45→  build-tools;27.0.1                                                              | 27.0.1            | Android SDK Build-Tools 27.0.1                                    
+    46→  build-tools;27.0.2                                                              | 27.0.2            | Android SDK Build-Tools 27.0.2                                    
+    47→  build-tools;27.0.3                                                              | 27.0.3            | Android SDK Build-Tools 27.0.3                                    
+    48→  build-tools;28.0.0                                                              | 28.0.0            | Android SDK Build-Tools 28                                        
+    49→  build-tools;28.0.1                                                              | 28.0.1            | Android SDK Build-Tools 28.0.1                                    
+    50→  build-tools;28.0.2                                                              | 28.0.2            | Android SDK Build-Tools 28.0.2                                    
+    51→  build-tools;28.0.3                                                              | 28.0.3            | Android SDK Build-Tools 28.0.3                                    
+    52→  build-tools;29.0.0                                                              | 29.0.0            | Android SDK Build-Tools 29                                        
+    53→  build-tools;29.0.1                                                              | 29.0.1            | Android SDK Build-Tools 29.0.1                                    
+    54→  build-tools;29.0.2                                                              | 29.0.2            | Android SDK Build-Tools 29.0.2                                    
+    55→  build-tools;29.0.3                                                              | 29.0.3            | Android SDK Build-Tools 29.0.3                                    
+    56→  build-tools;30.0.0                                                              | 30.0.0            | Android SDK Build-Tools 30                                        
+    57→  build-tools;30.0.1                                                              | 30.0.1            | Android SDK Build-Tools 30.0.1                                    
+    58→  build-tools;30.0.2                                                              | 30.0.2            | Android SDK Build-Tools 30.0.2                                    
+    59→  build-tools;30.0.3                                                              | 30.0.3            | Android SDK Build-Tools 30.0.3                                    
+    60→  build-tools;31.0.0                                                              | 31.0.0            | Android SDK Build-Tools 31                                        
+    61→  build-tools;32.0.0                                                              | 32.0.0            | Android SDK Build-Tools 32                                        
+    62→  build-tools;32.1.0-rc1                                                          | 32.1.0 rc1        | Android SDK Build-Tools 32.1-rc1                                  
+    63→  build-tools;33.0.0                                                              | 33.0.0            | Android SDK Build-Tools 33                                        
+    64→  build-tools;33.0.1                                                              | 33.0.1            | Android SDK Build-Tools 33.0.1                                    
+    65→  build-tools;33.0.2                                                              | 33.0.2            | Android SDK Build-Tools 33.0.2                                    
+    66→  build-tools;33.0.3                                                              | 33.0.3            | Android SDK Build-Tools 33.0.3                                    
+    67→  build-tools;34.0.0                                                              | 34.0.0            | Android SDK Build-Tools 34                                        
+    68→  build-tools;34.0.0-rc1                                                          | 34.0.0 rc1        | Android SDK Build-Tools 34-rc1                                    
+    69→  build-tools;34.0.0-rc2                                                          | 34.0.0 rc2        | Android SDK Build-Tools 34-rc2                                    
+    70→  build-tools;34.0.0-rc3                                                          | 34.0.0 rc3        | Android SDK Build-Tools 34-rc3                                    
+    71→  build-tools;35.0.0                                                              | 35.0.0            | Android SDK Build-Tools 35                                        
+    72→  build-tools;35.0.0-rc1                                                          | 35.0.0 rc1        | Android SDK Build-Tools 35-rc1                                    
+    73→  build-tools;35.0.0-rc2                                                          | 35.0.0 rc2        | Android SDK Build-Tools 35-rc2                                    
+    74→  build-tools;35.0.0-rc3                                                          | 35.0.0 rc3        | Android SDK Build-Tools 35-rc3                                    
+    75→  build-tools;35.0.0-rc4                                                          | 35.0.0 rc4        | Android SDK Build-Tools 35-rc4                                    
+    76→  build-tools;35.0.1                                                              | 35.0.1            | Android SDK Build-Tools 35.0.1                                    
+    77→  build-tools;36.0.0                                                              | 36.0.0            | Android SDK Build-Tools 36                                        
+    78→  build-tools;36.0.0-rc1                                                          | 36.0.0 rc1        | Android SDK Build-Tools 36-rc1                                    
+    79→  build-tools;36.0.0-rc3                                                          | 36.0.0 rc3        | Android SDK Build-Tools 36-rc3                                    
+    80→  build-tools;36.0.0-rc4                                                          | 36.0.0 rc4        | Android SDK Build-Tools 36-rc4                                    
+    81→  build-tools;36.0.0-rc5                                                          | 36.0.0 rc5        | Android SDK Build-Tools 36-rc5                                    
+    82→  build-tools;36.1.0                                                              | 36.1.0            | Android SDK Build-Tools 36.1                                      
+    83→  build-tools;36.1.0-rc1                                                          | 36.1.0 rc1        | Android SDK Build-Tools 36.1-rc1                                  
+    84→  build-tools;37.0.0                                                              | 37.0.0            | Android SDK Build-Tools 37                                        
+    85→  build-tools;37.0.0-rc1                                                          | 37.0.0 rc1        | Android SDK Build-Tools 37-rc1                                    
+    86→  build-tools;37.0.0-rc2                                                          | 37.0.0 rc2        | Android SDK Build-Tools 37-rc2                                    
+    87→  build;lightbuild;0.0.10-alpha01                                                 | 0.0.10 rc1        | Lightbuild                                                        
+    88→  build;templates                                                                 | 0.1.1             | Android Project Templates                                         
+    89→  cmake;3.10.2.4988404                                                            | 3.10.2            | CMake 3.10.2.4988404                                              
+    90→  cmake;3.18.1                                                                    | 3.18.1            | CMake 3.18.1                                                      
+    91→  cmake;3.22.1                                                                    | 3.22.1            | CMake 3.22.1                                                      
+    92→  cmake;3.30.3                                                                    | 3.30.3            | CMake 3.30.3                                                      
+    93→  cmake;3.30.4                                                                    | 3.30.4            | CMake 3.30.4                                                      
+    94→  cmake;3.30.5                                                                    | 3.30.5            | CMake 3.30.5                                                      
+    95→  cmake;3.31.0                                                                    | 3.31.0            | CMake 3.31.0                                                      
+    96→  cmake;3.31.1                                                                    | 3.31.1            | CMake 3.31.1                                                      
+    97→  cmake;3.31.4                                                                    | 3.31.4            | CMake 3.31.4                                                      
+    98→  cmake;3.31.5                                                                    | 3.31.5            | CMake 3.31.5                                                      
+    99→  cmake;3.31.6                                                                    | 3.31.6            | CMake 3.31.6                                                      
+   100→  cmake;3.6.4111459                                                               | 3.6.4111459       | CMake 3.6.4111459                                                 
+   101→  cmake;4.0.2                                                                     | 4.0.2             | CMake 4.0.2                                                       
+   102→  cmake;4.0.3                                                                     | 4.0.3             | CMake 4.0.3                                                       
+   103→  cmake;4.1.0                                                                     | 4.1.0             | CMake 4.1.0                                                       
+   104→  cmake;4.1.1                                                                     | 4.1.1             | CMake 4.1.1                                                       
+   105→  cmake;4.1.2                                                                     | 4.1.2             | CMake 4.1.2                                                       
+   106→  cmdline-tools;1.0                                                               | 1.0               | Android SDK Command-line Tools                                    
+   107→  cmdline-tools;10.0                                                              | 10.0              | Android SDK Command-line Tools                                    
+   108→  cmdline-tools;11.0                                                              | 11.0              | Android SDK Command-line Tools                                    
+   109→  cmdline-tools;12.0                                                              | 12.0              | Android SDK Command-line Tools                                    
+   110→  cmdline-tools;13.0                                                              | 13.0              | Android SDK Command-line Tools                                    
+   111→  cmdline-tools;16.0                                                              | 16.0              | Android SDK Command-line Tools                                    
+   112→  cmdline-tools;16.0-alpha01                                                      | 16.0.0 rc1        | Android SDK Command-line Tools                                    
+   113→  cmdline-tools;17.0                                                              | 17.0              | Android SDK Command-line Tools                                    
+   114→  cmdline-tools;19.0                                                              | 19.0              | Android SDK Command-line Tools                                    
+   115→  cmdline-tools;19.0-alpha01                                                      | 19.0.0 rc1        | Android SDK Command-line Tools                                    
+   116→  cmdline-tools;2.1                                                               | 2.1               | Android SDK Command-line Tools                                    
+   117→  cmdline-tools;20.0                                                              | 20.0              | Android SDK Command-line Tools                                    
+   118→  cmdline-tools;3.0                                                               | 3.0               | Android SDK Command-line Tools                                    
+   119→  cmdline-tools;4.0                                                               | 4.0               | Android SDK Command-line Tools                                    
+   120→  cmdline-tools;5.0                                                               | 5.0               | Android SDK Command-line Tools                                    
+   121→  cmdline-tools;6.0                                                               | 6.0               | Android SDK Command-line Tools                                    
+   122→  cmdline-tools;7.0                                                               | 7.0               | Android SDK Command-line Tools                                    
+   123→  cmdline-tools;8.0                                                               | 8.0               | Android SDK Command-line Tools                                    
+   124→  cmdline-tools;9.0                                                               | 9.0               | Android SDK Command-line Tools                                    
+   125→  cmdline-tools;latest                                                            | 20.0              | Android SDK Command-line Tools (latest)                           
+   126→  emulator                                                                        | 36.5.11           | Android Emulator                                                  
+   127→  extras;android;m2repository                                                     | 47.0.0            | Android Support Repository                                        
+   128→  extras;google;auto                                                              | 2.0               | Android Auto Desktop Head Unit Emulator                           
+   129→  extras;google;google_play_services                                              | 49                | Google Play services                                              
+   130→  extras;google;instantapps                                                       | 1.9.0             | Google Play Instant Development SDK (Deprecated)                  
+   131→  extras;google;m2repository                                                      | 58                | Google Repository                                                 
+   132→  extras;google;market_apk_expansion                                              | 1                 | Google Play APK Expansion library                                 
+   133→  extras;google;market_licensing                                                  | 1                 | Google Play Licensing Library                                     
+   134→  extras;google;simulators                                                        | 1                 | Android Auto API Simulators                                       
+   135→  extras;google;webdriver                                                         | 2                 | Google Web Driver                                                 
+   136→  ndk-bundle                                                                      | 22.1.7171670      | NDK                                                               
+   137→  ndk;16.1.4479499                                                                | 16.1.4479499      | NDK (Side by side) 16.1.4479499                                   
+   138→  ndk;17.2.4988734                                                                | 17.2.4988734      | NDK (Side by side) 17.2.4988734                                   
+   139→  ndk;18.1.5063045                                                                | 18.1.5063045      | NDK (Side by side) 18.1.5063045                                   
+   140→  ndk;19.2.5345600                                                                | 19.2.5345600      | NDK (Side by side) 19.2.5345600                                   
+   141→  ndk;20.0.5594570                                                                | 20.0.5594570      | NDK (Side by side) 20.0.5594570                                   
+   142→  ndk;20.1.5948944                                                                | 20.1.5948944      | NDK (Side by side) 20.1.5948944                                   
+   143→  ndk;21.0.6113669                                                                | 21.0.6113669      | NDK (Side by side) 21.0.6113669                                   
+   144→  ndk;21.1.6352462                                                                | 21.1.6352462      | NDK (Side by side) 21.1.6352462                                   
+   145→  ndk;21.2.6472646                                                                | 21.2.6472646      | NDK (Side by side) 21.2.6472646                                   
+   146→  ndk;21.3.6528147                                                                | 21.3.6528147      | NDK (Side by side) 21.3.6528147                                   
+   147→  ndk;21.4.7075529                                                                | 21.4.7075529      | NDK (Side by side) 21.4.7075529                                   
+   148→  ndk;22.0.7026061                                                                | 22.0.7026061      | NDK (Side by side) 22.0.7026061                                   
+   149→  ndk;22.1.7171670                                                                | 22.1.7171670      | NDK (Side by side) 22.1.7171670                                   
+   150→  ndk;23.0.7599858                                                                | 23.0.7599858      | NDK (Side by side) 23.0.7599858                                   
+   151→  ndk;23.1.7779620                                                                | 23.1.7779620      | NDK (Side by side) 23.1.7779620                                   
+   152→  ndk;23.2.8568313                                                                | 23.2.8568313      | NDK (Side by side) 23.2.8568313                                   
+   153→  ndk;24.0.8215888                                                                | 24.0.8215888      | NDK (Side by side) 24.0.8215888                                   
+   154→  ndk;25.0.8775105                                                                | 25.0.8775105      | NDK (Side by side) 25.0.8775105                                   
+   155→  ndk;25.1.8937393                                                                | 25.1.8937393      | NDK (Side by side) 25.1.8937393                                   
+   156→  ndk;25.2.9519653                                                                | 25.2.9519653      | NDK (Side by side) 25.2.9519653                                   
+   157→  ndk;26.0.10792818                                                               | 26.0.10792818     | NDK (Side by side) 26.0.10792818                                  
+   158→  ndk;26.1.10909125                                                               | 26.1.10909125     | NDK (Side by side) 26.1.10909125                                  
+   159→  ndk;26.2.11394342                                                               | 26.2.11394342     | NDK (Side by side) 26.2.11394342                                  
+   160→  ndk;26.3.11579264                                                               | 26.3.11579264     | NDK (Side by side) 26.3.11579264                                  
+   161→  ndk;27.0.11718014                                                               | 27.0.11718014 rc1 | NDK (Side by side) 27.0.11718014                                  
+   162→  ndk;27.0.11902837                                                               | 27.0.11902837 rc2 | NDK (Side by side) 27.0.11902837                                  
+   163→  ndk;27.0.12077973                                                               | 27.0.12077973     | NDK (Side by side) 27.0.12077973                                  
+   164→  ndk;27.1.12297006                                                               | 27.1.12297006     | NDK (Side by side) 27.1.12297006                                  
+   165→  ndk;27.2.12479018                                                               | 27.2.12479018     | NDK (Side by side) 27.2.12479018                                  
+   166→  ndk;27.3.13750724                                                               | 27.3.13750724     | NDK (Side by side) 27.3.13750724                                  
+   167→  ndk;28.0.12433566                                                               | 28.0.12433566 rc1 | NDK (Side by side) 28.0.12433566                                  
+   168→  ndk;28.0.12674087                                                               | 28.0.12674087 rc2 | NDK (Side by side) 28.0.12674087                                  
+   169→  ndk;28.0.12916984                                                               | 28.0.12916984 rc3 | NDK (Side by side) 28.0.12916984                                  
+   170→  ndk;28.0.13004108                                                               | 28.0.13004108     | NDK (Side by side) 28.0.13004108                                  
+   171→  ndk;28.1.13356709                                                               | 28.1.13356709     | NDK (Side by side) 28.1.13356709                                  
+   172→  ndk;28.2.13676358                                                               | 28.2.13676358     | NDK (Side by side) 28.2.13676358                                  
+   173→  ndk;29.0.13113456                                                               | 29.0.13113456 rc1 | NDK (Side by side) 29.0.13113456                                  
+   174→  ndk;29.0.13599879                                                               | 29.0.13599879 rc2 | NDK (Side by side) 29.0.13599879                                  
+   175→  ndk;29.0.13846066                                                               | 29.0.13846066 rc3 | NDK (Side by side) 29.0.13846066                                  
+   176→  ndk;29.0.14033849                                                               | 29.0.14033849 rc4 | NDK (Side by side) 29.0.14033849                                  
+   177→  ndk;29.0.14206865                                                               | 29.0.14206865     | NDK (Side by side) 29.0.14206865                                  
+   178→  ndk;30.0.14904198                                                               | 30.0.14904198 rc1 | NDK (Side by side) 30.0.14904198                                  
+   179→  platform-tools                                                                  | 37.0.0            | Android SDK Platform-Tools                                        
+   180→  platforms;android-10                                                            | 2                 | Android SDK Platform 10                                           
+   181→  platforms;android-11                                                            | 2                 | Android SDK Platform 11                                           
+   182→  platforms;android-12                                                            | 3                 | Android SDK Platform 12                                           
+   183→  platforms;android-13                                                            | 1                 | Android SDK Platform 13                                           
+   184→  platforms;android-14                                                            | 4                 | Android SDK Platform 14                                           
+   185→  platforms;android-15                                                            | 5                 | Android SDK Platform 15                                           
+   186→  platforms;android-16                                                            | 5                 | Android SDK Platform 16                                           
+   187→  platforms;android-17                                                            | 3                 | Android SDK Platform 17                                           
+   188→  platforms;android-18                                                            | 3                 | Android SDK Platform 18                                           
+   189→  platforms;android-19                                                            | 4                 | Android SDK Platform 19                                           
+   190→  platforms;android-20                                                            | 2                 | Android SDK Platform 20                                           
+   191→  platforms;android-21                                                            | 2                 | Android SDK Platform 21                                           
+   192→  platforms;android-22                                                            | 2                 | Android SDK Platform 22                                           
+   193→  platforms;android-23                                                            | 3                 | Android SDK Platform 23                                           
+   194→  platforms;android-24                                                            | 2                 | Android SDK Platform 24                                           
+   195→  platforms;android-25                                                            | 3                 | Android SDK Platform 25                                           
+   196→  platforms;android-26                                                            | 2                 | Android SDK Platform 26                                           
+   197→  platforms;android-27                                                            | 3                 | Android SDK Platform 27                                           
+   198→  platforms;android-28                                                            | 6                 | Android SDK Platform 28                                           
+   199→  platforms;android-29                                                            | 5                 | Android SDK Platform 29                                           
+   200→  platforms;android-30                                                            | 3                 | Android SDK Platform 30                                           
+   201→  platforms;android-31                                                            | 1                 | Android SDK Platform 31                                           
+   202→  platforms;android-32                                                            | 1                 | Android SDK Platform 32                                           
+   203→  platforms;android-33                                                            | 3                 | Android SDK Platform 33                                           
+   204→  platforms;android-33-ext4                                                       | 1                 | Android SDK Platform 33-ext4                                      
+   205→  platforms;android-33-ext5                                                       | 1                 | Android SDK Platform 33-ext5                                      
+   206→  platforms;android-34                                                            | 3                 | Android SDK Platform 34                                           
+   207→  platforms;android-34-ext10                                                      | 1                 | Android SDK Platform 34-ext10                                     
+   208→  platforms;android-34-ext11                                                      | 1                 | Android SDK Platform 34-ext11                                     
+   209→  platforms;android-34-ext12                                                      | 1                 | Android SDK Platform 34-ext12                                     
+   210→  platforms;android-34-ext8                                                       | 1                 | Android SDK Platform 34-ext8                                      
+   211→  platforms;android-35                                                            | 2                 | Android SDK Platform 35                                           
+   212→  platforms;android-35-ext14                                                      | 1                 | Android SDK Platform 35-ext14                                     
+   213→  platforms;android-35-ext15                                                      | 1                 | Android SDK Platform 35-ext15                                     
+   214→  platforms;android-36                                                            | 2                 | Android SDK Platform 36                                           
+   215→  platforms;android-36-ext18                                                      | 1                 | Android SDK Platform 36-ext18                                     
+   216→  platforms;android-36-ext19                                                      | 1                 | Android SDK Platform 36-ext19                                     
+   217→  platforms;android-36.1                                                          | 1                 | Android SDK Platform 36.1                                         
+   218→  platforms;android-37.0                                                          | 1                 | Android SDK Platform 37.0                                         
+   219→  platforms;android-7                                                             | 3                 | Android SDK Platform 7                                            
+   220→  platforms;android-8                                                             | 3                 | Android SDK Platform 8                                            
+   221→  platforms;android-9                                                             | 2                 | Android SDK Platform 9                                            
+   222→  platforms;android-Baklava                                                       | 1                 | Android SDK Platform Baklava-ext19                                
+   223→  platforms;android-Baklava-ext19                                                 | 1                 | Android SDK Platform Baklava-ext19                                
+   224→  platforms;android-CANARY                                                        | 12                | Android SDK Platform CANARY                                       
+   225→  platforms;android-CinnamonBun                                                   | 2                 | Android SDK Platform CinnamonBun                                  
+   226→  platforms;android-CinnamonBun-ext23                                             | 3                 | Android SDK Platform CinnamonBun-ext23                            
+   227→  skiaparser;1                                                                    | 6                 | Layout Inspector image server for API 29-30                       
+   228→  skiaparser;2                                                                    | 3                 | Layout Inspector image server for API S                           
+   229→  skiaparser;3                                                                    | 8                 | Layout Inspector image server for API 31-36                       
+   230→  sources;android-15                                                              | 2                 | Sources for Android 15                                            
+   231→  sources;android-16                                                              | 2                 | Sources for Android 16                                            
+   232→  sources;android-17                                                              | 1                 | Sources for Android 17                                            
+   233→  sources;android-18                                                              | 1                 | Sources for Android 18                                            
+   234→  sources;android-19                                                              | 2                 | Sources for Android 19                                            
+   235→  sources;android-20                                                              | 1                 | Sources for Android 20                                            
+   236→  sources;android-21                                                              | 1                 | Sources for Android 21                                            
+   237→  sources;android-22                                                              | 1                 | Sources for Android 22                                            
+   238→  sources;android-23                                                              | 1                 | Sources for Android 23                                            
+   239→  sources;android-24                                                              | 1                 | Sources for Android 24                                            
+   240→  sources;android-25                                                              | 1                 | Sources for Android 25                                            
+   241→  sources;android-26                                                              | 1                 | Sources for Android 26                                            
+   242→  sources;android-27                                                              | 1                 | Sources for Android 27                                            
+   243→  sources;android-28                                                              | 1                 | Sources for Android 28                                            
+   244→  sources;android-29                                                              | 1                 | Sources for Android 29                                            
+   245→  sources;android-30                                                              | 1                 | Sources for Android 30                                            
+   246→  sources;android-31                                                              | 1                 | Sources for Android 31                                            
+   247→  sources;android-32                                                              | 1                 | Sources for Android 32                                            
+   248→  sources;android-33                                                              | 1                 | Sources for Android 33                                            
+   249→  sources;android-34                                                              | 2                 | Sources for Android 34                                            
+   250→  sources;android-35                                                              | 1                 | Sources for Android 35                                            
+   251→  sources;android-36                                                              | 1                 | Sources for Android 36                                            
+   252→  sources;android-36.1                                                            | 1                 | Sources for Android 36.1                                          
+   253→  sources;android-37.0                                                            | 1                 | Sources for Android 37.0                                          
+   254→  system-images;android-10;default;armeabi-v7a                                    | 5                 | ARM EABI v7a System Image                                         
+   255→  system-images;android-10;default;x86                                            | 5                 | Intel x86 Atom System Image                                       
+   256→  system-images;android-10;google_apis;armeabi-v7a                                | 6                 | Google APIs ARM EABI v7a System Image                             
+   257→  system-images;android-10;google_apis;x86                                        | 6                 | Google APIs Intel x86 Atom System Image                           
+   258→  system-images;android-14;default;armeabi-v7a                                    | 2                 | ARM EABI v7a System Image                                         
+   259→  system-images;android-15;default;armeabi-v7a                                    | 5                 | ARM EABI v7a System Image                                         
+   260→  system-images;android-15;default;x86                                            | 7                 | Intel x86 Atom System Image                                       
+   261→  system-images;android-15;google_apis;armeabi-v7a                                | 6                 | Google APIs ARM EABI v7a System Image                             
+   262→  system-images;android-15;google_apis;x86                                        | 7                 | Google APIs Intel x86 Atom System Image                           
+   263→  system-images;android-16;default;armeabi-v7a                                    | 6                 | ARM EABI v7a System Image                                         
+   264→  system-images;android-16;default;mips                                           | 1                 | MIPS System Image                                                 
+   265→  system-images;android-16;default;x86                                            | 7                 | Intel x86 Atom System Image                                       
+   266→  system-images;android-16;google_apis;armeabi-v7a                                | 6                 | Google APIs ARM EABI v7a System Image                             
+   267→  system-images;android-16;google_apis;x86                                        | 7                 | Google APIs Intel x86 Atom System Image                           
+   268→  system-images;android-17;default;armeabi-v7a                                    | 6                 | ARM EABI v7a System Image                                         
+   269→  system-images;android-17;default;mips                                           | 1                 | MIPS System Image                                                 
+   270→  system-images;android-17;default;x86                                            | 7                 | Intel x86 Atom System Image                                       
+   271→  system-images;android-17;google_apis;armeabi-v7a                                | 6                 | Google APIs ARM EABI v7a System Image                             
+   272→  system-images;android-17;google_apis;x86                                        | 7                 | Google APIs Intel x86 Atom System Image                           
+   273→  system-images;android-18;default;armeabi-v7a                                    | 5                 | ARM EABI v7a System Image                                         
+   274→  system-images;android-18;default;x86                                            | 4                 | Intel x86 Atom System Image                                       
+   275→  system-images;android-18;google_apis;armeabi-v7a                                | 6                 | Google APIs ARM EABI v7a System Image                             
+   276→  system-images;android-18;google_apis;x86                                        | 6                 | Google APIs Intel x86 Atom System Image                           
+   277→  system-images;android-19;default;armeabi-v7a                                    | 5                 | ARM EABI v7a System Image                                         
+   278→  system-images;android-19;default;x86                                            | 6                 | Intel x86 Atom System Image                                       
+   279→  system-images;android-19;google_apis;armeabi-v7a                                | 40                | Google APIs ARM EABI v7a System Image                             
+   280→  system-images;android-19;google_apis;x86                                        | 40                | Google APIs Intel x86 Atom System Image                           
+   281→  system-images;android-21;android-tv;armeabi-v7a                                 | 3                 | Android TV ARM EABI v7a System Image                              
+   282→  system-images;android-21;android-tv;x86                                         | 3                 | Android TV Intel x86 Atom System Image                            
+   283→  system-images;android-21;default;arm64-v8a                                      | 4                 | ARM 64 v8a System Image                                           
+   284→  system-images;android-21;default;armeabi-v7a                                    | 4                 | ARM EABI v7a System Image                                         
+   285→  system-images;android-21;default;x86                                            | 5                 | Intel x86 Atom System Image                                       
+   286→  system-images;android-21;default;x86_64                                         | 5                 | Intel x86_64 Atom System Image                                    
+   287→  system-images;android-21;google_apis;arm64-v8a                                  | 32                | Google APIs ARM 64 v8a System Image                               
+   288→  system-images;android-21;google_apis;armeabi-v7a                                | 32                | Google APIs ARM EABI v7a System Image                             
+   289→  system-images;android-21;google_apis;x86                                        | 32                | Google APIs Intel x86 Atom System Image                           
+   290→  system-images;android-21;google_apis;x86_64                                     | 32                | Google APIs Intel x86_64 Atom System Image                        
+   291→  system-images;android-22;android-tv;x86                                         | 3                 | Android TV Intel x86 Atom System Image                            
+   292→  system-images;android-22;default;arm64-v8a                                      | 2                 | ARM 64 v8a System Image                                           
+   293→  system-images;android-22;default;armeabi-v7a                                    | 2                 | ARM EABI v7a System Image                                         
+   294→  system-images;android-22;default;x86                                            | 6                 | Intel x86 Atom System Image                                       
+   295→  system-images;android-22;default;x86_64                                         | 6                 | Intel x86_64 Atom System Image                                    
+   296→  system-images;android-22;google_apis;arm64-v8a                                  | 26                | Google APIs ARM 64 v8a System Image                               
+   297→  system-images;android-22;google_apis;armeabi-v7a                                | 26                | Google APIs ARM EABI v7a System Image                             
+   298→  system-images;android-22;google_apis;x86                                        | 26                | Google APIs Intel x86 Atom System Image                           
+   299→  system-images;android-22;google_apis;x86_64                                     | 26                | Google APIs Intel x86_64 Atom System Image                        
+   300→  system-images;android-23;android-tv;armeabi-v7a                                 | 12                | Android TV ARM EABI v7a System Image                              
+
+<system-reminder>
+Whenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.
+</system-reminder>

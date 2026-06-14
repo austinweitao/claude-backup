@@ -1,0 +1,12 @@
+Exit code 1
+=== build.prop info ===
+user
+release-keys
+=== Checking for su binary ===
+ls: /system/bin/su: No such file or directory
+
+=== build.prop info ===
+user
+release-keys
+=== Checking for su binary ===
+ls: /system/bin/su: No such file or directory

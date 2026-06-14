@@ -1,0 +1,36 @@
+
+
+## ATD System Images
+
+According to the page, **Automated Test Device (ATD) images** are optimized for headless automated tests, offering reduced CPU/memory usage and faster test execution.
+
+### Two ATD Versions:
+
+| Image Type | Description |
+|------------|-------------|
+| **Google APIs ATD** | Provides Google APIs |
+| **AOSP ATD** | Provides pure AOSP experience |
+
+### What's Removed in Both:
+- Most user-facing applications (Dialer, Settings, SystemUI)
+- Hardware renderer drawing
+
+---
+
+## Regular System Images vs Google APIs
+
+The page explains:
+
+- **Default/AOSP images**: Pure Android Open Source Project without Google services
+- **Google APIs images**: Include access to Google Play services
+- **Google Play images**: Include Google Play services **and** the Google Play Store
+
+---
+
+## Root Access
+
+The page does **not** explicitly mention which image type has root access. However:
+- AOSP images typically provide root access by default
+- Google APIs images may restrict root access depending on the variant
+
+For definitive information on root access, you'd need to consult additional documentation or test the emulator images directly.

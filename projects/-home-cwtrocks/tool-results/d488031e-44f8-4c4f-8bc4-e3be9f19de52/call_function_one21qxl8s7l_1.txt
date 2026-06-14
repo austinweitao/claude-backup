@@ -1,0 +1,6 @@
+    Name: android35_root
+  Device: pixel_xl (Google)
+    Path: /home/cwtrocks/.config/.android/avd/android35_root.avd
+  Target: AOSP ATD (Google Inc.)
+          Based on: Android API 35 Tag/ABI: aosp_atd/x86_64
+  Sdcard: 512 MB

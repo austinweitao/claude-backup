@@ -1,0 +1,7 @@
+
+
+According to the docs, **Google APIs** system images include Google Mobile Services (GMS). They come with `userdebug`/`dev-keys` build properties, meaning they have root access (you can run `adb root` and `adb remount` after starting).
+
+In contrast, **AOSP images** have no GMS and use `eng`/`test-keys`.
+
+The **Google Play** variant additionally includes the Play Store, with `user`/`release-keys`.

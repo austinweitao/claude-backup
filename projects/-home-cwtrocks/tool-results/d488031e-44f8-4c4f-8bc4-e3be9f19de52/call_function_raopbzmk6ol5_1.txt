@@ -1,0 +1,10 @@
+total 3666660
+drwxr-xr-x 1 cwtrocks cwtrocks        358 Mar 22 11:25 .
+drwxr-xr-x 1 cwtrocks cwtrocks         12 Mar 22 11:25 ..
+-rw-r--r-- 1 cwtrocks cwtrocks        758 Mar 22 11:25 advancedFeatures.ini
+-rw-r--r-- 1 cwtrocks cwtrocks       5113 Mar 22 11:25 build.prop
+drwxr-xr-x 1 cwtrocks cwtrocks         58 Mar 22 11:25 data
+-rw-r--r-- 1 cwtrocks cwtrocks   18874368 Mar 22 11:25 encryptionkey.img
+-rw-r--r-- 1 cwtrocks cwtrocks         32 Mar 22 11:25 kernel_cmdline.txt
+-rw-r--r-- 1 cwtrocks cwtrocks   20374528 Mar 22 11:25 kernel-ranchu
+-rw-r--r-- 1 cwtrocks cwtrocks   20115976 Mar 22 11:25 NOTICE.txt

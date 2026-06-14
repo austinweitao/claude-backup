@@ -1,0 +1,11 @@
+=== Check current system ===
+33
+user
+release-keys
+=== Check if /system is writable ===
+oem_etc on /system/etc/media_profiles.xml type virtiofs (ro,seclabel,relatime)
+/dev/block/vdb on /system/lib/arm type erofs (ro,seclabel,nodev,noatime,user_xattr,acl,cache_strategy=readaround)
+/dev/block/vdb on /system/lib64/arm64 type erofs (ro,seclabel,nodev,noatime,user_xattr,acl,cache_strategy=readaround)
+=== Try to create file in /system ===
+touch: '/system/test_file': Read-only file system
+FAILED (expected)

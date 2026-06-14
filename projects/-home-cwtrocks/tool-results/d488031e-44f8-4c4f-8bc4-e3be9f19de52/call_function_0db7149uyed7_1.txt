@@ -1,0 +1,1 @@
+  system-images;android-34;google_apis;x86_64                                     | 14                | Google APIs Intel x86_64 Atom System Image
