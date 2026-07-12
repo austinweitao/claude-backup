@@ -1,1 +1,0 @@
-Command running in background with ID: b7w6zewar. Output is being written to: /tmp/claude-1000/-home-cwtrocks/tasks/b7w6zewar.output

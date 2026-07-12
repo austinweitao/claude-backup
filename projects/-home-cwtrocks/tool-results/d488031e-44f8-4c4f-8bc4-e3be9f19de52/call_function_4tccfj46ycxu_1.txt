@@ -1,8 +1,0 @@
-    Name: android35_google_apis
-  Device: pixel_xl (Google)
-    Path: /home/cwtrocks/.config/.android/avd/android35_google_apis.avd
-  Target: Google APIs (Google Inc.)
-          Based on: Android API 35 Tag/ABI: google_apis/x86_64
-  Sdcard: 512 MB
----------
-    Name: android36_google_apis

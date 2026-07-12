@@ -1,3 +1,0 @@
-error: could not connect to TCP port 5554: Connection refused
-List of devices attached
-emulator-5554	device

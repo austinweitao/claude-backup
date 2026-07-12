@@ -1,10 +1,52 @@
 # Claude Code 全局配置
 
+## ⛔ Android / AOSP / MTK / Linux kernel 强制协议（最高优先级，不可违反）
+
+**本协议优先级高于本文档其他所有章节。任何 Android / AOSP / MTK / Linux kernel 内部实现相关的回答，必须 100% 遵守，违反则视为不合格回答，必须从零重写。**
+
+### 必须执行的硬性约束
+
+1. **源码唯一可信来源**：
+   - AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT` （必须带 `?format=TEXT`）
+   - Linux kernel master：`https://github.com/torvalds/linux/blob/master/<path>`
+   - 抓取工具：`mcp__fetch__imageFetch`（raw 文本）或 `mcp__ddg-search__fetch_content`
+
+2. **禁止使用的过时来源**：
+   - ❌ 任何 `android-X.Y.Z_rN` tag（如 `android-10.0.0_r25`、`android-8.0.0_r4`）—— 默认过时，最新是 master
+   - ❌ `cs.android.com/...` —— 实测返回空内容（已知问题）
+   - ❌ 训练数据中"猜的字段名" —— 必须以 master 实测为准
+   - ❌ 任何 android 4.x~10.x 的博客源码引用当现状
+   - ❌ 不带 `?format=TEXT` 后缀的 googlesource URL
+
+3. **每篇回答必填**：
+   - [ ] 所有字段名 / 函数签名 / 常量值在 AOSP master 或 Linux kernel master **实测确认**
+   - [ ] 如文件返回 404，明确告知用户"**路径已变更**"，不要猜测替代内容
+   - [ ] 4 引擎 Web 搜索（`mcp__serper__google_search` + `mcp__ddg-search__search` + `mcp__tavily__tavily_search` + `mcp__MiniMax__web_search`）**全部并行调用**
+   - [ ] 结尾有"**硬性事实清单**"小节（哪些实测、哪些是推断、哪些是 4 引擎佐证）
+   - [ ] 来源标注符合模板：`[知识来源: AOSP master 2026-MM-DD 实测 - ...]`、`[知识来源: Linux kernel master 实测 - ...]`、`[知识来源: Web 搜索 4 引擎并行 - ...]`、`[置信度: 高/中/低]`
+
+4. **每次回答前反向自问**：
+   - 我引用的字段名是不是训练数据"猜"的？
+   - 如果明天 master 重构这个文件，我的回答会错在哪？
+   - 有没有更直接的 master URL 验证？
+   - 是否引用了 `android-X.Y.Z_rN` tag？（必须替换为 master）
+   - 是否引用了 cs.android.com 网页？（必须替换为 googlesource.com）
+
+### 详细协议
+
+完整的字段实测、已知 404 路径、引用模板、4 引擎调用清单 → 必须先读取 `/home/cwtrocks/.claude/projects/-home-cwtrocks-boot-procedure/memory/android.md`
+
+### 历史教训
+
+2026-07-12 在 boot-procedure 项目调研时，曾多次违反本协议（引用 `android-10.0.0_r25`、`android-8.0.0_r4` 当最新、引用 `cs.android.com` 抓不到内容时编造答案）。该错误已修正，详见 memory/android.md 中的"关键字段实测事实"。
+
+---
+
 ## 知识输出规范
 
 - 知识来源必须标注：`[知识来源: 训练数据]` 或 `[知识来源: Web搜索 - "关键词"]`
 - 涉及新技术/框架/版本时必须 Web 搜索
-- Android 内部实现 → 参考 `memory/android.md`
+- Android 内部实现 → 参考 `memory/android.md`（**注意：仅作为参考，详细强制协议见上方"⛔ Android 强制协议"章节和 `memory/android.md`**）
 
 ### Android 技术问题（强制 4 引擎并行 + AOSP master 交叉验证）
 

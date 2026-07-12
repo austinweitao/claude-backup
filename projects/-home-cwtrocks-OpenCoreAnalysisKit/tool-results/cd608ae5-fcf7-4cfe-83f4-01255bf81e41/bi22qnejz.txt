@@ -1,828 +1,0 @@
-开始导入 206 个知识条目到 claude-mem...
-进度: 1/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 2/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 3/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 4/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 5/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 6/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 7/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 8/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 9/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 10/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 11/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 12/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 13/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 14/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 15/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 16/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 17/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 18/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 19/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 20/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 21/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 22/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 23/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 24/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 25/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 26/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 27/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 28/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 29/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 30/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 31/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 32/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 33/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 34/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 35/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 36/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 37/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 38/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 39/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 40/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 41/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 42/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 43/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 44/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 45/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 46/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 47/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 48/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 49/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 50/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 51/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 52/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 53/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 54/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 55/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 56/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 57/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 58/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 59/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 60/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 61/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 62/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 63/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 64/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 65/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 66/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 67/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 68/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 69/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 70/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 71/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 72/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 73/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 74/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 75/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 76/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 77/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 78/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 79/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 80/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 81/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 82/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 83/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 84/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 85/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 86/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 87/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 88/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 89/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 90/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 91/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 92/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 93/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 94/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 95/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 96/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 97/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 98/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 99/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 100/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 101/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 102/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 103/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 104/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 105/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 106/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 107/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 108/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 109/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 110/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 111/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 112/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 113/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 114/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 115/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 116/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 117/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 118/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 119/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 120/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 121/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 122/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 123/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 124/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 125/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 126/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 127/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 128/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 129/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 130/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 131/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 132/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 133/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 134/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 135/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 136/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 137/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 138/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 139/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 140/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 141/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 142/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 143/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 144/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 145/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 146/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 147/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 148/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 149/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 150/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 151/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 152/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 153/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 154/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 155/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 156/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 157/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 158/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 159/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 160/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 161/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 162/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 163/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 164/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 165/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 166/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 167/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 168/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 169/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 170/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 171/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 172/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 173/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 174/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 175/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 176/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 177/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 178/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 179/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 180/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 181/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 182/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 183/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 184/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 185/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 186/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 187/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 188/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 189/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 190/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 191/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 192/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 193/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 194/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 195/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 196/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 197/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 198/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 199/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 200/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 201/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 202/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 203/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 204/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 205/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-进度: 206/206/tmp/import-to-claude-mem.sh: line 15: jq: command not found
-/tmp/import-to-claude-mem.sh: line 16: jq: command not found
-/tmp/import-to-claude-mem.sh: line 17: jq: command not found
-/tmp/import-to-claude-mem.sh: line 18: jq: command not found
-
-完成！共处理 206 个条目
-批量导入文件: /tmp/claude-mem-batch.jsonl
