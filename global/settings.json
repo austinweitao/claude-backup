@@ -6,8 +6,8 @@
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
     "ANTHROPIC_MODEL": "claude-fable-5",
     "ANTHROPIC_SMALL_FAST_MODEL": "claude-sonnet-4.6",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4.6",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4.8",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-5",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-8",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4.5"
   },
   "permissions": {
@@ -27,7 +27,8 @@
       "Bash(fdisk*)"
     ]
   },
-  "model": "sonnet",
+  "model": "claude-fable-5",
+  "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
       {
@@ -86,6 +87,7 @@
     "claude-mem@thedotmack": true
   },
   "skipWebFetchPreflight": true,
+  "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true
 }

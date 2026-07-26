@@ -1,5 +1,46 @@
 # Claude Code 全局配置
 
+## 📚 Android 源码本地优先规则（Android 强制协议的补充前置步骤）
+
+**当用户提问涉及 Android / AOSP 内部实现需要源码确认时，遵循以下优先级顺序：**
+
+### Step 1 — 先用本地 `~/aosp` 源码确认（最快、最权威）
+
+- 路径：`~/aosp`（已存在本地 AOSP 镜像）
+- 结构：
+  - `~/aosp/base`   — `frameworks/base`（含 `services/core/.../wm/`、`core/java/android/view/` 等）
+  - `~/aosp/native` — `frameworks/native`（含 native SurfaceFlinger 等）
+  - 其他子目录视情况而定
+- 使用 Read / Grep 工具直接在本地打开对应文件
+- **优势**：本地代码比 AOSP master 略旧但足够解答 95% 的架构与字段名问题，省去网络抖动
+
+### Step 2 — 本地确实没有 / 路径缺失时，回退到远端确认
+
+- 优先 AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT`（必须带 `?format=TEXT`）
+- 然后才考虑通过外部信源（联网检索 / 官方文档 / 第三方权威博客）补足
+
+### Step 3 — 标注规则（混合来源时）
+
+```
+[知识来源: ~/aosp/base/<相对路径>/<file>.java 实测 - <具体行/字段>]
+[知识来源: AOSP master - <URL>]
+[知识来源: 外部权威信源 - <来源名称>]
+[置信度: 高/中/低]
+```
+
+- 来源**全部列出来**，不要只标"查了代码"
+- 若 `~/aosp` 命中 → 直接 `置信度: 高`（等同于实测）
+- 若 `~/aosp` 没命中但存在目录 → 在事实清单里说明"本地无此路径，已回退到 AOSP master"
+
+### ⚠️ 重要约束
+
+- **禁止用 `~/aosp/<repo>` 里 `android-X.Y.Z_rN` tag 的代码当"最新"** — 老分支默认过时，需在事实清单标"来源是 <tag> 快照"
+- **禁止在没有 `~/aosp` 也没有 `aosp master URL` 的情况下，单凭训练数据写字段名** — 必须老实声明
+- `~/aosp` 只是**起点**，不是保险箱：发现某个文件位置不对、字段对不上 `master` 当前实现时，必须升级到远端确认，不能硬套本地结论
+- 本规则**不取代**下方的"⛔ Android / AOSP / MTK / Linux kernel 强制协议"——它是协议的前置补充，先用本地，再走协议
+
+---
+
 ## ⛔ Android / AOSP / MTK / Linux kernel 强制协议（最高优先级，不可违反）
 
 **本协议优先级高于本文档其他所有章节。任何 Android / AOSP / MTK / Linux kernel 内部实现相关的回答，必须 100% 遵守，违反则视为不合格回答，必须从零重写。**

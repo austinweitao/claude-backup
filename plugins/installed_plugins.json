@@ -4,10 +4,10 @@
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/superpowers/6.1.1",
-        "version": "6.1.1",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0",
+        "version": "6.2.0",
         "installedAt": "2026-06-06T13:50:10.308Z",
-        "lastUpdated": "2026-07-12T01:30:38.028Z",
+        "lastUpdated": "2026-07-25T04:49:19.699Z",
         "gitCommitSha": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06"
       }
     ],
@@ -24,11 +24,11 @@
     "claude-mem@thedotmack": [
       {
         "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.11.0",
-        "version": "13.11.0",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.12.4",
+        "version": "13.12.4",
         "installedAt": "2026-06-07T04:07:33.964Z",
-        "lastUpdated": "2026-07-18T01:16:26.835Z",
-        "gitCommitSha": "f5633c1f84181673896c038cbe285131c6d669a3"
+        "lastUpdated": "2026-07-24T13:04:56.960Z",
+        "gitCommitSha": "132b46343e60ecf4057c427736c57b08f7615dfe"
       }
     ]
   }
