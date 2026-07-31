@@ -60,7 +60,6 @@
       "mcp__MiniMax__web_search",
       "mcp__ddg-search__search",
       "mcp__ddg-search__fetch_content",
-      "mcp__serper__google_search",
       "mcp__mermaid__mermaid_preview",
       "mcp__fetch__imageFetch",
       "mcp__tavily__tavily_search",
@@ -68,7 +67,6 @@
       "mcp__plugin_claude-mem_mcp-search__get_observations",
       "mcp__tavily__tavily_extract",
       "mcp__plugin_claude-mem_mcp-search__smart_search",
-      "mcp__serper__webpage_scrape",
       "Skill(coredump)",
       "Skill(update-config)",
       "mcp__plugin_claude-mem_mcp-search__observation_search"
@@ -76,7 +74,6 @@
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "fetch",
-    "serper"
+    "fetch"
   ]
 }
