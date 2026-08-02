@@ -1,5 +1,5 @@
 {
-  "numStartups": 129,
+  "numStartups": 135,
   "installMethod": "native",
   "autoUpdates": false,
   "hasSeenTasksHint": true,
@@ -13,29 +13,29 @@
     "status-line": 129,
     "enter-to-steer-in-relatime": 124,
     "todo-list": 124,
-    "ide-upsell-external-terminal": 129,
+    "ide-upsell-external-terminal": 133,
     "drag-and-drop-images": 128,
     "double-esc-code-restore": 128,
-    "continue": 120,
-    "shift-tab": 120,
+    "continue": 130,
+    "shift-tab": 130,
     "image-paste": 125,
-    "subagent-fanout-nudge": 128,
-    "loop-command-nudge": 129,
-    "default-permission-mode-config": 120,
+    "subagent-fanout-nudge": 134,
+    "loop-command-nudge": 135,
+    "default-permission-mode-config": 130,
     "custom-agents": 127,
-    "permissions": 123,
-    "rename-conversation": 118,
+    "permissions": 133,
+    "rename-conversation": 133,
     "install-github-app": 40,
     "install-slack-app": 40,
-    "git-worktrees": 122,
-    "frontend-design-plugin": 62,
-    "dynamic-workflows": 128,
-    "workflow-size-prompting-ambient": 120,
+    "git-worktrees": 132,
+    "frontend-design-plugin": 133,
+    "dynamic-workflows": 134,
+    "workflow-size-prompting-ambient": 132,
     "agents-view-multiclauding": 78,
     "workflow-size-prompting": 96
   },
-  "promptQueueUseCount": 58,
-  "btwUseCount": 12,
+  "promptQueueUseCount": 64,
+  "btwUseCount": 13,
   "unpinOpus47LaunchEffort": true,
   "unpinOpus48LaunchEffort": true,
   "unpinFable5LaunchEffort": true,
@@ -55,24 +55,24 @@
     "status-line": 6,
     "enter-to-steer-in-relatime": 7,
     "todo-list": 7,
-    "ide-upsell-external-terminal": 27,
+    "ide-upsell-external-terminal": 28,
     "drag-and-drop-images": 13,
     "double-esc-code-restore": 13,
-    "continue": 12,
-    "shift-tab": 12,
+    "continue": 13,
+    "shift-tab": 13,
     "image-paste": 7,
-    "subagent-fanout-nudge": 33,
-    "loop-command-nudge": 32,
-    "default-permission-mode-config": 12,
+    "subagent-fanout-nudge": 35,
+    "loop-command-nudge": 34,
+    "default-permission-mode-config": 13,
     "custom-agents": 9,
-    "permissions": 12,
-    "rename-conversation": 8,
+    "permissions": 13,
+    "rename-conversation": 9,
     "install-github-app": 1,
     "install-slack-app": 1,
-    "git-worktrees": 8,
-    "frontend-design-plugin": 1,
-    "dynamic-workflows": 13,
-    "workflow-size-prompting-ambient": 3,
+    "git-worktrees": 9,
+    "frontend-design-plugin": 2,
+    "dynamic-workflows": 15,
+    "workflow-size-prompting-ambient": 4,
     "agents-view-multiclauding": 5,
     "workflow-size-prompting": 3
   },
@@ -84,14 +84,14 @@
       "lastUsedNumStartups": 58
     },
     "superpowers@claude-plugins-official": {
-      "usageCount": 135,
-      "lastUsedAt": 1785488116787,
-      "lastUsedNumStartups": 129
+      "usageCount": 150,
+      "lastUsedAt": 1785635645086,
+      "lastUsedNumStartups": 135
     },
     "claude-mem@thedotmack": {
-      "usageCount": 12881,
-      "lastUsedAt": 1785511697048,
-      "lastUsedNumStartups": 129
+      "usageCount": 14591,
+      "lastUsedAt": 1785635860270,
+      "lastUsedNumStartups": 135
     }
   },
   "projects": {
@@ -643,7 +643,7 @@
       "projectOnboardingSeenCount": 0,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false,
-      "lastGracefulShutdown": true,
+      "lastGracefulShutdown": false,
       "lastVersionBase": "2.1.212",
       "lastCost": 18.940827999999996,
       "lastAPIDuration": 4081533,
@@ -715,39 +715,58 @@
         "smb2ops.c"
       ],
       "exampleFilesGeneratedAt": 1785487746614,
-      "lastCost": 0,
-      "lastAPIDuration": 0,
-      "lastAPIDurationWithoutRetries": 0,
+      "lastCost": 0.660564,
+      "lastAPIDuration": 171426,
+      "lastAPIDurationWithoutRetries": 95256,
       "lastToolDuration": 0,
-      "lastDuration": 43938,
-      "lastStartTime": 1785488020843,
+      "lastDuration": 340281,
+      "lastStartTime": 1785635248480,
       "lastLinesAdded": 0,
       "lastLinesRemoved": 0,
-      "lastTotalInputTokens": 0,
-      "lastTotalOutputTokens": 0,
+      "lastTotalInputTokens": 215618,
+      "lastTotalOutputTokens": 914,
       "lastTotalCacheCreationInputTokens": 0,
       "lastTotalCacheReadInputTokens": 0,
       "lastTotalWebSearchRequests": 0,
-      "lastFpsAverage": 7.97,
-      "lastFpsLow1Pct": 109.75,
-      "lastModelUsage": {},
-      "lastSessionId": "3374ab87-46bd-4c38-bed0-753584dc570a",
+      "lastModelUsage": {
+        "claude-sonnet-5": {
+          "inputTokens": 215618,
+          "outputTokens": 914,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.660564
+        }
+      },
+      "lastSessionId": "49617d87-d6a0-4766-bd99-8b4f22607e2b",
       "lastSessionMetrics": {
-        "frame_duration_ms_count": 343,
-        "frame_duration_ms_min": 0.10472500000014406,
-        "frame_duration_ms_max": 12.196615000000065,
-        "frame_duration_ms_avg": 1.0813250466472137,
-        "frame_duration_ms_p50": 0.28310599999895203,
-        "frame_duration_ms_p95": 5.173761899999805,
-        "frame_duration_ms_p99": 8.37198893999978,
-        "hook_duration_ms_count": 3,
-        "hook_duration_ms_min": 298,
-        "hook_duration_ms_max": 618,
-        "hook_duration_ms_avg": 406,
-        "hook_duration_ms_p50": 302,
-        "hook_duration_ms_p95": 586.4,
-        "hook_duration_ms_p99": 611.6800000000001
-      }
+        "frame_duration_ms_count": 2105,
+        "frame_duration_ms_min": 0.08491700002923608,
+        "frame_duration_ms_max": 17.85762699999998,
+        "frame_duration_ms_avg": 0.8540658703089332,
+        "frame_duration_ms_p50": 0.3461679999873013,
+        "frame_duration_ms_p95": 2.0958101500043984,
+        "frame_duration_ms_p99": 8.432641899997503,
+        "hook_duration_ms_count": 9,
+        "hook_duration_ms_min": 15,
+        "hook_duration_ms_max": 593,
+        "hook_duration_ms_avg": 308.6666666666667,
+        "hook_duration_ms_p50": 338,
+        "hook_duration_ms_p95": 537.4,
+        "hook_duration_ms_p99": 581.88,
+        "pre_tool_hook_duration_ms_count": 1,
+        "pre_tool_hook_duration_ms_min": 1,
+        "pre_tool_hook_duration_ms_max": 1,
+        "pre_tool_hook_duration_ms_avg": 1,
+        "pre_tool_hook_duration_ms_p50": 1,
+        "pre_tool_hook_duration_ms_p95": 1,
+        "pre_tool_hook_duration_ms_p99": 1
+      },
+      "disabledMcpServers": [
+        "xpoz-mcp"
+      ],
+      "lastFpsAverage": 4.4,
+      "lastFpsLow1Pct": 127.82
     }
   },
   "lastReleaseNotesSeen": "2.1.212",
@@ -766,7 +785,7 @@
       "/home/cwtrocks/linux"
     ]
   },
-  "lastPlanModeUse": 1785492091946,
+  "lastPlanModeUse": 1785633764502,
   "skillUsage": {
     "explore-opencore-codebase": {
       "usageCount": 1,
@@ -777,8 +796,8 @@
       "lastUsedAt": 1780844654097
     },
     "update-config": {
-      "usageCount": 3,
-      "lastUsedAt": 1780824172250
+      "usageCount": 4,
+      "lastUsedAt": 1785634995739
     },
     "understand-anything:understand": {
       "usageCount": 15,
@@ -809,27 +828,20 @@
       "lastUsedAt": 1781401455325
     },
     "deep-research": {
-      "usageCount": 36,
-      "lastUsedAt": 1785507914239
+      "usageCount": 47,
+      "lastUsedAt": 1785635189307
     },
     "claude-api": {
       "usageCount": 5,
       "lastUsedAt": 1784970069147
     },
     "superpowers:brainstorming": {
-      "usageCount": 3,
-      "lastUsedAt": 1785075115681
+      "usageCount": 4,
+      "lastUsedAt": 1785634578616
     }
   },
   "showSpinnerTree": false,
   "mcpServers": {
-    "xpoz-mcp": {
-      "type": "http",
-      "url": "https://mcp.xpoz.ai/mcp",
-      "headers": {
-        "Authorization": "Bearer <K3EnBak9K1sTqwvYD0rb9BPqZyDSAHKX3QywG1DP67iuClR0nqEEGwtpw8KvxdVJnU2ke7z>"
-      }
-    },
     "MiniMax": {
       "type": "stdio",
       "command": "uvx",

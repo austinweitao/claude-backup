@@ -88,6 +88,7 @@
   },
   "skipWebFetchPreflight": true,
   "effortLevel": "medium",
+  "autoCompactWindow": 700000,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true
 }
