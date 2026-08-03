@@ -24,11 +24,11 @@
     "claude-mem@thedotmack": [
       {
         "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.12.4",
-        "version": "13.12.4",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.13.0",
+        "version": "13.13.0",
         "installedAt": "2026-06-07T04:07:33.964Z",
-        "lastUpdated": "2026-07-24T13:04:56.960Z",
-        "gitCommitSha": "132b46343e60ecf4057c427736c57b08f7615dfe"
+        "lastUpdated": "2026-08-03T01:18:43.809Z",
+        "gitCommitSha": "b368abaeabfebb8d5cfe18836b779edda204664c"
       }
     ]
   }
