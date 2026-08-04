@@ -323,8 +323,163 @@
 - 多轮对话结束后，主动询问是否需要沉淀
 - 用户说"不要沉淀"或"skip"时跳过
 
+## 大型探索任务管理规则（防止上下文溢出）
+
+**本规则基于 2026-08-03 Binder 项目（7 个并行 agent 生成 ~3000 行文档）的实战教训制定。**
+
+### 核心问题
+
+| 问题 | 症状 | 根因 |
+|------|------|------|
+| 上下文窗口溢出 | 系统自动 compact，生成会话摘要 | 并行 agent 输出分散、多文件累积 |
+| 内容重复/遗漏 | 摘要不全，恢复后重复工作 | 没有统一整合点 |
+| 任务状态丢失 | 中断后不知道做到哪了 | 没有进度跟踪 |
+
+### 强制规则
+
+#### 1. 并行任务完成后必须立即整合
+
+**触发时机**: 任何 `Workflow` / 并行 `Agent` 任务完成后，**第一个工具调用**必须是整合输出。
+
+**整合文件命名规范**:
+- 主文档: `PROJECT-MASTER-GUIDE.md` 或 `PROJECT-MASTER-GUIDE.html`
+- 放弃独立文件，保留一个综合版本即可
+
+#### 2. 大文件分批读取和处理
+
+**超过 500 行的文件**: 使用 `Read` 的 `limit` + `offset` 参数分批读取。
+
+#### 3. 任务进度跟踪
+
+**使用 Task 工具**: 在开始工作时创建 task，标记 `in_progress`，完成后标记 `completed`。
+
+#### 4. 中断恢复策略
+
+**依赖会话摘要**: 系统生成的摘要应包含"当前工作状态"。恢复时：
+1. 读取摘要理解上下文
+2. 识别未完成的任务
+3. 直接恢复工作（不重复探索）
+
+---
+
 ## 禁止事项
 
 - 禁止省略知识来源标注
-- 禁止在未经 Web 搜索验证的情况下，对可能过时的知识做出确定性表述
+- 禁止在未经验证的情况下，对可能过时的知识做出确定性表述
 - 禁止在回答深度技术问题后不进行知识沉淀（除非用户明确拒绝）
+
+---
+
+## Mermaid 图表 HTML 文件生成规范
+
+**生成包含 Mermaid.js 图表的 HTML 文件时，必须严格遵守以下流程，确保图表能正常渲染。**
+
+### 强制检查清单
+
+生成 HTML 文件前，必须完成以下检查：
+
+#### 1. Mermaid.js CDN 引入
+```html
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+```
+
+#### 2. Mermaid 初始化配置（必须）
+```javascript
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        securityLevel: 'loose',
+        flowchart: { useMaxWidth: true, htmlLabels: true },
+        sequence: { useMaxWidth: true }
+    });
+</script>
+```
+
+**关键点**：
+- `startOnLoad: true` —— 页面加载后自动渲染图表
+- `securityLevel: 'loose'` —— 允许执行内联脚本（HTML 标签）
+- `flowchart.htmlLabels: true` —— 支持 flowchart 中的 HTML 标签
+
+#### 3. Mermaid 图表语法安全检查
+
+生成图表前必须验证 Mermaid 语法，避免以下错误：
+
+| 错误类型 | 错误写法 | 正确写法 |
+|----------|----------|----------|
+| 节点含逗号 | `A[obj, data]` | `A[obj data]` 或 `A[obj - data]` |
+| 节点含括号 | `A[地址 (ptr)]` | `A[地址 ptr]` |
+| 节点含竖线 | `A[\|label\|data]` | `A[label data]` |
+| classDef 名为关键字 | `classDef end fill:#f00` | `classDef stop fill:#f00` |
+| subgraph 含括号 | `subgraph A["节点 (x)"]` | `subgraph A["节点 x"]` |
+
+#### 4. CSS 容器样式
+
+确保 `.mermaid` 类有正确的样式：
+```css
+.mermaid {
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    overflow-x: auto;
+}
+.mermaid svg {
+    max-width: 100% !important;
+    height: auto !important;
+}
+```
+
+#### 5. DOM 加载后渲染确认
+
+在 `</body>` 前添加确认脚本：
+```javascript
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    mermaid.run({
+        querySelector: '.mermaid',
+        postRender: function(id) {
+            console.log('Mermaid diagram rendered:', id);
+        }
+    });
+});
+</script>
+```
+
+### 生成后的自检流程
+
+1. **语法检查**：确认所有 Mermaid 图表代码没有语法错误
+2. **资源验证**：确认 CDN URL 可访问
+3. **容器验证**：确认 `.mermaid` CSS 类存在且样式正确
+4. **初始化验证**：确认 `mermaid.initialize()` 配置完整
+
+### 常见渲染失败原因
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 图表不显示 | 缺少 `mermaid.initialize()` | 添加初始化配置 |
+| 图表只显示代码 | `securityLevel: 'strict'` | 改为 `securityLevel: 'loose'` |
+| HTML 标签不解析 | `flowchart.htmlLabels: false` | 改为 `true` |
+| 图表溢出容器 | 缺少 `max-width` | 添加 `max-width: 100%` |
+| 页面空白 | CDN 加载失败 | 添加备用 CDN 或离线版本 |
+
+### 输出格式
+
+生成 HTML 文件后，必须在回复中确认：
+
+```
+✅ HTML 文件已生成，包含 N 个 Mermaid 图表
+✅ Mermaid.js CDN 已引入
+✅ mermaid.initialize() 配置已添加
+✅ CSS .mermaid 容器样式已设置
+✅ DOM 加载后自动渲染脚本已添加
+✅ 图表语法已检查，无已知问题
+```
+
+### 触发条件
+
+本规则在以下情况下**强制执行**：
+- 用户要求生成包含图表的 HTML 文件
+- 用户要求生成报告/文档（默认包含 Mermaid 图表）
+- 用户说"输出为 HTML"、"生成 HTML"、"写一个带图的 HTML"
