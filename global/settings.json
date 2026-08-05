@@ -27,7 +27,7 @@
       "Bash(fdisk*)"
     ]
   },
-  "model": "opus",
+  "model": "claude-fable-5",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
@@ -87,7 +87,7 @@
     "claude-mem@thedotmack": true
   },
   "skipWebFetchPreflight": true,
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "autoCompactWindow": 700000,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,

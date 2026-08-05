@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/home/cwtrocks/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-08-04T01:25:58.818Z"
+    "lastUpdated": "2026-08-05T01:06:08.706Z"
   },
   "understand-anything": {
     "source": {
@@ -21,7 +21,7 @@
       "repo": "thedotmack/claude-mem"
     },
     "installLocation": "/home/cwtrocks/.claude/plugins/marketplaces/thedotmack",
-    "lastUpdated": "2026-08-04T01:26:03.356Z",
+    "lastUpdated": "2026-08-05T01:06:08.475Z",
     "autoUpdate": true
   }
 }
