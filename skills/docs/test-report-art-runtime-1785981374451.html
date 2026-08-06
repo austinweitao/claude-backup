@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Exploration Report</title>
+
+    <!-- Mermaid.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+    <!-- Highlight.js for code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --accent-red: #f85149;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
+            --code-bg: #0d1117;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .nav-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-item {
+            display: block;
+            padding: 10px 15px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            transition: all 0.2s;
+        }
+
+        .nav-item:hover {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent-blue);
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 240px;
+            padding: 30px 50px;
+            max-width: 1200px;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .header-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Sections */
+        .section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        /* Confidence Badge */
+        .confidence-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .confidence-high {
+            background: rgba(63, 185, 80, 0.2);
+            color: var(--accent-green);
+        }
+
+        .confidence-medium {
+            background: rgba(210, 153, 34, 0.2);
+            color: var(--accent-yellow);
+        }
+
+        .confidence-low {
+            background: rgba(248, 81, 73, 0.2);
+            color: var(--accent-red);
+        }
+
+        /* Mermaid Charts */
+        .mermaid {
+            background: var(--bg-tertiary);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .mermaid svg {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+            font-size: 13px;
+        }
+
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+
+        /* Lists */
+        .module-list {
+            list-style: none;
+        }
+
+        .module-item {
+            padding: 12px 15px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .module-name {
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .module-role {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+
+        .module-desc {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        /* Stats */
+        .stats-row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--bg-tertiary);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+            .main {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-title">📊 Code Explorer</div>
+        <a href="#overview" class="nav-item active">Overview</a>
+        <a href="#architecture" class="nav-item">Architecture</a>
+        <a href="#modules" class="nav-item">Modules</a>
+        <a href="#paths" class="nav-item">Critical Paths</a>
+        <a href="#structures" class="nav-item">Data Structures</a>
+        <a href="#validation" class="nav-item">Validation</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Header -->
+        <header class="header">
+            <h1>Code Exploration Report</h1>
+            <div class="header-meta">
+                <span>📁 /home/cwtrocks/explore-art/art</span>
+                <span>🏷️ art</span>
+                <span>📅 2026-08-06T01:56:13.800Z</span>
+                <span>🤖 mock</span>
+            </div>
+        </header>
+
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <h2 class="section-title">Overview</h2>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Modules</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Structures</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Critical Paths</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0.20</div>
+                    <div class="stat-label">Confidence</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="section">
+            <h2 class="section-title">Architecture Pattern</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-title">Mock Architecture</div>
+                    <div class="card-text">0.5 confidence</div>
+                </div>
+            </div>
+
+            
+
+            
+        </section>
+
+        <!-- Modules Section -->
+        <section id="modules" class="section">
+            <h2 class="section-title">Core Modules</h2>
+
+            <ul class="module-list">
+                
+            </ul>
+
+            
+        </section>
+
+        <!-- Critical Paths Section -->
+        <section id="paths" class="section">
+            <h2 class="section-title">Critical Paths</h2>
+
+            
+
+            
+        </section>
+
+        <!-- Data Structures Section -->
+        <section id="structures" class="section">
+            <h2 class="section-title">Data Structures</h2>
+
+            
+
+            
+        </section>
+
+        <!-- Validation Section -->
+        <section id="validation" class="section">
+            <h2 class="section-title">Validation Results</h2>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <div class="stat-value confidence-low">0.20</div>
+                    <div class="stat-label">Overall Confidence</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0/4</div>
+                    <div class="stat-label">Engines Succeeded</div>
+                </div>
+            </div>
+
+            
+            <p style="color: var(--text-secondary); margin-top: 15px;">
+                Verified by: ddg
+            </p>
+            
+
+            
+            <div style="background: rgba(210, 153, 34, 0.1); border: 1px solid var(--accent-yellow); border-radius: 6px; padding: 15px; margin-top: 15px;">
+                <strong style="color: var(--accent-yellow);">⚠️ Needs Refinement</strong>
+                <p style="color: var(--text-secondary); margin-top: 5px;">
+                    The analysis confidence is below the threshold. Consider re-running with more context.
+                </p>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Mermaid Initialization -->
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose',
+            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+            fontSize: 14,
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                nodeSpacing: 20,
+                rankSpacing: 40
+            },
+            sequence: {
+                useMaxWidth: true,
+                diagramMarginX: 20,
+                diagramMarginY: 20
+            }
+        });
+
+        // Fix SVG dimensions after render
+        function fixMermaidSVGs() {
+            document.querySelectorAll('.mermaid svg').forEach(function(svg) {
+                svg.setAttribute('width', '100%');
+                svg.removeAttribute('height');
+                svg.querySelectorAll('text').forEach(function(text) {
+                    text.style.fontSize = '12px';
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fixMermaidSVGs();
+        });
+
+        // Observe for dynamically rendered charts
+        var observer = new MutationObserver(function(mutations) {
+            fixMermaidSVGs();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+
+    <!-- Navigation Highlight -->
+    <script>
+        // Highlight active nav item on scroll
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

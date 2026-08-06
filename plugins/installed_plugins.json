@@ -30,6 +30,15 @@
         "lastUpdated": "2026-08-04T01:26:03.459Z",
         "gitCommitSha": "f85bb28c4788ed6372e3406b3fc92cfbecf6df08"
       }
+    ],
+    "github@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/github/unknown",
+        "version": "unknown",
+        "installedAt": "2026-08-05T16:04:15.101Z",
+        "lastUpdated": "2026-08-06T01:49:40.870Z"
+      }
     ]
   }
 }

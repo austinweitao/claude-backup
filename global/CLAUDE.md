@@ -388,10 +388,22 @@
 <script>
     mermaid.initialize({
         startOnLoad: true,
-        theme: 'default',
+        theme: 'dark',
         securityLevel: 'loose',
-        flowchart: { useMaxWidth: true, htmlLabels: true },
-        sequence: { useMaxWidth: true }
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontSize: 14,
+        flowchart: {
+            useMaxWidth: true,
+            htmlLabels: true,
+            curve: 'basis',
+            nodeSpacing: 20,
+            rankSpacing: 40
+        },
+        sequence: {
+            useMaxWidth: true,
+            diagramMarginX: 20,
+            diagramMarginY: 20
+        }
     });
 </script>
 ```
@@ -400,40 +412,95 @@
 - `startOnLoad: true` —— 页面加载后自动渲染图表
 - `securityLevel: 'loose'` —— 允许执行内联脚本（HTML 标签）
 - `flowchart.htmlLabels: true` —— 支持 flowchart 中的 HTML 标签
+- `fontSize: 14` —— 限制字体大小（默认 16-18px 过大）
+- `flowchart.useMaxWidth: true` —— 允许 SVG 缩放到容器宽度
 
-#### 3. Mermaid 图表语法安全检查
+#### 3. CSS 容器样式（必须）
 
-生成图表前必须验证 Mermaid 语法，避免以下错误：
-
-| 错误类型 | 错误写法 | 正确写法 |
-|----------|----------|----------|
-| 节点含逗号 | `A[obj, data]` | `A[obj data]` 或 `A[obj - data]` |
-| 节点含括号 | `A[地址 (ptr)]` | `A[地址 ptr]` |
-| 节点含竖线 | `A[\|label\|data]` | `A[label data]` |
-| classDef 名为关键字 | `classDef end fill:#f00` | `classDef stop fill:#f00` |
-| subgraph 含括号 | `subgraph A["节点 (x)"]` | `subgraph A["节点 x"]` |
-
-#### 4. CSS 容器样式
-
-确保 `.mermaid` 类有正确的样式：
+**字体大小限制 + 响应式宽度是必须的**：
 ```css
 .mermaid {
     background: var(--bg-secondary);
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     margin: 20px 0;
+    overflow-x: auto;  /* 长图表水平滚动 */
     text-align: center;
-    overflow-x: auto;
 }
+
 .mermaid svg {
-    max-width: 100% !important;
+    /* 关键：强制宽度为容器宽度 */
+    width: 100% !important;
     height: auto !important;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 限制字体大小 */
+.mermaid svg text {
+    font-size: 12px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* 节点标签 */
+.mermaid svg [class*="nodeLabel"],
+.mermaid svg .edgeLabel text {
+    font-size: 11px !important;
 }
 ```
 
-#### 5. DOM 加载后渲染确认
+#### 4. 强制 SVG 属性修复（JavaScript - 必须）
 
-在 `</body>` 前添加确认脚本：
+仅靠 CSS **可能不足**，因为 Mermaid 生成的 SVG 包含内联 `width`/`height` 属性，CSS 的 `width: 100%` 无法覆盖。
+
+**必须在 `</body>` 前添加 JavaScript 修复脚本：**
+
+```javascript
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function fixMermaidSVGs() {
+        document.querySelectorAll('.mermaid svg').forEach(function(svg) {
+            // 强制宽度为容器宽度（覆盖内联属性）
+            svg.setAttribute('width', '100%');
+            svg.removeAttribute('height');
+
+            // 强制字体大小
+            svg.querySelectorAll('text').forEach(function(text) {
+                text.style.fontSize = '11px';
+            });
+
+            // 强制节点标签字体
+            svg.querySelectorAll('[class*="nodeLabel"], .edgeLabel text').forEach(function(el) {
+                el.style.fontSize = '11px';
+            });
+        });
+    }
+
+    // 立即执行一次
+    fixMermaidSVGs();
+
+    // MutationObserver 监控动态渲染的图表
+    var observer = new MutationObserver(function(mutations) {
+        fixMermaidSVGs();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+```
+
+#### 5. 禁止的做法
+
+❌ **不要只靠 CSS 而不使用 JavaScript**（CSS 可能被内联属性覆盖）
+❌ **不要**在渲染后用 JavaScript 手动计算比例放大 SVG
+❌ **不要**设置固定 `max-width: 1400px`（会导致大图表溢出）
+❌ **不要**移除 `overflow-x: auto`（长图表需要滚动）
+❌ **不要**省略 `fontSize` 配置（Mermaid 默认字体太大）
+❌ **不要**省略 `flowchart.useMaxWidth: true`（会导致 SVG 不缩放）
+
+#### 6. DOM 加载后渲染确认（可选）
+
+如需确认渲染，可添加：
 ```javascript
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -452,7 +519,9 @@ document.addEventListener('DOMContentLoaded', function() {
 1. **语法检查**：确认所有 Mermaid 图表代码没有语法错误
 2. **资源验证**：确认 CDN URL 可访问
 3. **容器验证**：确认 `.mermaid` CSS 类存在且样式正确
-4. **初始化验证**：确认 `mermaid.initialize()` 配置完整
+4. **字体验证**：确认 `fontSize: 14` 和 CSS `font-size: 12px` 已设置
+5. **响应式验证**：确认 SVG 使用 `width: 100%` 而非固定宽度
+6. **JavaScript 修复**：确认添加了 `fixMermaidSVGs()` 函数覆盖内联属性
 
 ### 常见渲染失败原因
 
@@ -461,7 +530,9 @@ document.addEventListener('DOMContentLoaded', function() {
 | 图表不显示 | 缺少 `mermaid.initialize()` | 添加初始化配置 |
 | 图表只显示代码 | `securityLevel: 'strict'` | 改为 `securityLevel: 'loose'` |
 | HTML 标签不解析 | `flowchart.htmlLabels: false` | 改为 `true` |
-| 图表溢出容器 | 缺少 `max-width` | 添加 `max-width: 100%` |
+| 图表溢出容器 | 缺少 `max-width` + JS 修复 | 添加 CSS + `setAttribute('width','100%')` |
+| 字体过大 | 未设置 `fontSize` + JS 修复 | 添加 `fontSize: 14` + JS 强制样式 |
+| SVG 不缩放 | 未设置 `useMaxWidth` + 无 JS | 添加 `flowchart.useMaxWidth: true` + JS |
 | 页面空白 | CDN 加载失败 | 添加备用 CDN 或离线版本 |
 
 ### 输出格式
@@ -471,9 +542,9 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 ✅ HTML 文件已生成，包含 N 个 Mermaid 图表
 ✅ Mermaid.js CDN 已引入
-✅ mermaid.initialize() 配置已添加
-✅ CSS .mermaid 容器样式已设置
-✅ DOM 加载后自动渲染脚本已添加
+✅ mermaid.initialize() 配置已添加（含 fontSize: 14）
+✅ CSS .mermaid 容器样式已设置（含响应式 width: 100%）
+✅ JavaScript SVG 属性修复脚本已添加（强制 setAttribute）
 ✅ 图表语法已检查，无已知问题
 ```
 
