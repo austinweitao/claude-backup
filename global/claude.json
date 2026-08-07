@@ -1,5 +1,5 @@
 {
-  "numStartups": 148,
+  "numStartups": 152,
   "installMethod": "native",
   "autoUpdates": false,
   "hasSeenTasksHint": true,
@@ -14,28 +14,28 @@
     "status-line": 129,
     "enter-to-steer-in-relatime": 144,
     "todo-list": 144,
-    "ide-upsell-external-terminal": 145,
+    "ide-upsell-external-terminal": 149,
     "drag-and-drop-images": 148,
     "double-esc-code-restore": 148,
-    "continue": 140,
-    "shift-tab": 140,
+    "continue": 150,
+    "shift-tab": 150,
     "image-paste": 145,
-    "subagent-fanout-nudge": 146,
-    "loop-command-nudge": 147,
-    "default-permission-mode-config": 140,
+    "subagent-fanout-nudge": 152,
+    "loop-command-nudge": 150,
+    "default-permission-mode-config": 150,
     "custom-agents": 142,
     "permissions": 143,
     "rename-conversation": 148,
     "install-github-app": 40,
     "install-slack-app": 40,
-    "git-worktrees": 142,
-    "frontend-design-plugin": 147,
-    "dynamic-workflows": 146,
+    "git-worktrees": 152,
+    "frontend-design-plugin": 150,
+    "dynamic-workflows": 152,
     "workflow-size-prompting-ambient": 144,
     "agents-view-multiclauding": 78,
     "workflow-size-prompting": 96
   },
-  "promptQueueUseCount": 166,
+  "promptQueueUseCount": 167,
   "btwUseCount": 18,
   "unpinOpus47LaunchEffort": true,
   "unpinOpus48LaunchEffort": true,
@@ -56,23 +56,23 @@
     "status-line": 6,
     "enter-to-steer-in-relatime": 8,
     "todo-list": 8,
-    "ide-upsell-external-terminal": 31,
+    "ide-upsell-external-terminal": 32,
     "drag-and-drop-images": 15,
     "double-esc-code-restore": 15,
-    "continue": 14,
-    "shift-tab": 14,
+    "continue": 15,
+    "shift-tab": 15,
     "image-paste": 8,
-    "subagent-fanout-nudge": 39,
-    "loop-command-nudge": 38,
-    "default-permission-mode-config": 14,
+    "subagent-fanout-nudge": 41,
+    "loop-command-nudge": 39,
+    "default-permission-mode-config": 15,
     "custom-agents": 10,
     "permissions": 14,
     "rename-conversation": 10,
     "install-github-app": 1,
     "install-slack-app": 1,
-    "git-worktrees": 10,
-    "frontend-design-plugin": 6,
-    "dynamic-workflows": 19,
+    "git-worktrees": 11,
+    "frontend-design-plugin": 7,
+    "dynamic-workflows": 21,
     "workflow-size-prompting-ambient": 5,
     "agents-view-multiclauding": 5,
     "workflow-size-prompting": 3
@@ -85,14 +85,19 @@
       "lastUsedNumStartups": 58
     },
     "superpowers@claude-plugins-official": {
-      "usageCount": 323,
-      "lastUsedAt": 1785981435286,
-      "lastUsedNumStartups": 148
+      "usageCount": 343,
+      "lastUsedAt": 1786009861501,
+      "lastUsedNumStartups": 152
     },
     "claude-mem@thedotmack": {
-      "usageCount": 23943,
-      "lastUsedAt": 1785981449564,
-      "lastUsedNumStartups": 148
+      "usageCount": 24409,
+      "lastUsedAt": 1786010010316,
+      "lastUsedNumStartups": 152
+    },
+    "github@claude-plugins-official": {
+      "usageCount": 0,
+      "lastUsedAt": 1785981922863,
+      "lastUsedNumStartups": 149
     }
   },
   "projects": {
@@ -706,7 +711,7 @@
       "projectOnboardingSeenCount": 0,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false,
-      "lastGracefulShutdown": false,
+      "lastGracefulShutdown": true,
       "lastVersionBase": "2.1.212",
       "exampleFiles": [
         "MAINTAINERS",
@@ -716,67 +721,88 @@
         "smb2ops.c"
       ],
       "exampleFilesGeneratedAt": 1785487746614,
-      "lastCost": 228.54729199999983,
-      "lastAPIDuration": 3400768,
-      "lastAPIDurationWithoutRetries": 3379892,
-      "lastToolDuration": 58099,
-      "lastDuration": 2616440,
-      "lastStartTime": 1785921086687,
-      "lastLinesAdded": 1165,
-      "lastLinesRemoved": 95,
-      "lastTotalInputTokens": 22415919,
-      "lastTotalOutputTokens": 88366,
+      "lastCost": 17.961672999999998,
+      "lastAPIDuration": 422783,
+      "lastAPIDurationWithoutRetries": 422727,
+      "lastToolDuration": 2325,
+      "lastDuration": 691634,
+      "lastStartTime": 1786006417496,
+      "lastLinesAdded": 1822,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 1703950,
+      "lastTotalOutputTokens": 18718,
       "lastTotalCacheCreationInputTokens": 0,
       "lastTotalCacheReadInputTokens": 0,
       "lastTotalWebSearchRequests": 0,
       "lastModelUsage": {
         "claude-fable-5": {
-          "inputTokens": 22413540,
-          "outputTokens": 87979,
+          "inputTokens": 1702749,
+          "outputTokens": 18566,
           "cacheReadInputTokens": 0,
           "cacheCreationInputTokens": 0,
           "webSearchRequests": 0,
-          "costUSD": 228.53434999999985
+          "costUSD": 17.955789999999997
         },
         "claude-sonnet-5": {
-          "inputTokens": 2379,
-          "outputTokens": 387,
+          "inputTokens": 1201,
+          "outputTokens": 152,
           "cacheReadInputTokens": 0,
           "cacheCreationInputTokens": 0,
           "webSearchRequests": 0,
-          "costUSD": 0.012941999999999999
+          "costUSD": 0.005883
         }
       },
-      "lastSessionId": "f7737de1-1333-4944-8fb5-c14218038220",
+      "lastSessionId": "8fe92086-2f4f-461f-a1e0-1077484bca1d",
       "lastSessionMetrics": {
-        "frame_duration_ms_count": 18331,
-        "frame_duration_ms_min": 0.07244400004856288,
-        "frame_duration_ms_max": 101.45367499999702,
-        "frame_duration_ms_avg": 1.6493332684514368,
-        "frame_duration_ms_p50": 1.3386000000173226,
-        "frame_duration_ms_p95": 3.559226749883963,
-        "frame_duration_ms_p99": 5.1884976100968165,
-        "hook_duration_ms_count": 349,
-        "hook_duration_ms_min": 1,
-        "hook_duration_ms_max": 6613,
-        "hook_duration_ms_avg": 52.48137535816619,
-        "hook_duration_ms_p50": 12,
-        "hook_duration_ms_p95": 105.7999999999999,
-        "hook_duration_ms_p99": 414.52,
-        "pre_tool_hook_duration_ms_count": 222,
+        "frame_duration_ms_count": 2580,
+        "frame_duration_ms_min": 0.09251000000040221,
+        "frame_duration_ms_max": 93.56333299999824,
+        "frame_duration_ms_avg": 2.0132634255813002,
+        "frame_duration_ms_p50": 1.57631400001992,
+        "frame_duration_ms_p95": 4.284501649989395,
+        "frame_duration_ms_p99": 7.004472919998801,
+        "hook_duration_ms_count": 36,
+        "hook_duration_ms_min": 2,
+        "hook_duration_ms_max": 10998,
+        "hook_duration_ms_avg": 356.25,
+        "hook_duration_ms_p50": 8,
+        "hook_duration_ms_p95": 523.5,
+        "hook_duration_ms_p99": 7414.349999999986,
+        "pre_tool_hook_duration_ms_count": 30,
         "pre_tool_hook_duration_ms_min": 0,
-        "pre_tool_hook_duration_ms_max": 132,
-        "pre_tool_hook_duration_ms_avg": 13.396396396396396,
-        "pre_tool_hook_duration_ms_p50": 5,
-        "pre_tool_hook_duration_ms_p95": 72.84999999999997,
-        "pre_tool_hook_duration_ms_p99": 94.52999999999994
+        "pre_tool_hook_duration_ms_max": 89,
+        "pre_tool_hook_duration_ms_avg": 8.766666666666667,
+        "pre_tool_hook_duration_ms_p50": 0,
+        "pre_tool_hook_duration_ms_p95": 59.44999999999989,
+        "pre_tool_hook_duration_ms_p99": 85.52000000000001
       },
       "disabledMcpServers": [
         "xpoz-mcp"
       ],
       "hasCompletedProjectOnboarding": true,
-      "lastFpsAverage": 7.01,
-      "lastFpsLow1Pct": 190.34
+      "lastFpsAverage": 3.74,
+      "lastFpsLow1Pct": 141.28
+    },
+    "/home/cwtrocks/aosp/base": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "systemui.aconfig",
+        "DesktopModeFlags.java",
+        "ExpandableNotificationRow.java",
+        "MediaQualityService.java",
+        "DesktopTasksController.kt"
+      ],
+      "lastGracefulShutdown": false,
+      "lastVersionBase": "2.1.212",
+      "exampleFilesGeneratedAt": 1786007133424
     }
   },
   "lastReleaseNotesSeen": "2.1.212",
@@ -795,7 +821,7 @@
       "/home/cwtrocks/linux"
     ]
   },
-  "lastPlanModeUse": 1785942318329,
+  "lastPlanModeUse": 1786007709560,
   "skillUsage": {
     "explore-opencore-codebase": {
       "usageCount": 1,
@@ -846,20 +872,20 @@
       "lastUsedAt": 1784970069147
     },
     "superpowers:brainstorming": {
-      "usageCount": 10,
-      "lastUsedAt": 1785949719253
+      "usageCount": 11,
+      "lastUsedAt": 1786007218801
     },
     "dataviz": {
       "usageCount": 1,
       "lastUsedAt": 1785654774654
     },
     "claude-mem:mode-creator": {
-      "usageCount": 1,
-      "lastUsedAt": 1785818754989
+      "usageCount": 2,
+      "lastUsedAt": 1786006374760
     },
     "init": {
-      "usageCount": 1,
-      "lastUsedAt": 1785833094833
+      "usageCount": 2,
+      "lastUsedAt": 1785999890452
     },
     "superpowers:dispatching-parallel-agents": {
       "usageCount": 1,
