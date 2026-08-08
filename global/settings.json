@@ -27,7 +27,7 @@
       "Bash(fdisk*)"
     ]
   },
-  "model": "opus",
+  "model": "sonnet",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
@@ -83,7 +83,6 @@
     ]
   },
   "enabledPlugins": {
-    "superpowers@claude-plugins-official": true,
     "claude-mem@thedotmack": true,
     "github@claude-plugins-official": true
   },

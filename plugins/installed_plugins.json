@@ -1,33 +1,14 @@
 {
   "version": 2,
   "plugins": {
-    "superpowers@claude-plugins-official": [
-      {
-        "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0",
-        "version": "6.2.0",
-        "installedAt": "2026-06-06T13:50:10.308Z",
-        "lastUpdated": "2026-07-25T04:49:19.699Z",
-        "gitCommitSha": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06"
-      }
-    ],
-    "understand-anything@understand-anything": [
-      {
-        "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/understand-anything/understand-anything/2.7.6",
-        "version": "2.7.6",
-        "installedAt": "2026-06-06T13:50:10.308Z",
-        "lastUpdated": "2026-06-06T13:50:10.308Z",
-        "gitCommitSha": "7a3b7511b26a1816be3b6cc5683b34779e0abce9"
-      }
-    ],
     "claude-mem@thedotmack": [
       {
-        "scope": "user",
+        "scope": "project",
+        "projectPath": "/home/cwtrocks/minimax",
         "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.13.1",
         "version": "13.13.1",
         "installedAt": "2026-06-07T04:07:33.964Z",
-        "lastUpdated": "2026-08-04T01:26:03.459Z",
+        "lastUpdated": "2026-08-08T01:53:49.070Z",
         "gitCommitSha": "f85bb28c4788ed6372e3406b3fc92cfbecf6df08"
       }
     ],
@@ -37,7 +18,17 @@
         "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/github/unknown",
         "version": "unknown",
         "installedAt": "2026-08-05T16:04:15.101Z",
-        "lastUpdated": "2026-08-06T09:29:23.300Z"
+        "lastUpdated": "2026-08-08T01:56:37.003Z"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/cwtrocks/minimax",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/superpowers/6.1.1",
+        "version": "6.1.1",
+        "installedAt": "2026-08-08T01:53:49.070Z",
+        "lastUpdated": "2026-08-08T01:53:49.070Z"
       }
     ]
   }
