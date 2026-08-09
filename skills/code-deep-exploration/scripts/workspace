@@ -1,0 +1,90 @@
+#!/bin/bash
+# Workspace setup script for code-deep-exploration
+# Usage: ./workspace <target-directory> <project-name>
+# Creates: <target>/docs/exploration-<RUN_ID>/ + progress ledger
+
+set -e
+
+TARGET_DIR="$1"
+PROJECT_NAME="$2"
+
+if [ -z "$TARGET_DIR" ] || [ -z "$PROJECT_NAME" ]; then
+    echo "Usage: workspace <target-directory> <project-name>"
+    echo "Example: workspace frameworks/base/services/core/java/com/android/server/am/ AMS"
+    exit 1
+fi
+
+# Resolve to absolute path
+TARGET_DIR=$(realpath "$TARGET_DIR" 2>/dev/null || echo "$TARGET_DIR")
+
+# Generate a unique run ID: timestamp + random 5-digit suffix
+TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+RANDOM_SUFFIX=$(shuf -i 10000-99999 -n 1)
+RUN_ID="${TIMESTAMP}-${RANDOM_SUFFIX}"
+
+EXPLORATION_DIR="$TARGET_DIR/docs/exploration-${RUN_ID}"
+LEDGER_DIR="$TARGET_DIR/.exploration-${RUN_ID}"
+LEDGER_FILE="$LEDGER_DIR/ledger.md"
+
+echo "Setting up exploration workspace..."
+echo "  Target: $TARGET_DIR"
+echo "  Project: $PROJECT_NAME"
+echo "  Run ID: $RUN_ID"
+echo "  Exploration dir: $EXPLORATION_DIR"
+
+# Create directories
+mkdir -p "$EXPLORATION_DIR"
+mkdir -p "$LEDGER_DIR"
+
+# Create ledger if it doesn't exist
+if [ ! -f "$LEDGER_FILE" ]; then
+    cat > "$LEDGER_FILE" << EOF
+# Exploration ledger — project: $PROJECT_NAME
+
+**Created:** $(date -Iseconds)
+**Target:** $TARGET_DIR
+
+## Module Map Phase
+- [ ] Round 1: File Inventory → 01-file-inventory.html
+- [ ] Round 2: Module Division → 02-module-division.html
+- [ ] Round 3: Module Map Doc → <name>-module-map.html
+
+## Module Deep Dives
+_(to be filled as exploration progresses)_
+
+## Key Findings
+_(record important discoveries here)_
+
+## Decisions
+_(record architectural decisions here)_
+
+---
+*This ledger survives session compaction. Update after each round.*
+EOF
+    echo "Created ledger: $LEDGER_FILE"
+else
+    echo "Ledger already exists: $LEDGER_FILE"
+fi
+
+# Create exploration output directory structure
+mkdir -p "$EXPLORATION_DIR"
+
+echo ""
+echo "✅ Workspace ready!"
+echo ""
+echo "Next steps:"
+echo "  1. Phase 1, Round 1: Run Round 1 file inventory"
+echo "     → Output: $EXPLORATION_DIR/01-file-inventory.html"
+echo ""
+echo "  2. Phase 1, Round 2: Divide into modules"
+echo "     → Output: $EXPLORATION_DIR/02-module-division.html"
+echo ""
+echo "  3. Phase 1, Round 3: Create module map document"
+echo "     → Output: $EXPLORATION_DIR/${PROJECT_NAME,,}-module-map.html"
+echo ""
+echo "  4. Phase 2: Per-module deep dive (Round 0-6)"
+echo "     → Output: $EXPLORATION_DIR/${PROJECT_NAME,,}-<module>-deep-dive.html"
+echo ""
+echo "⚠️  This run ID: $RUN_ID"
+echo "   Previous runs remain in their own timestamped directories."
+echo ""

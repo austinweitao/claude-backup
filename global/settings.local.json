@@ -69,7 +69,9 @@
       "mcp__plugin_claude-mem_mcp-search__smart_search",
       "Skill(coredump)",
       "Skill(update-config)",
-      "mcp__plugin_claude-mem_mcp-search__observation_search"
+      "mcp__plugin_claude-mem_mcp-search__observation_search",
+      "Bash(sed -i 's/^version: 2\\\\.12$/version: 2.13/' /home/cwtrocks/.claude/skills/code-deep-exploration/SKILL.md)",
+      "Bash(sed -i 's/^# Code Deep Exploration Skill v2\\\\.12$/# Code Deep Exploration Skill v2.13/' /home/cwtrocks/.claude/skills/code-deep-exploration/SKILL.md)"
     ]
   },
   "enableAllProjectMcpServers": true,

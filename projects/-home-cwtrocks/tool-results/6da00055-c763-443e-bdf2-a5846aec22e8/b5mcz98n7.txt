@@ -1,0 +1,247 @@
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AccessCheckDelegateHelper.java:class AccessCheckDelegateHelper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveInstrumentation.java:class ActiveInstrumentation {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    boolean hasServiceTimedOutLocked(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    boolean shouldServiceTimeOutLocked(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    boolean stopServiceTokenLocked(ComponentName className, IBinder token,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    final class ServiceDumper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    final class ServiceMap extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private class MediaProjectionFgsTypeCustomPermission extends ForegroundServiceTypePermission {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private class ServiceRestarter implements Runnable {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private class SystemExemptedFgsTypePermission extends ForegroundServiceTypePermission {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private final class ServiceLookupResult {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private static class ProcessAnrTimer extends AnrTimer<ProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private static class ServiceAnrTimer extends AnrTimer<ServiceRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    private static final class AppOpCallback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    public int getForegroundServiceTypeLocked(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    public void setServiceForegroundLocked(ComponentName className, IBinder token,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActiveServices.java:    static final class ActiveForegroundApp {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerDebugConfig.java:class ActivityManagerDebugConfig {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    abstract class ImportanceToken implements IBinder.DeathRecipient {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    final class MainHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    final class UiHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    final static class Association {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    final static class MemItem {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    private class MyBinderProxyCountEventListener implements BinderProxyCountEventListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    private final class AppDeathRecipient implements IBinder.DeathRecipient {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    private final class PackageAssociationInfo {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    private static class GetBackgroundStartPrivilegesFunctor implements Consumer<ProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    private static class MemoryUsageDumpOptions {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public boolean hasServiceTimeLimitExceeded(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public boolean shouldServiceTimeOut(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public boolean startInstrumentation(ComponentName className,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public boolean stopServiceToken(ComponentName className, IBinder token,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:public class ActivityManagerService extends IActivityManager.Stub
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public final class LocalService extends ActivityManagerInternal
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public int getForegroundServiceType(ComponentName className, IBinder token) {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public static class Injector {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public static class ItemMatcher {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public static final class FgsTempAllowListItem {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public static final class IntentCreatorToken extends Binder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public static final class Lifecycle extends SystemService {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    public void setServiceForeground(ComponentName className, IBinder token,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class CacheBinder extends Binder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class DbBinder extends Binder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class GraphicsBinder extends Binder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class HiddenApiSettings extends ContentObserver
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class MemBinder extends Binder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class PermissionController extends IPermissionController.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class ProcessInfoService extends IProcessInfoService.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static class VolatileDropboxEntryStates {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static final class PendingTempAllowlist {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static final class PidMap {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static final class ProcessChangeItem {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerService.java:    static final class ProcStatsRunnable implements Runnable {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    final static class IntentReceiver extends IIntentReceiver.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    private class ProgressWaiter extends IProgressListener.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    static final class MyActivityController extends IActivityController.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    static final class MyUidObserver extends UidObserver
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    static final class ProcessObserver extends IProcessObserver.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerShellCommand.java:    static final class StopUserCallback extends IStopUserCallback.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ActivityManagerUtils.java:public class ActivityManagerUtils {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AnrHelper.java:class AnrHelper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AnrHelper.java:    private class AnrConsumerThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AnrHelper.java:    private class AnrRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryExemptionTracker.java:    static final class AppBatteryExemptionPolicy
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryExemptionTracker.java:    static final class UidBatteryStates extends BaseAppStateDurations<UidStateEventWithBattery> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryExemptionTracker.java:    static final class UidStateEventWithBattery extends BaseTimeEvent {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryTracker.java:    static class BatteryUsage {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryTracker.java:    static final class AppBatteryPolicy extends BaseAppStatePolicy<AppBatteryTracker> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBatteryTracker.java:    static final class ImmutableBatteryUsage extends BatteryUsage {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBindServiceEventsTracker.java:    static final class AppBindServiceEventsPolicy
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppBroadcastEventsTracker.java:    static final class AppBroadcastEventsPolicy
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppErrorDialog.java:    static class Data {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppErrors.java:class AppErrors {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppErrors.java:    static final class BadProcessInfo {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppExitInfoTracker.java:    final class AppExitInfoContainer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppExitInfoTracker.java:    final class AppExitInfoExternalSource {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppExitInfoTracker.java:    final class IsolatedUidRecords {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppExitInfoTracker.java:    final class KillHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppFGSTracker.java:    private static class MyHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppFGSTracker.java:    static class PackageDurations extends BaseAppStateDurations<BaseTimeEvent> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppFGSTracker.java:    static final class AppFGSPolicy extends BaseAppStateEventsPolicy<AppFGSTracker> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ApplicationThreadDeferred.java:    private @interface NotificationType {};
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ApplicationThreadDeferred.java:    private interface Operation {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppMediaSessionTracker.java:    static final class AppMediaSessionPolicy
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppNotRespondingDialog.java:    static class Data {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppPermissionTracker.java:    private class MyAppOpsCallback extends IAppOpsCallback.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppPermissionTracker.java:    private class UidGrantedPermissionState {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppPermissionTracker.java:    private static class MyHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppPermissionTracker.java:    static final class AppPermissionPolicy extends BaseAppStatePolicy<AppPermissionTracker> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppProfiler.java:    private class BgHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppProfiler.java:    private class ProcessCpuThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppProfiler.java:    private class ProfileData {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppProfiler.java:    private final class RecordPssRunnable implements Runnable {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppProfiler.java:public class AppProfiler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    final class ConstantsObserver implements OnPropertiesChangedListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    final class RestrictionSettings {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    private class PhoneCarrierPrivilegesCallback implements CarrierPrivilegesCallback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    private class TrackerInfo {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    static class BgHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    static class Injector {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppRestrictionController.java:    static class NotificationHelper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppStartInfoTracker.java:    final class ApplicationStartInfoCompleteCallback implements DeathRecipient {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppStartInfoTracker.java:    final class AppStartInfoContainer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AppTimeTracker.java:public class AppTimeTracker {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AssistDataRequester.java:public class AssistDataRequester extends IAssistDataReceiver.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/AssistDataRequester.java:    public interface AssistDataRequesterCallbacks {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateDurationsTracker.java:    static class SimplePackageDurations extends BaseAppStateDurations<BaseTimeEvent> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateDurationsTracker.java:    static class UidStateDurations extends SimplePackageDurations {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateEventsTracker.java:    abstract static class BaseAppStateEventsPolicy<V extends BaseAppStateEventsTracker>
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateEventsTracker.java:    static class SimplePackageEvents extends BaseAppStateTimeEvents {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeEvents.java:class BaseAppStateTimeEvents<T extends BaseTimeEvent> extends BaseAppStateEvents<T> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeEvents.java:    static class BaseTimeEvent implements Cloneable {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeSlotEvents.java:class BaseAppStateTimeSlotEvents extends BaseAppStateEvents<Integer> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeSlotEventsTracker.java:    static class BaseAppStateTimeSlotEventsPolicy<E extends BaseAppStateTimeSlotEventsTracker>
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeSlotEventsTracker.java:    static class H extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTimeSlotEventsTracker.java:    static class SimpleAppStateTimeslotEvents extends BaseAppStateTimeSlotEvents {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseAppStateTracker.java:    static class Injector<T extends BaseAppStatePolicy> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BaseErrorDialog.java:public class BaseErrorDialog extends AlertDialog {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    final class WakeupReasonThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    private class StatsPullAtomCallbackImpl implements StatsManager.StatsPullAtomCallback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    private final class LocalService extends BatteryStatsInternal {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    public static class FrameworkStatsLogger {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    public static class StatsPerUidLogger {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BatteryStatsService.java:    void updateBatteryStatsOnActivityUsage(final String packageName, final String className,
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastConstants.java:public class BroadcastConstants {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastConstants.java:    public @interface DeferBootCompletedBroadcastType {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastController.java:class BroadcastController {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastController.java:    static final class StickyBroadcast {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastDeliveryFailedException.java:public class BroadcastDeliveryFailedException extends AndroidException {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastHistory.java:public class BroadcastHistory {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastLoopers.java:public class BroadcastLoopers {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastProcessQueue.java:class BroadcastProcessQueue {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastProcessQueue.java:    public interface BroadcastConsumer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastProcessQueue.java:    public interface BroadcastPredicate {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastProcessQueue.java:    public interface BroadcastRecordConsumer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastProcessQueue.java:    public @interface Reason {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastQueueImpl.java:class BroadcastQueueImpl extends BroadcastQueue {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastQueueImpl.java:    private class BroadcastAnrTimer extends AnrTimer<BroadcastProcessQueue> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastRecord.java:    final boolean urgent;    // has been classified as "urgent"
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastRecord.java:    public @interface DeliveryState {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastRetryException.java:public class BroadcastRetryException extends BroadcastDeliveryFailedException {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastSkipPolicy.java:public class BroadcastSkipPolicy {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastStats.java:    static final class ActionEntry {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastStats.java:    static final class PackageEntry {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BroadcastStats.java:    static final class ViolationEntry {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/BugReportHandlerUtil.java:    private static class BugreportHandlerResponseBroadcastReceiver extends BroadcastReceiver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:    private final class FreezeHandler extends Handler implements
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:    private final class MemCompactionHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:    private final class SettingsContentObserver extends ContentObserver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:    private static final class DefaultProcessDependencies implements ProcessDependencies {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:public class CachedAppOptimizer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CachedAppOptimizer.java:    public @interface UnfreezeReason {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class CacheUseComparator implements Comparator<RankedProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class LastActivityTimeComparator implements Comparator<RankedProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class LastRssComparator implements Comparator<RankedProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class ProcessDependenciesImpl implements ProcessDependencies {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class RankedProcessRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class RssComparator implements Comparator<RankedProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:    private static class ScoreComparator implements Comparator<RankedProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CacheOomRanker.java:public class CacheOomRanker {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/compaction/AggregatedCompactionStats.java:class AggregatedCompactionStats {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/compaction/CompactionStatsManager.java:    public @interface CompactThrottleReason {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ComponentAliasResolver.java:public class ComponentAliasResolver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ComponentAliasResolver.java:    public static class Resolution<T> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ContentProviderHelper.java:    private final class DevelopmentSettingsObserver extends ContentObserver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ContentProviderHelper.java:    private static final class StartActivityRunnable implements Runnable {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ContentProviderHelper.java:public class ContentProviderHelper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ContentProviderRecord.java:    private class ExternalProcessHandle implements DeathRecipient {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CoreSettingsObserver.java:    private static class DeviceConfigEntry<T> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/CoreSettingsObserver.java:    private static final String LOG_TAG = CoreSettingsObserver.class.getSimpleName();
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DataConnectionStats.java:    private class PhoneStateListenerImpl extends PhoneStateListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DataConnectionStats.java:    private static class PhoneStateListenerExecutor implements Executor {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DataConnectionStats.java:public class DataConnectionStats extends BroadcastReceiver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DropboxRateLimiter.java:    private class ErrorRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DropboxRateLimiter.java:    private static class DefaultClock implements Clock {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DropboxRateLimiter.java:public class DropboxRateLimiter {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DropboxRateLimiter.java:    public class RateLimitResult {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/DropboxRateLimiter.java:    public interface Clock {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/FgsTempAllowList.java:public class FgsTempAllowList<E> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ForegroundServiceDelegation.java:public class ForegroundServiceDelegation {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ForegroundServiceTypeLoggerModule.java:    private static class FgsApiRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ForegroundServiceTypeLoggerModule.java:    private static class UidState {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ForegroundServiceTypeLoggerModule.java:public class ForegroundServiceTypeLoggerModule {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ForegroundServiceTypeLoggerModule.java:    public @interface FgsApiState {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/Freezer.java:class Freezer {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/HealthStatsBatteryStatsWriter.java:public class HealthStatsBatteryStatsWriter {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/InstrumentationReporter.java:    final class MyThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/InstrumentationReporter.java:    final class Report {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/InstrumentationReporter.java:public class InstrumentationReporter {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/LmkdConnection.java:public class LmkdConnection {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/LowMemDetector.java:    private final class LowMemThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/LowMemDetector.java:    public @interface MemFactor{}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/MemoryStatUtil.java:    public static final class MemoryStat {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterDebugLogger.java:class OomAdjusterDebugLogger {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjuster.java:    final class ComputeOomAdjWindowCallback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjuster.java:public class OomAdjuster {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjuster.java:    public static class Injector {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private class ComputeConnectionIgnoringReachableClientsConsumer implements
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private class ComputeConnectionsConsumer implements Consumer<OomAdjusterArgs> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private class ComputeHostConsumer implements BiConsumer<Connection, ProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private class OomAdjusterArgs {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private class ProcessRecordNodes {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    private static class ReachableCollectingConsumer implements
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:public class OomAdjusterModernImpl extends OomAdjuster {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    public interface Connection {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomAdjusterModernImpl.java:    static class ProcessRecordNode {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomConnection.java:    private final class OomConnectionThread extends Thread {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/OomConnection.java:    public interface OomConnectionListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PendingIntentController.java:public class PendingIntentController {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PendingIntentRecord.java:    final static class Key {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PendingIntentRecord.java:    public @interface CancellationReason {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PendingIntentRecord.java:    static final class TempAllowListDuration {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PhantomProcessList.java:    static class Injector {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PlatformCompatCache.java:    static class CacheItem implements CompatChange.ChangeListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/PlatformCompatCache.java:    static @interface CachedCompatChangeId{}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessCachedOptimizerRecord.java:    public @interface ShouldNotFreezeReason {}
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessErrorStateRecord.java:class ProcessErrorStateRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    final class IsolatedUidRange {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    final class IsolatedUidRangeAllocator {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    final class KillHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    final class MyProcessMap extends ProcessMap<ProcessRecord> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    private final class ImperceptibleKillRunner extends UidObserver {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    public static final class ProcStateMemTracker {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    static class ProcessListSettingsListener implements DeviceConfig.OnPropertiesChangedListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessList.java:    static final class ProcStartHandler extends Handler {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessMemInfo.java:public class ProcessMemInfo {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessRecord.java:class ProcessRecord implements WindowProcessListener {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessStateController.java:    private static class GlobalState implements OomAdjuster.GlobalState {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessStateController.java:public class ProcessStateController {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessStateController.java:    public static class Builder {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ProcessStatsService.java:    private final class LocalService extends ProcessStatsInternal {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/SameProcessApplicationThread.java:public class SameProcessApplicationThread extends IApplicationThread.Default {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ServiceRecord.java:    static class StartItem {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/ServiceRecord.java:    static class TimeLimitedFgsInfo {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/SettingsToPropertiesMapper.java:public class SettingsToPropertiesMapper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/StackTracesDumpHelper.java:public class StackTracesDumpHelper {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/TraceErrorLogger.java:public class TraceErrorLogger {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UidObserverController.java:    private static final class UidObserverRegistration {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UidObserverController.java:public class UidObserverController {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UidObserverController.java:    static final class ChangeRecord {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UidProcessMap.java:public class UidProcessMap<E> {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserController.java:class UserController implements Handler.Callback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserController.java:    private static class PendingUserStart {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserController.java:    private static class UserProgressListener extends IProgressListener.Stub {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserController.java:    static class Injector {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserState.java:    public interface KeyEvictedCallback {
+/home/cwtrocks/aosp/base/services/core/java/com/android/server/am/UserSwitchingDialog.java:class UserSwitchingDialog extends Dialog {
