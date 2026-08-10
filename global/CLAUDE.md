@@ -554,3 +554,524 @@ document.addEventListener('DOMContentLoaded', function() {
 - 用户要求生成包含图表的 HTML 文件
 - 用户要求生成报告/文档（默认包含 Mermaid 图表）
 - 用户说"输出为 HTML"、"生成 HTML"、"写一个带图的 HTML"
+
+---
+
+## 🌐 HTML 报告格式规范（代码探索报告强制默认）
+
+**所有代码探索、源码分析、系统架构报告默认使用 HTML 格式输出。**
+
+### 强制要求
+
+1. **默认格式**：所有 `.md` 报告同时生成对应的 `.html` 版本
+2. **文件命名**：`[report-name]-guide.html` 与 `.md` 并存
+3. **Mermaid 图表**：必须渲染为可交互的 SVG/PNG，而非静态代码块
+4. **专业配色**：采用护眼的暗色系配色方案（适合长时间阅读）
+5. **代码高亮**：使用 Prism.js 或 highlight.js 进行语法高亮
+6. **响应式设计**：支持桌面、平板、手机多端阅读
+7. **打印友好**：提供 `@media print` 优化打印效果
+
+### HTML 模板（强制使用）
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{报告标题}</title>
+    
+    <!-- Mermaid.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    
+    <!-- 代码高亮 - Prism.js -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+    
+    <style>
+        /* ========== 基础变量 ========== */
+        :root {
+            /* 暗色系主配色 - 护眼设计 */
+            --bg-primary: #1a1a2e;        /* 主背景：深蓝黑 */
+            --bg-secondary: #16213e;       /* 次级背景 */
+            --bg-tertiary: #0f3460;        /* 卡片/代码块背景 */
+            --bg-code: #1e1e3f;           /* 代码背景 */
+            
+            /* 文字颜色 */
+            --text-primary: #e4e4e7;        /* 主文字：柔和白 */
+            --text-secondary: #a1a1aa;     /* 次级文字 */
+            --text-muted: #71717a;         /* 弱化文字 */
+            --text-accent: #60a5fa;        /* 强调文字：亮蓝 */
+            
+            /* 强调色 - 代码图表专用 */
+            --accent-blue: #60a5fa;         /* 蓝色：类/接口 */
+            --accent-green: #4ade80;       /* 绿色：方法/函数 */
+            --accent-purple: #a78bfa;      /* 紫色：变量/字段 */
+            --accent-orange: #fb923c;       /* 橙色：常量/枚举 */
+            --accent-red: #f87171;         /* 红色：重要/警告 */
+            --accent-yellow: #fbbf24;      /* 黄色：注释/提示 */
+            
+            /* 边框和分隔 */
+            --border-subtle: #27272a;
+            --border-default: #3f3f46;
+            
+            /* 字体 */
+            --font-sans: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+            --font-size-base: 15px;         /* 基础字号：稍大便于阅读 */
+            --line-height-base: 1.7;        /* 行高：宽松便于阅读 */
+            
+            /* 间距 */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            
+            /* 圆角 */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+        }
+        
+        /* ========== 基础重置 ========== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: var(--font-size-base);
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-sans);
+            line-height: var(--line-height-base);
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* ========== 容器布局 ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-lg);
+        }
+        
+        /* ========== 标题层级 ========== */
+        h1, h2, h3, h4, h5, h6 {
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-primary);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--accent-blue);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+        
+        h4 {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        /* ========== 目录导航 ========== */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: var(--spacing-lg);
+        }
+        
+        .toc-list li {
+            margin-bottom: var(--spacing-sm);
+            break-inside: avoid;
+        }
+        
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        .toc-list a:hover {
+            color: var(--accent-blue);
+        }
+        
+        /* ========== Mermaid 图表容器 ========== */
+        .mermaid {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+            overflow-x: auto;
+        }
+        
+        .mermaid svg {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100%;
+            display: block;
+        }
+        
+        /* Mermaid 节点字体大小 */
+        .mermaid svg text {
+            font-family: var(--font-sans) !important;
+            font-size: 12px !important;
+        }
+        
+        .mermaid svg .nodeLabel,
+        .mermaid svg .edgeLabel {
+            font-size: 11px !important;
+        }
+        
+        /* Mermaid 暗色主题覆盖 */
+        [class*="node"] rect,
+        [class*="node"] polygon {
+            fill: var(--bg-tertiary) !important;
+            stroke: var(--accent-blue) !important;
+        }
+        
+        [class*="edge"] path,
+        [class*="edge"] line {
+            stroke: var(--text-muted) !important;
+        }
+        
+        /* ========== 代码块 ========== */
+        pre {
+            background: var(--bg-code) !important;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            overflow-x: auto;
+            margin: var(--spacing-xl) 0;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        
+        code {
+            font-family: var(--font-mono);
+            font-size: 0.85em;
+        }
+        
+        /* 内联代码 */
+        :not(pre) > code {
+            background: var(--bg-tertiary);
+            padding: 2px 6px;
+            border-radius: var(--radius-sm);
+            color: var(--accent-orange);
+        }
+        
+        /* Prism.js 代码高亮优化 */
+        pre[class*="language-"] {
+            background: var(--bg-code) !important;
+        }
+        
+        .token.comment { color: var(--text-muted); }
+        .token.keyword { color: var(--accent-purple); }
+        .token.string { color: var(--accent-green); }
+        .token.number { color: var(--accent-orange); }
+        .token.function { color: var(--accent-blue); }
+        .token.class-name { color: var(--accent-yellow); }
+        .token.operator { color: var(--accent-red); }
+        
+        /* ========== 表格 ========== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-xl) 0;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: var(--spacing-sm) var(--spacing-md);
+            text-align: left;
+            border: 1px solid var(--border-subtle);
+        }
+        
+        th {
+            background: var(--bg-tertiary);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        td {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+        
+        tr:hover td {
+            background: var(--bg-tertiary);
+        }
+        
+        /* ========== 提示框 ========== */
+        .tip, .warning, .important {
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin: var(--spacing-xl) 0;
+            border-left: 4px solid;
+        }
+        
+        .tip {
+            background: rgba(74, 222, 128, 0.1);
+            border-color: var(--accent-green);
+        }
+        
+        .warning {
+            background: rgba(251, 191, 36, 0.1);
+            border-color: var(--accent-yellow);
+        }
+        
+        .important {
+            background: rgba(96, 165, 250, 0.1);
+            border-color: var(--accent-blue);
+        }
+        
+        /* ========== 区块引用 ========== */
+        blockquote {
+            margin: var(--spacing-xl) 0;
+            padding: var(--spacing-md) var(--spacing-lg);
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-purple);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        /* ========== 分割线 ========== */
+        hr {
+            border: none;
+            height: 1px;
+            background: var(--border-subtle);
+            margin: var(--spacing-2xl) 0;
+        }
+        
+        /* ========== 链接 ========== */
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        /* ========== 响应式设计 ========== */
+        @media (max-width: 768px) {
+            :root {
+                --font-size-base: 14px;
+            }
+            
+            .container {
+                padding: var(--spacing-md);
+            }
+            
+            .toc-list {
+                columns: 1;
+            }
+            
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.25rem; }
+            h3 { font-size: 1.1rem; }
+            
+            pre {
+                font-size: 0.8rem;
+                padding: var(--spacing-md);
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: var(--spacing-xs) var(--spacing-sm);
+            }
+        }
+        
+        /* ========== 打印优化 ========== */
+        @media print {
+            body {
+                background: white;
+                color: #1a1a1a;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            
+            .mermaid {
+                page-break-inside: avoid;
+                background: #f5f5f5;
+            }
+            
+            pre {
+                background: #f5f5f5 !important;
+                border: 1px solid #ddd;
+                color: #1a1a1a;
+            }
+            
+            .token {
+                color: #1a1a1a !important;
+            }
+            
+            h1, h2, h3 {
+                color: #1a1a1a;
+                border-color: #ddd;
+            }
+            
+            a {
+                color: #1a1a1a;
+                text-decoration: underline;
+            }
+            
+            .toc {
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+            }
+            
+            .tip, .warning, .important {
+                background: #f5f5f5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 内容区域 -->
+    </div>
+    
+    <script>
+        // Mermaid 初始化
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose',
+            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: 14,
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                nodeSpacing: 30,
+                rankSpacing: 50
+            },
+            sequence: {
+                useMaxWidth: true,
+                diagramMarginX: 30,
+                diagramMarginY: 20,
+                actorMargin: 50,
+                messageMargin: 35
+            },
+            state: {
+                useMaxWidth: true,
+                dividerMargin: 10,
+                sizeUnit: 5
+            }
+        });
+        
+        // SVG 响应式修复
+        document.addEventListener('DOMContentLoaded', function() {
+            function fixMermaidSVGs() {
+                document.querySelectorAll('.mermaid svg').forEach(function(svg) {
+                    svg.setAttribute('width', '100%');
+                    svg.removeAttribute('height');
+                    
+                    svg.querySelectorAll('text').forEach(function(text) {
+                        text.style.fontFamily = 'Inter, -apple-system, sans-serif';
+                        text.style.fontSize = '12px';
+                    });
+                });
+            }
+            
+            fixMermaidSVGs();
+            
+            var observer = new MutationObserver(fixMermaidSVGs);
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+        
+        // 代码高亮
+        Prism.highlightAll();
+    </script>
+</body>
+</html>
+```
+
+### 配色方案说明
+
+| 用途 | 颜色 | 说明 |
+|------|------|------|
+| 主背景 | `#1a1a2e` | 深蓝黑，护眼 |
+| 次级背景 | `#16213e` | 卡片/表格背景 |
+| 代码背景 | `#1e1e3f` | 代码块背景 |
+| 主文字 | `#e4e4e7` | 柔和白 |
+| 强调色 | `#60a5fa` | 蓝色：类/接口 |
+| 方法色 | `#4ade80` | 绿色：方法/函数 |
+| 变量色 | `#a78bfa` | 紫色：字段/属性 |
+| 常量色 | `#fb923c` | 橙色：常量/枚举 |
+
+### 输出确认清单
+
+生成 HTML 报告后，必须确认：
+
+```
+✅ HTML 报告已生成
+✅ 配色方案：暗色系护眼设计
+✅ 字体配置：Inter + JetBrains Mono
+✅ Mermaid 图表：CDN 引入 + 初始化配置
+✅ 代码高亮：Prism.js 已配置
+✅ 响应式设计：支持移动端
+✅ 打印优化：@media print 已配置
+✅ SVG 修复：JavaScript 强制响应式
+✅ 图表数量：N 个 Mermaid 图表
+✅ 源码引用：N 处带行号引用
+```
+
+### 触发条件
+
+本规则**强制默认执行**：
+- 代码探索类报告（AMS、WMS、Binder 等）
+- 架构分析报告
+- 源码解读报告
+- 系统流程分析报告
+- 任何包含 Mermaid 图表的文档

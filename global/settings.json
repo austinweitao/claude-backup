@@ -25,9 +25,10 @@
       "Bash(dd if=*)",
       "Bash(mkfs*)",
       "Bash(fdisk*)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
-  "model": "sonnet",
+  "model": "claude-fable-5",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
