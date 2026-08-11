@@ -84,11 +84,11 @@
     ]
   },
   "enabledPlugins": {
-    "claude-mem@thedotmack": true,
-    "github@claude-plugins-official": true
+    "github@claude-plugins-official": true,
+    "claude-mem@thedotmack": true
   },
   "skipWebFetchPreflight": true,
-  "effortLevel": "high",
+  "effortLevel": "medium",
   "autoCompactWindow": 700000,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,

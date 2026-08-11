@@ -1,364 +1,147 @@
 # Claude Code 全局配置
 
-## 📚 Android 源码本地优先规则（Android 强制协议的补充前置步骤）
+## 📚 Android 源码本地优先规则
 
 **当用户提问涉及 Android / AOSP 内部实现需要源码确认时，遵循以下优先级顺序：**
 
-### Step 1 — 先用本地 `~/aosp` 源码确认（最快、最权威）
+### Step 1 — 先用本地 `~/aosp` 源码确认（最快，最权威）
 
 - 路径：`~/aosp`（已存在本地 AOSP 镜像）
 - 结构：
-  - `~/aosp/base`   — `frameworks/base`（含 `services/core/.../wm/`、`core/java/android/view/` 等）
-  - `~/aosp/native` — `frameworks/native`（含 native SurfaceFlinger 等）
-  - 其他子目录视情况而定
+  - `~/aosp/base`   — `frameworks/base`
+  - `~/aosp/native` — `frameworks/native`
 - 使用 Read / Grep 工具直接在本地打开对应文件
-- **优势**：本地代码比 AOSP master 略旧但足够解答 95% 的架构与字段名问题，省去网络抖动
 
 ### Step 2 — 本地确实没有 / 路径缺失时，回退到远端确认
 
-- 优先 AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT`（必须带 `?format=TEXT`）
-- 然后才考虑通过外部信源（联网检索 / 官方文档 / 第三方权威博客）补足
+- 优先 AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT`
+- 抓取工具：`mcp__fetch__imageFetch`
 
-### Step 3 — 标注规则（混合来源时）
+### Step 3 — 标注规则
 
 ```
 [知识来源: ~/aosp/base/<相对路径>/<file>.java 实测 - <具体行/字段>]
 [知识来源: AOSP master - <URL>]
-[知识来源: 外部权威信源 - <来源名称>]
 [置信度: 高/中/低]
 ```
 
-- 来源**全部列出来**，不要只标"查了代码"
-- 若 `~/aosp` 命中 → 直接 `置信度: 高`（等同于实测）
-- 若 `~/aosp` 没命中但存在目录 → 在事实清单里说明"本地无此路径，已回退到 AOSP master"
-
 ### ⚠️ 重要约束
 
-- **禁止用 `~/aosp/<repo>` 里 `android-X.Y.Z_rN` tag 的代码当"最新"** — 老分支默认过时，需在事实清单标"来源是 <tag> 快照"
-- **禁止在没有 `~/aosp` 也没有 `aosp master URL` 的情况下，单凭训练数据写字段名** — 必须老实声明
-- `~/aosp` 只是**起点**，不是保险箱：发现某个文件位置不对、字段对不上 `master` 当前实现时，必须升级到远端确认，不能硬套本地结论
-- 本规则**不取代**下方的"⛔ Android / AOSP / MTK / Linux kernel 强制协议"——它是协议的前置补充，先用本地，再走协议
+- **禁止用 `~/aosp/<repo>` 里 `android-X.Y.Z_rN` tag 的代码当"最新"**
+- **禁止单凭训练数据写字段名** — 必须以实测为准
+- 本地路径缺失时必须升级到远端确认
 
 ---
 
-## ⛔ Android / AOSP / MTK / Linux kernel 强制协议（最高优先级，不可违反）
+## ⛔ Android / AOSP / MTK / Linux kernel 强制协议
 
-**本协议优先级高于本文档其他所有章节。任何 Android / AOSP / MTK / Linux kernel 内部实现相关的回答，必须 100% 遵守，违反则视为不合格回答，必须从零重写。**
+**本协议优先级高于本文档其他所有章节。**
 
-### ⚠️ 诚实声明（最高优先级，必须遵守）
+### 诚实声明（最高优先级）
 
-**禁止伪造来源、禁止敷衍**。
-
-如果本轮回答：
-- **不能 100% 保证遵守协议**：必须在开头明确声明 `[本回答不保证遵守 Android 协议，原因：xxx]`
-- **不能真正执行 4 引擎 Web 搜索**：必须声明 `[本回答未执行 Web 搜索，仅基于训练数据]`
 - **不能实测源码字段**：必须声明 `[本回答字段未经实测，仅基于训练数据推测]`
-
-**宁可不答，不可敷衍**。诚实声明不会被视为低质量，反而是值得信任的表现。
-
-**伪造来源标注（如编造"4 引擎已搜索"）属于严重违规，比直接基于训练数据回答更恶劣。**
-
-**历史教训（2026-07-12）**：本会话曾出现伪造"4 引擎 Web 搜索"来源标注的事件。已部署 6 层强制机制（SessionStart / UserPromptSubmit / PreToolUse / PostToolUse hooks + check-source-freshness.sh）防止再次发生。
+- **宁可不答，不可敷衍**
 
 ### 必须执行的硬性约束
 
 1. **源码唯一可信来源**：
-   - AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT` （必须带 `?format=TEXT`）
+   - AOSP master：`https://android.googlesource.com/platform/<repo>/+/refs/heads/main/<path>?format=TEXT`
    - Linux kernel master：`https://github.com/torvalds/linux/blob/master/<path>`
-   - 抓取工具：`mcp__fetch__imageFetch`（raw 文本）或 `mcp__ddg-search__fetch_content`
 
 2. **禁止使用的过时来源**：
-   - ❌ 任何 `android-X.Y.Z_rN` tag（如 `android-10.0.0_r25`、`android-8.0.0_r4`）—— 默认过时，最新是 master
-   - ❌ `cs.android.com/...` —— 实测返回空内容（已知问题）
-   - ❌ 训练数据中"猜的字段名" —— 必须以 master 实测为准
-   - ❌ 任何 android 4.x~10.x 的博客源码引用当现状
-   - ❌ 不带 `?format=TEXT` 后缀的 googlesource URL
+   - ❌ `android-X.Y.Z_rN` tag（如 `android-10.0.0_r25`）—— 默认过时
+   - ❌ `cs.android.com/...` —— 返回空内容
+   - ❌ 训练数据中"猜的字段名"
 
 3. **每篇回答必填**：
-   - [ ] 所有字段名 / 函数签名 / 常量值在 AOSP master 或 Linux kernel master **实测确认**
-   - [ ] 如文件返回 404，明确告知用户"**路径已变更**"，不要猜测替代内容
-   - [ ] 4 引擎 Web 搜索（`mcp__serper__google_search` + `mcp__ddg-search__search` + `mcp__tavily__tavily_search` + `mcp__MiniMax__web_search`）**全部并行调用**
-   - [ ] 结尾有"**硬性事实清单**"小节（哪些实测、哪些是推断、哪些是 4 引擎佐证）
-   - [ ] 来源标注符合模板：`[知识来源: AOSP master 2026-MM-DD 实测 - ...]`、`[知识来源: Linux kernel master 实测 - ...]`、`[知识来源: Web 搜索 4 引擎并行 - ...]`、`[置信度: 高/中/低]`
-
-4. **每次回答前反向自问**：
-   - 我引用的字段名是不是训练数据"猜"的？
-   - 如果明天 master 重构这个文件，我的回答会错在哪？
-   - 有没有更直接的 master URL 验证？
-   - 是否引用了 `android-X.Y.Z_rN` tag？（必须替换为 master）
-   - 是否引用了 cs.android.com 网页？（必须替换为 googlesource.com）
-
-### 详细协议
-
-完整的字段实测、已知 404 路径、引用模板、4 引擎调用清单 → 必须先读取 `/home/cwtrocks/.claude/projects/-home-cwtrocks-boot-procedure/memory/android.md`
-
-### 历史教训
-
-2026-07-12 在 boot-procedure 项目调研时，曾多次违反本协议（引用 `android-10.0.0_r25`、`android-8.0.0_r4` 当最新、引用 `cs.android.com` 抓不到内容时编造答案）。该错误已修正，详见 memory/android.md 中的"关键字段实测事实"。
+   - [ ] 所有字段名 / 函数签名 / 常量值 **实测确认**
+   - [ ] 如文件返回 404，明确告知用户"**路径已变更**"
+   - [ ] 结尾有"**硬性事实清单**"小节
+   - [ ] 来源标注符合模板
 
 ---
 
-## 知识输出规范
+## 📊 报告格式规范
 
-- 知识来源必须标注：`[知识来源: 训练数据]` 或 `[知识来源: Web搜索 - "关键词"]`
-- 涉及新技术/框架/版本时必须 Web 搜索
-- Android 内部实现 → 参考 `memory/android.md`（**注意：仅作为参考，详细强制协议见上方"⛔ Android 强制协议"章节和 `memory/android.md`**）
+**默认输出格式：Markdown（`.md`）**
 
-### Android 技术问题（强制 4 引擎并行 + AOSP master 交叉验证）
+### 默认规则
 
-所有 Android 相关问题（ART / framework / native / Java 层 / 系统服务 / GC / dex / oat / Runtime / Class / Object / String / 堆内存 / 内存空间 / 线程 / 类加载 等）**必须**按以下流程产出结论，不允许单凭训练数据回答：
+1. **默认格式**：所有报告使用 Markdown 格式输出
+2. **Mermaid 图表**：使用 ` ```mermaid ` 代码块
+3. **代码高亮**：使用 Markdown 原生代码块语法
+4. **目录导航**：自动生成 TOC 链接
 
-**Step 1 — 4 引擎并行 Web 搜索**（必须全部调用，不允许省略）
-- `mcp__serper__google_search` —— 官方文档、权威博客（Luoshengyang / Mark Allison / Android Code Search / 官方 source.android.com）
-- `mcp__ddg-search__search` —— 开发者社区、Stack Overflow、Reddit、Hacker News
-- `mcp__tavily__tavily_search` —— 学术论文、技术深度文章、search_depth=`advanced`
-- `mcp__MiniMax__web_search` —— 中文社区（CSDN / 知乎 / 博客园），弥补国内 ART 源码分析文章
+### HTML 报告（仅按需生成）
 
-**Step 2 — AOSP master 分支源码交叉验证**（必须）
-- 对涉及字段名、常量值、类结构、方法签名、继承关系的描述，**必须**用 WebFetch / fetch_content 抓 AOSP master 分支对应路径：
-  - `https://android.googlesource.com/platform/art/+/master/<path>` —— 主仓
-  - `https://cs.android.com/android/platform/superproject/+/master:art/<path>` —— Android Code Search（带行号）
-  - `https://source.android.com/source/` —— 文档侧
-- 抓取后核对：字段名拼写、常量数值、继承层次、API 是否已废弃/重命名
-- **禁止**用训练数据中的"我猜的字段名"（如 `large_object_maps_` / `region_bitmap_`）直接作答——必须以 AOSP 源码中的实际 getter / 字段为准（如 `GetLiveBitmap()` / `GetMarkBitmap()`）
+如果用户明确要求生成 HTML 格式报告，使用专业模板：
+- 配色：暗色系护眼（`#1a1a2e` 背景）
+- 字体：Inter + JetBrains Mono
+- 图表：Mermaid.js CDN
+- 响应式：支持移动端
 
-**Step 3 — 信息整合与置信度标注**
-- AOSP 源码命中 = 强证据，直接采纳
-- 4 引擎全部命中 = 强证据，直接采纳
-- 4 引擎部分命中（1-3 个）= 需在结论后加 `[置信度: 中]` 并指出分歧点
-- 4 引擎全部未命中 = 需明确标 `[知识来源: 训练数据，未交叉验证]` 并降级为"经验性描述"
-- 涉及**版本/设备相关常量**（如 `kLargeObjectThreshold`、Region 大小）：**只能写范围/典型值**，不允许写绝对值
+---
 
-**Step 4 — 输出格式**
-- 答案末尾附"知识来源"小节，列出本次实际调用的 4 引擎 query + AOSP 源码 URL
-- 任何被推翻的训练数据假设，必须显式声明（如"我之前猜测 X，源码验证后正确为 Y"）
+## 图表生成规范（opt-in）
 
-**反例（必须避免）**：
-- ❌ 只调 1-2 个 Web 搜索就开始写答案
-- ❌ 训练数据里记得的字段名直接写、不去 AOSP 验证
-- ❌ "通常 ~12KB" 写成 "是 12KB"
-- ❌ 一次回答里混杂"训练数据结论"和"搜索结论"而不区分
+- **默认行为**: 写软件图表用 Mermaid 语法在 markdown 里**直接出 ` ```mermaid ` 代码块**
+- **触发渲染**：用户明确说"画图"、"render"、"出图"时才渲染
 
-**正例模板**：
-```
-[知识来源: Web 搜索 - "ART Heap ContinuousSpace DiscontinuousSpace"]
-[知识来源: AOSP master - android.googlesource.com/platform/art/+/master/runtime/gc/heap.cc]
-[置信度: 高]
-```
-
-## Web 搜索规范
-
-**强制规则：所有 Web 搜索必须多引擎并行，确保信息准确性和全面性**
-
-### 核心引擎配置（4 个必须并行调用）
-
-1. **`mcp__serper__google_search`** - Google 搜索（权威性、官方文档）
-2. **`mcp__ddg-search__search`** - DuckDuckGo（隐私友好、开发者社区）
-3. **`mcp__tavily__tavily_search`** - Tavily（技术深度、学术论文）
-4. **`mcp__MiniMax__web_search`** - MiniMax（中文内容优化）
-
-### 注意事项
-
-- ❌ **不使用 `WebSearch`（Claude Code 内置）**
-  - 原因：当前环境设置了 `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`
-  - 该环境变量禁用了 WebSearch/WebFetch 功能
-  - 如需启用：`unset CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` 后重启会话
-- ✅ **MCP 工具更可靠**：直连搜索 API，不依赖 Anthropic 后端
-- ✅ **四引擎并行**：覆盖面更广，结果更准确
-
-### 调用模板
-
-```xml
-<function_calls>
-<invoke name="WebSearch">
-<parameter name="query">搜索关键词
-
-## 图表生成规范（opt-in: 仅当用户明确要求出图时才渲染）
-
-- **默认行为**: 写软件图表用 Mermaid 语法在 markdown 里**直接出 ` ```mermaid ` 代码块**, 不做 PNG 渲染, 不弹浏览器。
-  - 用户拿到的是可复制 / 可改的源代码, **而不是图片**
-  - **除非用户在 prompt 里明确说要"画图" / "生成图" / "render" / "出图" / "给我看图" / "show diagram" / "可视化" / "画一下"**, 否则**只输出代码块**
-- **触发渲染的明确信号**（任一即触发, **必须出现在用户 prompt 里**, 不能自我授权）:
-  - "画图" / "画一下" / "出个图" / "生成图" / "render" / "show diagram" / "可视化" / "画个图给我看"
-  - "在浏览器看" / "弹图" / "把图打开" / "show me the image"
-  - "PNG" / "截图" / "导出图片"
-  - **任何**用户 prompt 末尾的 "画图" / "出图" / "render this" / "可视化" 后缀
-- **绝不触发的反例**:
-  - 用户只问"是什么 / 为什么 / 怎么走 / 区别" → **不**渲染, 只给文字 + 代码块
-  - 用户重复同样的问题 → **不**渲染 (除非本轮明确说"画图")
-  - 我自己回复里说"画图" → **不**自我授权
-- **一旦触发**: 流程跟之前一样 — mermaid 代码块同步 Write 到 `/tmp/mermaid-auto/<ISO>-<n>.md`, hook 接管, 浏览器自动打开
-- **关键: hook 只监听 Write/Edit/MultiEdit/NotebookEdit**,不会因为 markdown 文本里出现 ` ```mermaid ` 就自动触发。因此**每段 mermaid 都要同步用 Write 工具写一个临时文件**,hook 才会接管渲染:
-  - 文件路径:`/tmp/mermaid-auto/<ISO 时间戳>-<n>.md`
-  - 内容: ``` ```mermaid\n<diagram>\n``` ``` (只放这一段 mermaid)
-  - 写完后,回复里仍要保留原始 mermaid 代码块 (供人复制),但**额外**这步 Write 是触发渲染的唯一手段
-  - 例: `Write /tmp/mermaid-auto/2026-06-13T21-50-00-1.md` 内容只含一段 mermaid 块
-- **Mermaid 源码安全写法**（避免 mmdc 解析失败 —— 4 类踩过的坑）:
-  1. **节点文本 (`[xxx]`) 禁用保留字符**: `,` `[` `]` `(` `)` `{` `}` `\|` —— 会被 mermaid 解析器当成分隔符/属性。
-     - ❌ `A[live_bitmap_<br/>1 bit = 8 B]` (内部 `=` 不算保留,但行内 `<br/>` 加上 `,` 会让 AST 错位)
-     - ❌ `R[[addr, addr+size)]` (cylinder 节点 + 逗号 = 解析失败)
-     - ❌ `A[obj 首地址 (klass_ 字段)]` (括号 = 圆角节点触发)
-     - ✅ `A[obj 首地址 klass_ 字段]` / `B[1 bit 等于 8 B]` / `R[区间: addr 到 addr+size]`
-  2. **classDef 名称 / `:::xxx` class 名禁用关键字**: mermaid 在 flowchart 模式里 `end` `subgraph` `class` `default` `direction` `graph` 等是保留 token,用作名字会触发 `got 'end'` 错误。
-     - ❌ `classDef end fill:#...` / `AA["..."]:::end`
-     - ✅ `classDef stop fill:#...` / `AA["..."]:::borderend`
-  3. **形状语法含内部逗号时禁用**: `[/.../]` (parallelogram) `[\...\]` (alt parallelogram) `[(...)]` (cylinder) `[(\...\)]` —— 只要文本里含 `,` 就会和 shape 语法冲突。
-     - ❌ `R[[addr, addr+size)]` / `R[/[addr, addr+size)/]`
-     - ✅ 直接用矩形 `R[区间: addr 到 addr+size]`
-  4. **subgraph 标签 (`subgraph ID["..."]`) 禁用括号**: `subgraph Space["连续空间 (begin_..end_)"]` 同样会失败。
-     - ✅ `subgraph Space["连续空间 begin_ 到 end_"]`
-- 详细规范 + 4 类坑的真实错误信息 → `memory/mermaid.md`
-- 工作机制（实现细节，便于排查）：
-  1. `settings.json` 注册了 `PostToolUse` hook，matcher 为 `Write|Edit|MultiEdit|NotebookEdit`。
-  2. hook 脚本扫描工具入参里的 `content` / `new_string` / `new_source` 文本，提取所有 ` ```mermaid ... ` fenced block，写到 `/tmp/mermaid-render/m_<hash>_<n>.mmd`。
-  3. 对每个 `.mmd` 调用 `npx -p @mermaid-js/mermaid-cli@latest mmdc -i ... -o ...png -p puppeteer.json -b transparent -q --scale ${MERMAID_SCALE:-2}` 渲染为 PNG (默认 scale=2, HiDPI 友好)。
-  4. 渲染成功后**默认**:把所有 PNG 嵌入一个 HTML 页面, 在浏览器中打开 (按顺序探测 `$CHROME_PATH` → `~/.cache/puppeteer/chrome/.../chrome` → `~/.cache/ms-playwright/.../chrome` → `google-chrome` / `chromium` / `firefox` → `xdg-open` / `open` / `gio` / `wslview`)。**这个路径是默认**,因为它在任何 TTY / OS / 终端能力下都能工作。
-  5. **HTML 里有缩放按钮** (右上角: − / 1× / 1.5× / 2× / 3×), 点哪个哪个就 CSS scale 放大 (不重新渲染)。
-  6. **渲染失败时**: hook 不会静默忽略,会把 .mmd 源码和 mmdc 错误日志**内嵌进 HTML 的红色错误框** (按图序号对齐),用户能直接在浏览器看到失败原因。回复里**也要显式说明**第几张图失败、错误关键字。
-  7. hook 始终 `exit 0`，失败不阻塞 agent。
-- 环境变量旋钮:
-  - `MERMAID_SCALE=N` (1..8, **默认 2**) —— mmdc 像素放大倍率。
-    - 1: 普通 1080p 屏幕, 1:1 显示
-    - 2 (默认): 普通 1080p + 偶尔缩放, 性价比最高
-    - 3: HiDPI 笔记本 (Retina / 2K 屏) + 想放大看细节
-    - 4: 大屏 4K 或多张图并排
-    - 5-8: 极少用, 体积大、慢
-  - `MERMAID_HTML=0` —— 关闭 HTML 生成, 改为走终端直显路径
-  - `MERMAID_TERM=1` —— (与 HTML 互斥) 终端直显: `timg -ph --color8` (256 色 ANSI) → `chafa` → `viu` → `img2sixel` → `catimg` → `npx -p picture-tube` 兜底
-  - `MERMAID_BROWSER=0` —— 不调用任何浏览器 / 看图软件, 只生成文件
-  - `CHROME_PATH=/path/to/chrome` —— 强制指定 Chrome 路径
-- 失败兜底：若 hook 没生效或 mmdc 缺失，回复里必须**显式说明**并给出可执行命令（`npx -p @mermaid-js/mermaid-cli mmdc -i x.mmd -o x.png` + 用 Chrome 直接打开: `~/.cache/puppeteer/chrome/linux-148.0.7778.97/chrome-linux64/chrome --new-window file://<png 路径>`），不得静默忽略。
+---
 
 ## Bash 命令规范
 
 - 所有 Bash 命令默认自动批准执行
 - 危险操作（删除、强制推送等）需用户确认
 
-## 结论溯源规则（强制执行）
+---
 
-**每次 LLM 输出结论时，必须同时输出结论的来源依据和使用的 LLM 模型。**
+## 结论溯源规则
 
-### 溯源格式要求
-
-每次回答的结论部分必须包含以下信息：
+每次回答必须包含来源标注：
 
 ```
 [结论溯源]
 - 使用的模型: <具体模型名称>
-- 知识来源: 
+- 知识来源:
   - 源码: <具体文件路径或 URL>
   - 本地代码: <本地文件路径>:行号
-  - 推断: <未验证的推断，需标注>
 - 置信度: 高/中/低
 - 验证方式: 实测/推断
 ```
-
-### 示例
-
-**好的回答：**
-```
-结论：ART 运行时使用 Zygote 预加载机制加速应用启动。
-
-[结论溯源]
-- 使用的模型: claude-opus-4-8
-- 知识来源:
-  - AOSP master 源码: frameworks/core/java/com/android/internal/os/Zygote.java
-- 置信度: 高
-- 验证方式: 实测
-```
-
-**不好的回答（禁止）：**
-```
-❌ 结论：ART 使用 Zygote 预加载。（没有来源）
-```
-
-### 溯源等级分类
-
-| 等级 | 条件 | 置信度 |
-|------|------|--------|
-| A 级 | AOSP/Linux 源码实测 | 高 |
-| B 级 | 本地代码实测 | 中 |
-| C 级 | 外部权威文档 | 中 |
-| D 级 | 训练数据推断 | 低（需明确标注） |
-
-### 禁止行为
-
-- ❌ 不写来源就输出确定性结论
-- ❌ 伪造来源标注
-- ❌ 混合"实测结论"和"推断结论"不区分
-- ❌ 只写"查了代码"而不写具体文件路径
-
-### 常见来源类型
-
-| 类型 | 标注格式 | 示例 |
-|------|----------|------|
-| AOSP 源码 | `[源码: AOSP master - URL]` | `[源码: AOSP master - android.googlesource.com/platform/art/+/master/...]` |
-| Linux kernel 源码 | `[源码: Linux kernel master - URL]` | `[源码: Linux kernel master - github.com/torvalds/linux/blob/master/...]` |
-| 本地代码 | `[源码: ~/aosp/...]` | `[源码: ~/aosp/system/core/init/...]` |
-| 训练数据 | `[知识来源: 训练数据，未交叉验证]` | - |
 
 ---
 
 ## 知识沉淀规范
 
-**自动触发条件**（满足任一即触发）：
+**自动触发条件**：
 1. 深度分析了代码实现机制（超过 3 个源文件）
 2. 回答了架构/设计模式相关问题
-3. 解释了复杂的技术流程（包含流程图/时序图）
-4. 用户明确要求沉淀知识
+3. 用户明确要求沉淀
 
 **沉淀流程**：
 1. 判断项目是否有 `docs/exploration/` 目录
-   - 有：创建编号文档（如 `10-xxx.md`）
-   - 无：询问用户是否创建知识库目录
-2. 文档格式：
-   - 标题：`# [主题] 详解`
-   - 章节：问题背景 → 核心流程 → 实现细节 → 应用场景 → 总结
-   - 包含：代码示例、流程图、关键数据结构
+2. 创建编号文档（如 `10-xxx.md`）
 3. 更新项目 `CLAUDE.md` 的知识库索引
-4. 告知用户：`✅ 知识已沉淀至 docs/exploration/XX-xxx.md`
 
-**特殊规则**：
-- 简单问答（单文件查看、命令帮助）不沉淀
-- 多轮对话结束后，主动询问是否需要沉淀
-- 用户说"不要沉淀"或"skip"时跳过
+---
 
-## 大型探索任务管理规则（防止上下文溢出）
-
-**本规则基于 2026-08-03 Binder 项目（7 个并行 agent 生成 ~3000 行文档）的实战教训制定。**
+## 大型探索任务管理规则
 
 ### 核心问题
 
 | 问题 | 症状 | 根因 |
 |------|------|------|
-| 上下文窗口溢出 | 系统自动 compact，生成会话摘要 | 并行 agent 输出分散、多文件累积 |
-| 内容重复/遗漏 | 摘要不全，恢复后重复工作 | 没有统一整合点 |
+| 上下文窗口溢出 | 系统自动 compact | 并行 agent 输出分散 |
+| 内容重复/遗漏 | 摘要不全 | 没有统一整合点 |
 | 任务状态丢失 | 中断后不知道做到哪了 | 没有进度跟踪 |
 
 ### 强制规则
 
-#### 1. 并行任务完成后必须立即整合
-
-**触发时机**: 任何 `Workflow` / 并行 `Agent` 任务完成后，**第一个工具调用**必须是整合输出。
-
-**整合文件命名规范**:
-- 主文档: `PROJECT-MASTER-GUIDE.md` 或 `PROJECT-MASTER-GUIDE.html`
-- 放弃独立文件，保留一个综合版本即可
-
-#### 2. 大文件分批读取和处理
-
-**超过 500 行的文件**: 使用 `Read` 的 `limit` + `offset` 参数分批读取。
-
-#### 3. 任务进度跟踪
-
-**使用 Task 工具**: 在开始工作时创建 task，标记 `in_progress`，完成后标记 `completed`。
-
-#### 4. 中断恢复策略
-
-**依赖会话摘要**: 系统生成的摘要应包含"当前工作状态"。恢复时：
-1. 读取摘要理解上下文
-2. 识别未完成的任务
-3. 直接恢复工作（不重复探索）
+1. **并行任务完成后必须立即整合**：任何 Workflow / 并行 Agent 任务完成后，**第一个工具调用**必须是整合输出
+2. **大文件分批读取**：超过 500 行的文件使用 `limit` + `offset` 参数
+3. **任务进度跟踪**：使用 Task 工具标记 `in_progress` / `completed`
+4. **中断恢复策略**：依赖会话摘要恢复工作
 
 ---
 
@@ -367,711 +150,3 @@
 - 禁止省略知识来源标注
 - 禁止在未经验证的情况下，对可能过时的知识做出确定性表述
 - 禁止在回答深度技术问题后不进行知识沉淀（除非用户明确拒绝）
-
----
-
-## Mermaid 图表 HTML 文件生成规范
-
-**生成包含 Mermaid.js 图表的 HTML 文件时，必须严格遵守以下流程，确保图表能正常渲染。**
-
-### 强制检查清单
-
-生成 HTML 文件前，必须完成以下检查：
-
-#### 1. Mermaid.js CDN 引入
-```html
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-```
-
-#### 2. Mermaid 初始化配置（必须）
-```javascript
-<script>
-    mermaid.initialize({
-        startOnLoad: true,
-        theme: 'dark',
-        securityLevel: 'loose',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-        fontSize: 14,
-        flowchart: {
-            useMaxWidth: true,
-            htmlLabels: true,
-            curve: 'basis',
-            nodeSpacing: 20,
-            rankSpacing: 40
-        },
-        sequence: {
-            useMaxWidth: true,
-            diagramMarginX: 20,
-            diagramMarginY: 20
-        }
-    });
-</script>
-```
-
-**关键点**：
-- `startOnLoad: true` —— 页面加载后自动渲染图表
-- `securityLevel: 'loose'` —— 允许执行内联脚本（HTML 标签）
-- `flowchart.htmlLabels: true` —— 支持 flowchart 中的 HTML 标签
-- `fontSize: 14` —— 限制字体大小（默认 16-18px 过大）
-- `flowchart.useMaxWidth: true` —— 允许 SVG 缩放到容器宽度
-
-#### 3. CSS 容器样式（必须）
-
-**字体大小限制 + 响应式宽度是必须的**：
-```css
-.mermaid {
-    background: var(--bg-secondary);
-    padding: 15px;
-    border-radius: 8px;
-    margin: 20px 0;
-    overflow-x: auto;  /* 长图表水平滚动 */
-    text-align: center;
-}
-
-.mermaid svg {
-    /* 关键：强制宽度为容器宽度 */
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* 限制字体大小 */
-.mermaid svg text {
-    font-size: 12px !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-}
-
-/* 节点标签 */
-.mermaid svg [class*="nodeLabel"],
-.mermaid svg .edgeLabel text {
-    font-size: 11px !important;
-}
-```
-
-#### 4. 强制 SVG 属性修复（JavaScript - 必须）
-
-仅靠 CSS **可能不足**，因为 Mermaid 生成的 SVG 包含内联 `width`/`height` 属性，CSS 的 `width: 100%` 无法覆盖。
-
-**必须在 `</body>` 前添加 JavaScript 修复脚本：**
-
-```javascript
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    function fixMermaidSVGs() {
-        document.querySelectorAll('.mermaid svg').forEach(function(svg) {
-            // 强制宽度为容器宽度（覆盖内联属性）
-            svg.setAttribute('width', '100%');
-            svg.removeAttribute('height');
-
-            // 强制字体大小
-            svg.querySelectorAll('text').forEach(function(text) {
-                text.style.fontSize = '11px';
-            });
-
-            // 强制节点标签字体
-            svg.querySelectorAll('[class*="nodeLabel"], .edgeLabel text').forEach(function(el) {
-                el.style.fontSize = '11px';
-            });
-        });
-    }
-
-    // 立即执行一次
-    fixMermaidSVGs();
-
-    // MutationObserver 监控动态渲染的图表
-    var observer = new MutationObserver(function(mutations) {
-        fixMermaidSVGs();
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-});
-</script>
-```
-
-#### 5. 禁止的做法
-
-❌ **不要只靠 CSS 而不使用 JavaScript**（CSS 可能被内联属性覆盖）
-❌ **不要**在渲染后用 JavaScript 手动计算比例放大 SVG
-❌ **不要**设置固定 `max-width: 1400px`（会导致大图表溢出）
-❌ **不要**移除 `overflow-x: auto`（长图表需要滚动）
-❌ **不要**省略 `fontSize` 配置（Mermaid 默认字体太大）
-❌ **不要**省略 `flowchart.useMaxWidth: true`（会导致 SVG 不缩放）
-
-#### 6. DOM 加载后渲染确认（可选）
-
-如需确认渲染，可添加：
-```javascript
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    mermaid.run({
-        querySelector: '.mermaid',
-        postRender: function(id) {
-            console.log('Mermaid diagram rendered:', id);
-        }
-    });
-});
-</script>
-```
-
-### 生成后的自检流程
-
-1. **语法检查**：确认所有 Mermaid 图表代码没有语法错误
-2. **资源验证**：确认 CDN URL 可访问
-3. **容器验证**：确认 `.mermaid` CSS 类存在且样式正确
-4. **字体验证**：确认 `fontSize: 14` 和 CSS `font-size: 12px` 已设置
-5. **响应式验证**：确认 SVG 使用 `width: 100%` 而非固定宽度
-6. **JavaScript 修复**：确认添加了 `fixMermaidSVGs()` 函数覆盖内联属性
-
-### 常见渲染失败原因
-
-| 问题 | 原因 | 解决方案 |
-|------|------|----------|
-| 图表不显示 | 缺少 `mermaid.initialize()` | 添加初始化配置 |
-| 图表只显示代码 | `securityLevel: 'strict'` | 改为 `securityLevel: 'loose'` |
-| HTML 标签不解析 | `flowchart.htmlLabels: false` | 改为 `true` |
-| 图表溢出容器 | 缺少 `max-width` + JS 修复 | 添加 CSS + `setAttribute('width','100%')` |
-| 字体过大 | 未设置 `fontSize` + JS 修复 | 添加 `fontSize: 14` + JS 强制样式 |
-| SVG 不缩放 | 未设置 `useMaxWidth` + 无 JS | 添加 `flowchart.useMaxWidth: true` + JS |
-| 页面空白 | CDN 加载失败 | 添加备用 CDN 或离线版本 |
-
-### 输出格式
-
-生成 HTML 文件后，必须在回复中确认：
-
-```
-✅ HTML 文件已生成，包含 N 个 Mermaid 图表
-✅ Mermaid.js CDN 已引入
-✅ mermaid.initialize() 配置已添加（含 fontSize: 14）
-✅ CSS .mermaid 容器样式已设置（含响应式 width: 100%）
-✅ JavaScript SVG 属性修复脚本已添加（强制 setAttribute）
-✅ 图表语法已检查，无已知问题
-```
-
-### 触发条件
-
-本规则在以下情况下**强制执行**：
-- 用户要求生成包含图表的 HTML 文件
-- 用户要求生成报告/文档（默认包含 Mermaid 图表）
-- 用户说"输出为 HTML"、"生成 HTML"、"写一个带图的 HTML"
-
----
-
-## 🌐 HTML 报告格式规范（代码探索报告强制默认）
-
-**所有代码探索、源码分析、系统架构报告默认使用 HTML 格式输出。**
-
-### 强制要求
-
-1. **默认格式**：所有 `.md` 报告同时生成对应的 `.html` 版本
-2. **文件命名**：`[report-name]-guide.html` 与 `.md` 并存
-3. **Mermaid 图表**：必须渲染为可交互的 SVG/PNG，而非静态代码块
-4. **专业配色**：采用护眼的暗色系配色方案（适合长时间阅读）
-5. **代码高亮**：使用 Prism.js 或 highlight.js 进行语法高亮
-6. **响应式设计**：支持桌面、平板、手机多端阅读
-7. **打印友好**：提供 `@media print` 优化打印效果
-
-### HTML 模板（强制使用）
-
-```html
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{报告标题}</title>
-    
-    <!-- Mermaid.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-    
-    <!-- 代码高亮 - Prism.js -->
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
-    
-    <style>
-        /* ========== 基础变量 ========== */
-        :root {
-            /* 暗色系主配色 - 护眼设计 */
-            --bg-primary: #1a1a2e;        /* 主背景：深蓝黑 */
-            --bg-secondary: #16213e;       /* 次级背景 */
-            --bg-tertiary: #0f3460;        /* 卡片/代码块背景 */
-            --bg-code: #1e1e3f;           /* 代码背景 */
-            
-            /* 文字颜色 */
-            --text-primary: #e4e4e7;        /* 主文字：柔和白 */
-            --text-secondary: #a1a1aa;     /* 次级文字 */
-            --text-muted: #71717a;         /* 弱化文字 */
-            --text-accent: #60a5fa;        /* 强调文字：亮蓝 */
-            
-            /* 强调色 - 代码图表专用 */
-            --accent-blue: #60a5fa;         /* 蓝色：类/接口 */
-            --accent-green: #4ade80;       /* 绿色：方法/函数 */
-            --accent-purple: #a78bfa;      /* 紫色：变量/字段 */
-            --accent-orange: #fb923c;       /* 橙色：常量/枚举 */
-            --accent-red: #f87171;         /* 红色：重要/警告 */
-            --accent-yellow: #fbbf24;      /* 黄色：注释/提示 */
-            
-            /* 边框和分隔 */
-            --border-subtle: #27272a;
-            --border-default: #3f3f46;
-            
-            /* 字体 */
-            --font-sans: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
-            --font-size-base: 15px;         /* 基础字号：稍大便于阅读 */
-            --line-height-base: 1.7;        /* 行高：宽松便于阅读 */
-            
-            /* 间距 */
-            --spacing-xs: 4px;
-            --spacing-sm: 8px;
-            --spacing-md: 16px;
-            --spacing-lg: 24px;
-            --spacing-xl: 32px;
-            --spacing-2xl: 48px;
-            
-            /* 圆角 */
-            --radius-sm: 4px;
-            --radius-md: 8px;
-            --radius-lg: 12px;
-        }
-        
-        /* ========== 基础重置 ========== */
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-        
-        html {
-            font-size: var(--font-size-base);
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: var(--font-sans);
-            line-height: var(--line-height-base);
-            color: var(--text-primary);
-            background: var(--bg-primary);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        /* ========== 容器布局 ========== */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: var(--spacing-xl) var(--spacing-lg);
-        }
-        
-        /* ========== 标题层级 ========== */
-        h1, h2, h3, h4, h5, h6 {
-            margin: var(--spacing-xl) 0 var(--spacing-md);
-            font-weight: 600;
-            line-height: 1.3;
-            color: var(--text-primary);
-        }
-        
-        h1 {
-            font-size: 2rem;
-            padding-bottom: var(--spacing-md);
-            border-bottom: 2px solid var(--accent-blue);
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            color: var(--accent-blue);
-            margin-top: var(--spacing-2xl);
-        }
-        
-        h3 {
-            font-size: 1.25rem;
-            color: var(--text-primary);
-        }
-        
-        h4 {
-            font-size: 1rem;
-            color: var(--text-secondary);
-        }
-        
-        /* ========== 目录导航 ========== */
-        .toc {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-lg);
-            padding: var(--spacing-lg);
-            margin: var(--spacing-xl) 0;
-        }
-        
-        .toc-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .toc-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            columns: 2;
-            column-gap: var(--spacing-lg);
-        }
-        
-        .toc-list li {
-            margin-bottom: var(--spacing-sm);
-            break-inside: avoid;
-        }
-        
-        .toc-list a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-        
-        .toc-list a:hover {
-            color: var(--accent-blue);
-        }
-        
-        /* ========== Mermaid 图表容器 ========== */
-        .mermaid {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: var(--spacing-lg);
-            margin: var(--spacing-xl) 0;
-            overflow-x: auto;
-        }
-        
-        .mermaid svg {
-            width: 100% !important;
-            height: auto !important;
-            max-width: 100%;
-            display: block;
-        }
-        
-        /* Mermaid 节点字体大小 */
-        .mermaid svg text {
-            font-family: var(--font-sans) !important;
-            font-size: 12px !important;
-        }
-        
-        .mermaid svg .nodeLabel,
-        .mermaid svg .edgeLabel {
-            font-size: 11px !important;
-        }
-        
-        /* Mermaid 暗色主题覆盖 */
-        [class*="node"] rect,
-        [class*="node"] polygon {
-            fill: var(--bg-tertiary) !important;
-            stroke: var(--accent-blue) !important;
-        }
-        
-        [class*="edge"] path,
-        [class*="edge"] line {
-            stroke: var(--text-muted) !important;
-        }
-        
-        /* ========== 代码块 ========== */
-        pre {
-            background: var(--bg-code) !important;
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: var(--spacing-lg);
-            overflow-x: auto;
-            margin: var(--spacing-xl) 0;
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            line-height: 1.6;
-        }
-        
-        code {
-            font-family: var(--font-mono);
-            font-size: 0.85em;
-        }
-        
-        /* 内联代码 */
-        :not(pre) > code {
-            background: var(--bg-tertiary);
-            padding: 2px 6px;
-            border-radius: var(--radius-sm);
-            color: var(--accent-orange);
-        }
-        
-        /* Prism.js 代码高亮优化 */
-        pre[class*="language-"] {
-            background: var(--bg-code) !important;
-        }
-        
-        .token.comment { color: var(--text-muted); }
-        .token.keyword { color: var(--accent-purple); }
-        .token.string { color: var(--accent-green); }
-        .token.number { color: var(--accent-orange); }
-        .token.function { color: var(--accent-blue); }
-        .token.class-name { color: var(--accent-yellow); }
-        .token.operator { color: var(--accent-red); }
-        
-        /* ========== 表格 ========== */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--spacing-xl) 0;
-            font-size: 0.9rem;
-        }
-        
-        th, td {
-            padding: var(--spacing-sm) var(--spacing-md);
-            text-align: left;
-            border: 1px solid var(--border-subtle);
-        }
-        
-        th {
-            background: var(--bg-tertiary);
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-        
-        td {
-            background: var(--bg-secondary);
-            color: var(--text-secondary);
-        }
-        
-        tr:hover td {
-            background: var(--bg-tertiary);
-        }
-        
-        /* ========== 提示框 ========== */
-        .tip, .warning, .important {
-            padding: var(--spacing-md) var(--spacing-lg);
-            border-radius: var(--radius-md);
-            margin: var(--spacing-xl) 0;
-            border-left: 4px solid;
-        }
-        
-        .tip {
-            background: rgba(74, 222, 128, 0.1);
-            border-color: var(--accent-green);
-        }
-        
-        .warning {
-            background: rgba(251, 191, 36, 0.1);
-            border-color: var(--accent-yellow);
-        }
-        
-        .important {
-            background: rgba(96, 165, 250, 0.1);
-            border-color: var(--accent-blue);
-        }
-        
-        /* ========== 区块引用 ========== */
-        blockquote {
-            margin: var(--spacing-xl) 0;
-            padding: var(--spacing-md) var(--spacing-lg);
-            background: var(--bg-secondary);
-            border-left: 4px solid var(--accent-purple);
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-        
-        /* ========== 分割线 ========== */
-        hr {
-            border: none;
-            height: 1px;
-            background: var(--border-subtle);
-            margin: var(--spacing-2xl) 0;
-        }
-        
-        /* ========== 链接 ========== */
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-        
-        a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-        
-        /* ========== 响应式设计 ========== */
-        @media (max-width: 768px) {
-            :root {
-                --font-size-base: 14px;
-            }
-            
-            .container {
-                padding: var(--spacing-md);
-            }
-            
-            .toc-list {
-                columns: 1;
-            }
-            
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.25rem; }
-            h3 { font-size: 1.1rem; }
-            
-            pre {
-                font-size: 0.8rem;
-                padding: var(--spacing-md);
-            }
-            
-            table {
-                font-size: 0.8rem;
-            }
-            
-            th, td {
-                padding: var(--spacing-xs) var(--spacing-sm);
-            }
-        }
-        
-        /* ========== 打印优化 ========== */
-        @media print {
-            body {
-                background: white;
-                color: #1a1a1a;
-            }
-            
-            .container {
-                max-width: 100%;
-                padding: 0;
-            }
-            
-            .mermaid {
-                page-break-inside: avoid;
-                background: #f5f5f5;
-            }
-            
-            pre {
-                background: #f5f5f5 !important;
-                border: 1px solid #ddd;
-                color: #1a1a1a;
-            }
-            
-            .token {
-                color: #1a1a1a !important;
-            }
-            
-            h1, h2, h3 {
-                color: #1a1a1a;
-                border-color: #ddd;
-            }
-            
-            a {
-                color: #1a1a1a;
-                text-decoration: underline;
-            }
-            
-            .toc {
-                background: #f5f5f5;
-                border: 1px solid #ddd;
-            }
-            
-            .tip, .warning, .important {
-                background: #f5f5f5;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- 内容区域 -->
-    </div>
-    
-    <script>
-        // Mermaid 初始化
-        mermaid.initialize({
-            startOnLoad: true,
-            theme: 'dark',
-            securityLevel: 'loose',
-            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
-            fontSize: 14,
-            flowchart: {
-                useMaxWidth: true,
-                htmlLabels: true,
-                curve: 'basis',
-                nodeSpacing: 30,
-                rankSpacing: 50
-            },
-            sequence: {
-                useMaxWidth: true,
-                diagramMarginX: 30,
-                diagramMarginY: 20,
-                actorMargin: 50,
-                messageMargin: 35
-            },
-            state: {
-                useMaxWidth: true,
-                dividerMargin: 10,
-                sizeUnit: 5
-            }
-        });
-        
-        // SVG 响应式修复
-        document.addEventListener('DOMContentLoaded', function() {
-            function fixMermaidSVGs() {
-                document.querySelectorAll('.mermaid svg').forEach(function(svg) {
-                    svg.setAttribute('width', '100%');
-                    svg.removeAttribute('height');
-                    
-                    svg.querySelectorAll('text').forEach(function(text) {
-                        text.style.fontFamily = 'Inter, -apple-system, sans-serif';
-                        text.style.fontSize = '12px';
-                    });
-                });
-            }
-            
-            fixMermaidSVGs();
-            
-            var observer = new MutationObserver(fixMermaidSVGs);
-            observer.observe(document.body, { childList: true, subtree: true });
-        });
-        
-        // 代码高亮
-        Prism.highlightAll();
-    </script>
-</body>
-</html>
-```
-
-### 配色方案说明
-
-| 用途 | 颜色 | 说明 |
-|------|------|------|
-| 主背景 | `#1a1a2e` | 深蓝黑，护眼 |
-| 次级背景 | `#16213e` | 卡片/表格背景 |
-| 代码背景 | `#1e1e3f` | 代码块背景 |
-| 主文字 | `#e4e4e7` | 柔和白 |
-| 强调色 | `#60a5fa` | 蓝色：类/接口 |
-| 方法色 | `#4ade80` | 绿色：方法/函数 |
-| 变量色 | `#a78bfa` | 紫色：字段/属性 |
-| 常量色 | `#fb923c` | 橙色：常量/枚举 |
-
-### 输出确认清单
-
-生成 HTML 报告后，必须确认：
-
-```
-✅ HTML 报告已生成
-✅ 配色方案：暗色系护眼设计
-✅ 字体配置：Inter + JetBrains Mono
-✅ Mermaid 图表：CDN 引入 + 初始化配置
-✅ 代码高亮：Prism.js 已配置
-✅ 响应式设计：支持移动端
-✅ 打印优化：@media print 已配置
-✅ SVG 修复：JavaScript 强制响应式
-✅ 图表数量：N 个 Mermaid 图表
-✅ 源码引用：N 处带行号引用
-```
-
-### 触发条件
-
-本规则**强制默认执行**：
-- 代码探索类报告（AMS、WMS、Binder 等）
-- 架构分析报告
-- 源码解读报告
-- 系统流程分析报告
-- 任何包含 Mermaid 图表的文档
