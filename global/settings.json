@@ -28,7 +28,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "claude-fable-5",
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
@@ -88,7 +88,7 @@
     "claude-mem@thedotmack": true
   },
   "skipWebFetchPreflight": true,
-  "effortLevel": "medium",
+  "effortLevel": "high",
   "autoCompactWindow": 700000,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
