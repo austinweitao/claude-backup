@@ -1,5 +1,5 @@
 {
-  "numStartups": 194,
+  "numStartups": 195,
   "installMethod": "native",
   "autoUpdates": false,
   "hasSeenTasksHint": true,
@@ -20,8 +20,8 @@
     "continue": 192,
     "shift-tab": 192,
     "image-paste": 185,
-    "subagent-fanout-nudge": 192,
-    "loop-command-nudge": 190,
+    "subagent-fanout-nudge": 195,
+    "loop-command-nudge": 194,
     "default-permission-mode-config": 161,
     "custom-agents": 187,
     "permissions": 194,
@@ -62,8 +62,8 @@
     "continue": 19,
     "shift-tab": 19,
     "image-paste": 10,
-    "subagent-fanout-nudge": 54,
-    "loop-command-nudge": 51,
+    "subagent-fanout-nudge": 55,
+    "loop-command-nudge": 52,
     "default-permission-mode-config": 16,
     "custom-agents": 13,
     "permissions": 19,
@@ -85,9 +85,9 @@
       "lastUsedNumStartups": 167
     },
     "claude-mem@thedotmack": {
-      "usageCount": 42115,
-      "lastUsedAt": 1786845481952,
-      "lastUsedNumStartups": 194
+      "usageCount": 42409,
+      "lastUsedAt": 1786890201539,
+      "lastUsedNumStartups": 195
     },
     "github@claude-plugins-official": {
       "usageCount": 0,
@@ -930,7 +930,7 @@
         "34.0.ignore.cil",
         "service.te"
       ],
-      "lastGracefulShutdown": true,
+      "lastGracefulShutdown": false,
       "lastVersionBase": "2.1.212",
       "exampleFilesGeneratedAt": 1786768649578,
       "lastCost": 0.737095,
