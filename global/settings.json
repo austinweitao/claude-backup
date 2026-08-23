@@ -28,7 +28,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "deepseek-v4-pro",
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "hooks": {
     "SessionStart": [
@@ -88,7 +88,7 @@
     "claude-mem@thedotmack": true
   },
   "skipWebFetchPreflight": true,
-  "effortLevel": "xhigh",
+  "effortLevel": "high",
   "autoCompactWindow": 700000,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
