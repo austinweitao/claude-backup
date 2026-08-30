@@ -4,10 +4,10 @@
     "github@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/github/340e33aef211",
-        "version": "340e33aef211",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/claude-plugins-official/github/unknown",
+        "version": "unknown",
         "installedAt": "2026-08-05T16:04:15.101Z",
-        "lastUpdated": "2026-08-22T00:30:17.444Z",
+        "lastUpdated": "2026-08-30T01:33:10.910Z",
         "gitCommitSha": "340e33aef211d95769d252324854497af871dafe"
       }
     ],
@@ -24,11 +24,11 @@
     "claude-mem@thedotmack": [
       {
         "scope": "user",
-        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.15.3",
-        "version": "13.15.3",
+        "installPath": "/home/cwtrocks/.claude/plugins/cache/thedotmack/claude-mem/13.18.0",
+        "version": "13.18.0",
         "installedAt": "2026-08-10T04:04:28.945Z",
-        "lastUpdated": "2026-08-21T15:04:03.003Z",
-        "gitCommitSha": "e2d1df569a8f04075d40e92461128ece7cf04c82"
+        "lastUpdated": "2026-08-30T01:30:34.613Z",
+        "gitCommitSha": "fa6a1e9ec12d23f98326a9b26e243acb0819e105"
       }
     ]
   }
