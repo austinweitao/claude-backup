@@ -36,7 +36,7 @@
     "workflow-size-prompting": 218,
     "plugin-disuse-review": 201
   },
-  "promptQueueUseCount": 327,
+  "promptQueueUseCount": 329,
   "btwUseCount": 21,
   "unpinOpus47LaunchEffort": true,
   "unpinOpus48LaunchEffort": true,
@@ -87,8 +87,8 @@
       "lastUsedNumStartups": 167
     },
     "claude-mem@thedotmack": {
-      "usageCount": 46657,
-      "lastUsedAt": 1788055135211,
+      "usageCount": 47910,
+      "lastUsedAt": 1788061067056,
       "lastUsedNumStartups": 218
     },
     "github@claude-plugins-official": {
@@ -1059,8 +1059,8 @@
       "lastUsedAt": 1786356403242
     },
     "deep-research": {
-      "usageCount": 65,
-      "lastUsedAt": 1785834053132
+      "usageCount": 67,
+      "lastUsedAt": 1788058085192
     },
     "claude-api": {
       "usageCount": 5,
